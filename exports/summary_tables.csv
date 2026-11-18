@@ -1,0 +1,29 @@
+brand,complaint_prevalence,equal_store_mean_recent_rating,group,group_type,n_eligible_stores,n_reviews,n_stores,praise_prevalence,table,thin_evidence,topic
+Tim Hortons,,4.118181818181818,,,,305,11,,brand_ratings,,
+Starbucks,,3.2122274576997216,,,,249,11,,brand_ratings,,
+Second Cup,,3.440875668449198,,,,146,8,,brand_ratings,,
+Second Cup,0.019523809523809523,,,,5,,,0.13686274509803922,brand_topics,False,atmosphere_seating
+Second Cup,0.03128851540616247,,,,5,,,0.029047619047619044,brand_topics,False,cleanliness
+Second Cup,0.09795518207282913,,,,5,,,0.0,brand_topics,False,price_value
+Second Cup,0.1895798319327731,,,,5,,,0.3291036414565826,brand_topics,False,product_quality
+Second Cup,0.26745098039215687,,,,5,,,0.5518767507002801,brand_topics,False,service
+Starbucks,0.08651050835353905,,,,8,,,0.0923842634880039,brand_topics,False,atmosphere_seating
+Starbucks,0.011387163561076604,,,,8,,,0.03175770308123249,brand_topics,False,cleanliness
+Starbucks,0.08889320797488956,,,,8,,,0.005681818181818182,brand_topics,False,price_value
+Starbucks,0.13398896366847135,,,,8,,,0.1733327174743415,brand_topics,False,product_quality
+Starbucks,0.37858282888254113,,,,8,,,0.4291448521108048,brand_topics,False,service
+Tim Hortons,0.017176596886741814,,,,9,,,0.08970248973659033,brand_topics,False,atmosphere_seating
+Tim Hortons,0.036842116552261474,,,,9,,,0.06330882214940187,brand_topics,False,cleanliness
+Tim Hortons,0.0419600764869307,,,,9,,,0.0,brand_topics,False,price_value
+Tim Hortons,0.11709511857849453,,,,9,,,0.24258453049586898,brand_topics,False,product_quality
+Tim Hortons,0.16576334404126392,,,,9,,,0.6214524706766821,brand_topics,False,service
+Second Cup,,3.4895721925133687,downtown,area,,,7,,area_ratings,,
+Second Cup,,3.1,suburban,area,,,1,,area_ratings,,
+Starbucks,,3.1967835368030273,downtown,area,,,10,,area_ratings,,
+Starbucks,,3.3666666666666667,suburban,area,,,1,,area_ratings,,
+Tim Hortons,,4.196296296296296,downtown,area,,,9,,area_ratings,,
+Tim Hortons,,3.7,other,area,,,1,,area_ratings,,
+Tim Hortons,,3.8333333333333335,suburban,area,,,1,,area_ratings,,
+Second Cup,,3.243872549019608,university_adjacent,university,,,4,,area_ratings,,
+Starbucks,,3.0505122438780607,university_adjacent,university,,,6,,area_ratings,,
+Tim Hortons,,4.105555555555555,university_adjacent,university,,,6,,area_ratings,,

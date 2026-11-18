@@ -1,0 +1,8 @@
+.env
+.venv
+data/
+logs/
+__pycache__/
+*.pyc
+.DS_Store
+# Keep exports/ tracked (study deliverables). Raw DB/API dumps stay in data/.

@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1043759bafc729233937898c70498463 {
+                    position: relative;
+                    width: 100.0vw;
+                    height: 100.0vh;
+
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>/*
+ * Glyphicons Halflings -- the icon font used by folium's default Awesome Markers
+ * (Icon(prefix="glyphicon")). Extracted from Bootstrap 3's glyphicon rules only.
+ *
+ * folium previously loaded netdna's bootstrap-glyphicons.css, which despite its
+ * name ships a full Bootstrap-3 base stylesheet (normalize reset + global `body`
+ * rules) that leaked onto the host page (GH-1820). This file provides just the
+ * @font-face and .glyphicon/.glyphicon-* rules needed for the markers, with no
+ * page-wide side effects. Font files are served from jsDelivr.
+ */
+@font-face{font-family:'Glyphicons Halflings';src:url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.eot');src:url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;}
+.glyphicon-asterisk:before{content:"\2a";}
+.glyphicon-plus:before{content:"\2b";}
+.glyphicon-euro:before{content:"\20ac";}
+.glyphicon-minus:before{content:"\2212";}
+.glyphicon-cloud:before{content:"\2601";}
+.glyphicon-envelope:before{content:"\2709";}
+.glyphicon-pencil:before{content:"\270f";}
+.glyphicon-glass:before{content:"\e001";}
+.glyphicon-music:before{content:"\e002";}
+.glyphicon-search:before{content:"\e003";}
+.glyphicon-heart:before{content:"\e005";}
+.glyphicon-star:before{content:"\e006";}
+.glyphicon-star-empty:before{content:"\e007";}
+.glyphicon-user:before{content:"\e008";}
+.glyphicon-film:before{content:"\e009";}
+.glyphicon-th-large:before{content:"\e010";}
+.glyphicon-th:before{content:"\e011";}
+.glyphicon-th-list:before{content:"\e012";}
+.glyphicon-ok:before{content:"\e013";}
+.glyphicon-remove:before{content:"\e014";}
+.glyphicon-zoom-in:before{content:"\e015";}
+.glyphicon-zoom-out:before{content:"\e016";}
+.glyphicon-off:before{content:"\e017";}
+.glyphicon-signal:before{content:"\e018";}
+.glyphicon-cog:before{content:"\e019";}
+.glyphicon-trash:before{content:"\e020";}
+.glyphicon-home:before{content:"\e021";}
+.glyphicon-file:before{content:"\e022";}
+.glyphicon-time:before{content:"\e023";}
+.glyphicon-road:before{content:"\e024";}
+.glyphicon-download-alt:before{content:"\e025";}
+.glyphicon-download:before{content:"\e026";}
+.glyphicon-upload:before{content:"\e027";}
+.glyphicon-inbox:before{content:"\e028";}
+.glyphicon-play-circle:before{content:"\e029";}
+.glyphicon-repeat:before{content:"\e030";}
+.glyphicon-refresh:before{content:"\e031";}
+.glyphicon-list-alt:before{content:"\e032";}
+.glyphicon-flag:before{content:"\e034";}
+.glyphicon-headphones:before{content:"\e035";}
+.glyphicon-volume-off:before{content:"\e036";}
+.glyphicon-volume-down:before{content:"\e037";}
+.glyphicon-volume-up:before{content:"\e038";}
+.glyphicon-qrcode:before{content:"\e039";}
+.glyphicon-barcode:before{content:"\e040";}
+.glyphicon-tag:before{content:"\e041";}
+.glyphicon-tags:before{content:"\e042";}
+.glyphicon-book:before{content:"\e043";}
+.glyphicon-print:before{content:"\e045";}
+.glyphicon-font:before{content:"\e047";}
+.glyphicon-bold:before{content:"\e048";}
+.glyphicon-italic:before{content:"\e049";}
+.glyphicon-text-height:before{content:"\e050";}
+.glyphicon-text-width:before{content:"\e051";}
+.glyphicon-align-left:before{content:"\e052";}
+.glyphicon-align-center:before{content:"\e053";}
+.glyphicon-align-right:before{content:"\e054";}
+.glyphicon-align-justify:before{content:"\e055";}
+.glyphicon-list:before{content:"\e056";}
+.glyphicon-indent-left:before{content:"\e057";}
+.glyphicon-indent-right:before{content:"\e058";}
+.glyphicon-facetime-video:before{content:"\e059";}
+.glyphicon-picture:before{content:"\e060";}
+.glyphicon-map-marker:before{content:"\e062";}
+.glyphicon-adjust:before{content:"\e063";}
+.glyphicon-tint:before{content:"\e064";}
+.glyphicon-edit:before{content:"\e065";}
+.glyphicon-share:before{content:"\e066";}
+.glyphicon-check:before{content:"\e067";}
+.glyphicon-move:before{content:"\e068";}
+.glyphicon-step-backward:before{content:"\e069";}
+.glyphicon-fast-backward:before{content:"\e070";}
+.glyphicon-backward:before{content:"\e071";}
+.glyphicon-play:before{content:"\e072";}
+.glyphicon-pause:before{content:"\e073";}
+.glyphicon-stop:before{content:"\e074";}
+.glyphicon-forward:before{content:"\e075";}
+.glyphicon-fast-forward:before{content:"\e076";}
+.glyphicon-step-forward:before{content:"\e077";}
+.glyphicon-eject:before{content:"\e078";}
+.glyphicon-chevron-left:before{content:"\e079";}
+.glyphicon-chevron-right:before{content:"\e080";}
+.glyphicon-plus-sign:before{content:"\e081";}
+.glyphicon-minus-sign:before{content:"\e082";}
+.glyphicon-remove-sign:before{content:"\e083";}
+.glyphicon-ok-sign:before{content:"\e084";}
+.glyphicon-question-sign:before{content:"\e085";}
+.glyphicon-info-sign:before{content:"\e086";}
+.glyphicon-screenshot:before{content:"\e087";}
+.glyphicon-remove-circle:before{content:"\e088";}
+.glyphicon-ok-circle:before{content:"\e089";}
+.glyphicon-ban-circle:before{content:"\e090";}
+.glyphicon-arrow-left:before{content:"\e091";}
+.glyphicon-arrow-right:before{content:"\e092";}
+.glyphicon-arrow-up:before{content:"\e093";}
+.glyphicon-arrow-down:before{content:"\e094";}
+.glyphicon-share-alt:before{content:"\e095";}
+.glyphicon-resize-full:before{content:"\e096";}
+.glyphicon-resize-small:before{content:"\e097";}
+.glyphicon-exclamation-sign:before{content:"\e101";}
+.glyphicon-gift:before{content:"\e102";}
+.glyphicon-leaf:before{content:"\e103";}
+.glyphicon-eye-open:before{content:"\e105";}
+.glyphicon-eye-close:before{content:"\e106";}
+.glyphicon-warning-sign:before{content:"\e107";}
+.glyphicon-plane:before{content:"\e108";}
+.glyphicon-random:before{content:"\e110";}
+.glyphicon-comment:before{content:"\e111";}
+.glyphicon-magnet:before{content:"\e112";}
+.glyphicon-chevron-up:before{content:"\e113";}
+.glyphicon-chevron-down:before{content:"\e114";}
+.glyphicon-retweet:before{content:"\e115";}
+.glyphicon-shopping-cart:before{content:"\e116";}
+.glyphicon-folder-close:before{content:"\e117";}
+.glyphicon-folder-open:before{content:"\e118";}
+.glyphicon-resize-vertical:before{content:"\e119";}
+.glyphicon-resize-horizontal:before{content:"\e120";}
+.glyphicon-hdd:before{content:"\e121";}
+.glyphicon-bullhorn:before{content:"\e122";}
+.glyphicon-certificate:before{content:"\e124";}
+.glyphicon-thumbs-up:before{content:"\e125";}
+.glyphicon-thumbs-down:before{content:"\e126";}
+.glyphicon-hand-right:before{content:"\e127";}
+.glyphicon-hand-left:before{content:"\e128";}
+.glyphicon-hand-up:before{content:"\e129";}
+.glyphicon-hand-down:before{content:"\e130";}
+.glyphicon-circle-arrow-right:before{content:"\e131";}
+.glyphicon-circle-arrow-left:before{content:"\e132";}
+.glyphicon-circle-arrow-up:before{content:"\e133";}
+.glyphicon-circle-arrow-down:before{content:"\e134";}
+.glyphicon-globe:before{content:"\e135";}
+.glyphicon-tasks:before{content:"\e137";}
+.glyphicon-filter:before{content:"\e138";}
+.glyphicon-fullscreen:before{content:"\e140";}
+.glyphicon-dashboard:before{content:"\e141";}
+.glyphicon-heart-empty:before{content:"\e143";}
+.glyphicon-link:before{content:"\e144";}
+.glyphicon-phone:before{content:"\e145";}
+.glyphicon-usd:before{content:"\e148";}
+.glyphicon-gbp:before{content:"\e149";}
+.glyphicon-sort:before{content:"\e150";}
+.glyphicon-sort-by-alphabet:before{content:"\e151";}
+.glyphicon-sort-by-alphabet-alt:before{content:"\e152";}
+.glyphicon-sort-by-order:before{content:"\e153";}
+.glyphicon-sort-by-order-alt:before{content:"\e154";}
+.glyphicon-sort-by-attributes:before{content:"\e155";}
+.glyphicon-sort-by-attributes-alt:before{content:"\e156";}
+.glyphicon-unchecked:before{content:"\e157";}
+.glyphicon-expand:before{content:"\e158";}
+.glyphicon-collapse-down:before{content:"\e159";}
+.glyphicon-collapse-up:before{content:"\e160";}
+.glyphicon-log-in:before{content:"\e161";}
+.glyphicon-flash:before{content:"\e162";}
+.glyphicon-log-out:before{content:"\e163";}
+.glyphicon-new-window:before{content:"\e164";}
+.glyphicon-record:before{content:"\e165";}
+.glyphicon-save:before{content:"\e166";}
+.glyphicon-open:before{content:"\e167";}
+.glyphicon-saved:before{content:"\e168";}
+.glyphicon-import:before{content:"\e169";}
+.glyphicon-export:before{content:"\e170";}
+.glyphicon-send:before{content:"\e171";}
+.glyphicon-floppy-disk:before{content:"\e172";}
+.glyphicon-floppy-saved:before{content:"\e173";}
+.glyphicon-floppy-remove:before{content:"\e174";}
+.glyphicon-floppy-save:before{content:"\e175";}
+.glyphicon-floppy-open:before{content:"\e176";}
+.glyphicon-credit-card:before{content:"\e177";}
+.glyphicon-transfer:before{content:"\e178";}
+.glyphicon-cutlery:before{content:"\e179";}
+.glyphicon-header:before{content:"\e180";}
+.glyphicon-compressed:before{content:"\e181";}
+.glyphicon-earphone:before{content:"\e182";}
+.glyphicon-phone-alt:before{content:"\e183";}
+.glyphicon-tower:before{content:"\e184";}
+.glyphicon-stats:before{content:"\e185";}
+.glyphicon-sd-video:before{content:"\e186";}
+.glyphicon-hd-video:before{content:"\e187";}
+.glyphicon-subtitles:before{content:"\e188";}
+.glyphicon-sound-stereo:before{content:"\e189";}
+.glyphicon-sound-dolby:before{content:"\e190";}
+.glyphicon-sound-5-1:before{content:"\e191";}
+.glyphicon-sound-6-1:before{content:"\e192";}
+.glyphicon-sound-7-1:before{content:"\e193";}
+.glyphicon-copyright-mark:before{content:"\e194";}
+.glyphicon-registration-mark:before{content:"\e195";}
+.glyphicon-cloud-download:before{content:"\e197";}
+.glyphicon-cloud-upload:before{content:"\e198";}
+.glyphicon-tree-conifer:before{content:"\e199";}
+.glyphicon-tree-deciduous:before{content:"\e200";}
+.glyphicon-briefcase:before{content:"\1f4bc";}
+.glyphicon-calendar:before{content:"\1f4c5";}
+.glyphicon-pushpin:before{content:"\1f4cc";}
+.glyphicon-paperclip:before{content:"\1f4ce";}
+.glyphicon-camera:before{content:"\1f4f7";}
+.glyphicon-lock:before{content:"\1f512";}
+.glyphicon-bell:before{content:"\1f514";}
+.glyphicon-bookmark:before{content:"\1f516";}
+.glyphicon-fire:before{content:"\1f525";}
+.glyphicon-wrench:before{content:"\1f527";}
+</style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style='position:fixed;bottom:10px;left:10px;background:white;padding:6px;z-index:9999;font-size:12px'>Grey = unavailable. Window ends 2026-11-18T00:59:19.806029-05:00. Sample stores=33.</div>
+    
+            <div class="folium-map" id="map_1043759bafc729233937898c70498463" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1043759bafc729233937898c70498463 = L.map(
+                "map_1043759bafc729233937898c70498463",
+                {
+                    center: [43.7, -79.4],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b78962cf430e0f605eea39ace73d1d1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9b78962cf430e0f605eea39ace73d1d1.addTo(map_1043759bafc729233937898c70498463);
+        
+    
+            var feature_group_6a59b85a44dd2d6adf3418604355fda4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e9b09c42ac96a0a8e266bffc9195617c = L.circleMarker(
+                [43.659016699999995, -79.3969244],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c7240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_cdab93e962244c8e508fb7ea002d1359 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97cf19533feb0803f6fa1146b9202602 = $(`<div id="html_97cf19533feb0803f6fa1146b9202602" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.2 (n=31)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.659016699999995,-79.3969244,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34c749bab157:0x2228eb8e5f6ed943!8m2!3d43.659016699999995!4d-79.3969244" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_cdab93e962244c8e508fb7ea002d1359.setContent(html_97cf19533feb0803f6fa1146b9202602);
+            
+        
+
+        circle_marker_e9b09c42ac96a0a8e266bffc9195617c.bindPopup(popup_cdab93e962244c8e508fb7ea002d1359)
+        ;
+
+        
+    
+    
+            circle_marker_e9b09c42ac96a0a8e266bffc9195617c.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 3.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba8db25563ff2a0bbff1ae555f41f74e = L.circleMarker(
+                [43.6582106, -79.3996686],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac5240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_92c4beec37fe8deaf8bd66718d9227d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_101453d13ea6df78638d53dfb73cb085 = $(`<div id="html_101453d13ea6df78638d53dfb73cb085" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.7 (n=1063)<br>Recent mean: 4.2 (n=5)<br>Low-rating share: 0.2<br>Date range ts: 1793720479–1794886641<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6582106,-79.3996686,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c10020870d:0x2de4deb5f0305846!8m2!3d43.6582106!4d-79.3996686" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_92c4beec37fe8deaf8bd66718d9227d7.setContent(html_101453d13ea6df78638d53dfb73cb085);
+            
+        
+
+        circle_marker_ba8db25563ff2a0bbff1ae555f41f74e.bindPopup(popup_92c4beec37fe8deaf8bd66718d9227d7)
+        ;
+
+        
+    
+    
+            circle_marker_ba8db25563ff2a0bbff1ae555f41f74e.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 3.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e9f3b808a985266af4a81e1d516799f = L.circleMarker(
+                [43.6585414, -79.3954918],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b84640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_cec947963430611139ba24a09d452ffc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9db9a8740d55ab3f04747d0eb7d9c8cb = $(`<div id="html_9db9a8740d55ab3f04747d0eb7d9c8cb" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=580)<br>Recent mean: 1.8 (n=5)<br>Low-rating share: 0.8<br>Date range ts: 1792455272–1794073843<br><a href="https://www.google.com/maps/place/Starbucks/@43.6585414,-79.3954918,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b34c71490f457:0x4f113a148831c9b!8m2!3d43.6585414!4d-79.3954918" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_cec947963430611139ba24a09d452ffc.setContent(html_9db9a8740d55ab3f04747d0eb7d9c8cb);
+            
+        
+
+        circle_marker_6e9f3b808a985266af4a81e1d516799f.bindPopup(popup_cec947963430611139ba24a09d452ffc)
+        ;
+
+        
+    
+    
+            circle_marker_6e9f3b808a985266af4a81e1d516799f.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 3.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3735fc52e69d5dcb5a58aa6ae0682d4d = L.circleMarker(
+                [43.6440116, -79.37752259999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b24c40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_eb5704c6460aafb2b8af56caf2d98b21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_935a462a148e6fe6cd2ff62af798b0f1 = $(`<div id="html_935a462a148e6fe6cd2ff62af798b0f1" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.8 (n=259)<br>Recent mean: 3.6333333333333333 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1785808270–1794957898<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6440116,-79.37752259999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb3a11b42ef5:0x84c1857e60455800!8m2!3d43.6440116!4d-79.37752259999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_eb5704c6460aafb2b8af56caf2d98b21.setContent(html_935a462a148e6fe6cd2ff62af798b0f1);
+            
+        
+
+        circle_marker_3735fc52e69d5dcb5a58aa6ae0682d4d.bindPopup(popup_eb5704c6460aafb2b8af56caf2d98b21)
+        ;
+
+        
+    
+    
+            circle_marker_3735fc52e69d5dcb5a58aa6ae0682d4d.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 3.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_706c5c1b01b4c244b72bcb80bee96c42 = L.circleMarker(
+                [43.6471832, -79.3773224],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cc3240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_e8c2756b55a7dfd1f714488255a9c075 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7aec0fd75c738869e9dc7cc7e6a9d843 = $(`<div id="html_7aec0fd75c738869e9dc7cc7e6a9d843" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons Brookfield Place<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=817)<br>Recent mean: 4.366666666666666 (n=30)<br>Low-rating share: 0.13333333333333333<br>Date range ts: 1789148753–1794946160<br><a href="https://www.google.com/maps/place/Tim+Hortons+Brookfield+Place/@43.6471832,-79.3773224,14z/data=!4m8!1m2!2m1!1sTim+Hortons+Brookfield+Place!3m4!1s0x89d4cb2d3d1a83b9:0x32285cb5bf87d964!8m2!3d43.6471832!4d-79.3773224" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_e8c2756b55a7dfd1f714488255a9c075.setContent(html_7aec0fd75c738869e9dc7cc7e6a9d843);
+            
+        
+
+        circle_marker_706c5c1b01b4c244b72bcb80bee96c42.bindPopup(popup_e8c2756b55a7dfd1f714488255a9c075)
+        ;
+
+        
+    
+    
+            circle_marker_706c5c1b01b4c244b72bcb80bee96c42.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca513363719f97764fa78bdd321992b0 = L.circleMarker(
+                [43.6455621, -79.3798862],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cc3240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_c186f65667ece5c42c783ce361f504fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17d603ad8fc7dc5b9f2e52a1798a1a63 = $(`<div id="html_17d603ad8fc7dc5b9f2e52a1798a1a63" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=217)<br>Recent mean: 3.0 (n=11)<br>Low-rating share: 0.45454545454545453<br>Date range ts: 1763804001–1790669596<br><a href="https://www.google.com/maps/place/Starbucks/@43.6455621,-79.3798862,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x89d4cb2cd8243127:0x46b1648119ac4288!8m2!3d43.6455621!4d-79.3798862" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_c186f65667ece5c42c783ce361f504fe.setContent(html_17d603ad8fc7dc5b9f2e52a1798a1a63);
+            
+        
+
+        circle_marker_ca513363719f97764fa78bdd321992b0.bindPopup(popup_c186f65667ece5c42c783ce361f504fe)
+        ;
+
+        
+    
+    
+            circle_marker_ca513363719f97764fa78bdd321992b0.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc1b90b40c910c48ca23d19337f718e0 = L.circleMarker(
+                [43.6574989, -79.39017249999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b24c40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_ab39875cb02d7a20b7636624a50b469b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45f3daf26a478a3083c6fa0badc4e930 = $(`<div id="html_45f3daf26a478a3083c6fa0badc4e930" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.8 (n=83)<br>Recent mean: 4.882352941176471 (n=17)<br>Low-rating share: 0.0<br>Date range ts: 1765990906–1791158815<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6574989,-79.39017249999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb348775585f:0x6ebe2327abce7e7a!8m2!3d43.6574989!4d-79.39017249999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_ab39875cb02d7a20b7636624a50b469b.setContent(html_45f3daf26a478a3083c6fa0badc4e930);
+            
+        
+
+        circle_marker_bc1b90b40c910c48ca23d19337f718e0.bindPopup(popup_ab39875cb02d7a20b7636624a50b469b)
+        ;
+
+        
+    
+    
+            circle_marker_bc1b90b40c910c48ca23d19337f718e0.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 3.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e494075ca1dfb6e0896f7fba3a200791 = L.circleMarker(
+                [43.659414899999994, -79.39122139999999],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b84640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_727efacc708137088eaf5622290fa15f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df3ba05162717caf1f7c3edee0901e8c = $(`<div id="html_df3ba05162717caf1f7c3edee0901e8c" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=1110)<br>Recent mean: 4.3 (n=30)<br>Low-rating share: 0.16666666666666666<br>Date range ts: 1784730610–1794971177<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.659414899999994,-79.39122139999999,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c867a250a7:0xc627ee02ec9e9a89!8m2!3d43.659414899999994!4d-79.39122139999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_727efacc708137088eaf5622290fa15f.setContent(html_df3ba05162717caf1f7c3edee0901e8c);
+            
+        
+
+        circle_marker_e494075ca1dfb6e0896f7fba3a200791.bindPopup(popup_727efacc708137088eaf5622290fa15f)
+        ;
+
+        
+    
+    
+            circle_marker_e494075ca1dfb6e0896f7fba3a200791.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 3.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74825deb47e4feeed42fc7fd9566b9da = L.circleMarker(
+                [43.658069999999995, -79.3911],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d22c40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_a9582fa0f6edd59c31958723960d3d1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11a5b07ad02a9f32937e4190a10b0f8b = $(`<div id="html_11a5b07ad02a9f32937e4190a10b0f8b" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.3 (n=41)<br>Recent mean: 4.25 (n=8)<br>Low-rating share: 0.125<br>Date range ts: 1764788470–1792691600<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.658069999999995,-79.3911,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b35654e8a2c0b:0x730fcbafe5d27a20!8m2!3d43.658069999999995!4d-79.3911" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_a9582fa0f6edd59c31958723960d3d1e.setContent(html_11a5b07ad02a9f32937e4190a10b0f8b);
+            
+        
+
+        circle_marker_74825deb47e4feeed42fc7fd9566b9da.bindPopup(popup_a9582fa0f6edd59c31958723960d3d1e)
+        ;
+
+        
+    
+    
+            circle_marker_74825deb47e4feeed42fc7fd9566b9da.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70715364fb56f644cecac1cbbe2b52ef = L.circleMarker(
+                [43.6687693, -79.39466469999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf3f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_a126bee2e3aa528c39be60b092df974c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4b9d11f7cc02a7c59277efca07d6724 = $(`<div id="html_e4b9d11f7cc02a7c59277efca07d6724" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=38)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup/@43.6687693,-79.39466469999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup!3m4!1s0x882b34bb2884122d:0x8a5bc1a6e095de1d!8m2!3d43.6687693!4d-79.39466469999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_a126bee2e3aa528c39be60b092df974c.setContent(html_e4b9d11f7cc02a7c59277efca07d6724);
+            
+        
+
+        circle_marker_70715364fb56f644cecac1cbbe2b52ef.bindPopup(popup_a126bee2e3aa528c39be60b092df974c)
+        ;
+
+        
+    
+    
+            circle_marker_70715364fb56f644cecac1cbbe2b52ef.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 4.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_577e05dfa3941188959379713516bf3f = L.circleMarker(
+                [43.6681762, -79.3976878],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cc3240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_6798f871c141b857bcefd1373208e3dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f08eed828d449d9a09acccf53c12523f = $(`<div id="html_f08eed828d449d9a09acccf53c12523f" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.2 (n=2445)<br>Recent mean: 4.366666666666666 (n=30)<br>Low-rating share: 0.1<br>Date range ts: 1793730327–1794925845<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6681762,-79.3976878,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34bc9be08325:0x470de58c18e47270!8m2!3d43.6681762!4d-79.3976878" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_6798f871c141b857bcefd1373208e3dc.setContent(html_f08eed828d449d9a09acccf53c12523f);
+            
+        
+
+        circle_marker_577e05dfa3941188959379713516bf3f.bindPopup(popup_6798f871c141b857bcefd1373208e3dc)
+        ;
+
+        
+    
+    
+            circle_marker_577e05dfa3941188959379713516bf3f.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d4097d60b8734c2db12577708350bdd = L.circleMarker(
+                [43.6685924, -79.3974264],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_8834e412d1fc3758ee7cdc00cebe10b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c30f234813a37af8a946c8338b8cf152 = $(`<div id="html_c30f234813a37af8a946c8338b8cf152" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.1 (n=908)<br>Recent mean: 3.7666666666666666 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1777393556–1793889985<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.6685924,-79.3974264,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34a54e177221:0x601e123242df8e9a!8m2!3d43.6685924!4d-79.3974264" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_8834e412d1fc3758ee7cdc00cebe10b4.setContent(html_c30f234813a37af8a946c8338b8cf152);
+            
+        
+
+        circle_marker_3d4097d60b8734c2db12577708350bdd.bindPopup(popup_8834e412d1fc3758ee7cdc00cebe10b4)
+        ;
+
+        
+    
+    
+            circle_marker_3d4097d60b8734c2db12577708350bdd.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a87d7f1562b5a3ccd28ce1c5f7d42739 = L.circleMarker(
+                [43.6502838, -79.48090359999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf3f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_45f2be7af9555cc282d424e9f769b48f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14fd12d59a4d33535c75341c2e820ea5 = $(`<div id="html_14fd12d59a4d33535c75341c2e820ea5" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.0 (n=264)<br>Recent mean: 3.1 (n=30)<br>Low-rating share: 0.43333333333333335<br>Date range ts: 1766430175–1794377219<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6502838,-79.48090359999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b37d2a8c44219:0x42ac217ffcd4044b!8m2!3d43.6502838!4d-79.48090359999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_45f2be7af9555cc282d424e9f769b48f.setContent(html_14fd12d59a4d33535c75341c2e820ea5);
+            
+        
+
+        circle_marker_a87d7f1562b5a3ccd28ce1c5f7d42739.bindPopup(popup_45f2be7af9555cc282d424e9f769b48f)
+        ;
+
+        
+    
+    
+            circle_marker_a87d7f1562b5a3ccd28ce1c5f7d42739.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 4.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f9a1e906677d8edf0d2a2640e4725b4 = L.circleMarker(
+                [43.6497841, -79.4831437],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b84640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_ac7e4dc83c599253b4008a9697c3432e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db9afa2175c8531fb830bb31117ad37a = $(`<div id="html_db9afa2175c8531fb830bb31117ad37a" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.9 (n=69)<br>Recent mean: 3.8333333333333335 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1783533358–1794354862<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6497841,-79.4831437,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b379d862e2ff1:0xc1f35c45d54a0ca2!8m2!3d43.6497841!4d-79.4831437" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_ac7e4dc83c599253b4008a9697c3432e.setContent(html_db9afa2175c8531fb830bb31117ad37a);
+            
+        
+
+        circle_marker_1f9a1e906677d8edf0d2a2640e4725b4.bindPopup(popup_ac7e4dc83c599253b4008a9697c3432e)
+        ;
+
+        
+    
+    
+            circle_marker_1f9a1e906677d8edf0d2a2640e4725b4.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 3.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcff25579157d17163db14cc39803ab6 = L.circleMarker(
+                [43.65135, -79.47587],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_b45e644ba93a23294dbe3730d0d6ca83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90a111449e6fa6e23de6c7e877c16166 = $(`<div id="html_90a111449e6fa6e23de6c7e877c16166" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=682)<br>Recent mean: 3.3666666666666667 (n=30)<br>Low-rating share: 0.36666666666666664<br>Date range ts: 1773240655–1793803940<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.65135,-79.47587,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b36812d7c724b:0x994eb94d053b352a!8m2!3d43.65135!4d-79.47587" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_b45e644ba93a23294dbe3730d0d6ca83.setContent(html_90a111449e6fa6e23de6c7e877c16166);
+            
+        
+
+        circle_marker_bcff25579157d17163db14cc39803ab6.bindPopup(popup_b45e644ba93a23294dbe3730d0d6ca83)
+        ;
+
+        
+    
+    
+            circle_marker_bcff25579157d17163db14cc39803ab6.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5efdd5cd8fd16ebbb4f42feeaa95114b = L.circleMarker(
+                [43.6575588, -79.4032347],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cc3240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_4e855491785694e67afebeaa85e498b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_674f2200a2c6710b19f478ae98a232bc = $(`<div id="html_674f2200a2c6710b19f478ae98a232bc" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=376)<br>Recent mean: 4.0 (n=30)<br>Low-rating share: 0.23333333333333334<br>Date range ts: 1768484768–1794843367<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6575588,-79.4032347,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34c79cfb2529:0xd71ccfe0b79d1b47!8m2!3d43.6575588!4d-79.4032347" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_4e855491785694e67afebeaa85e498b6.setContent(html_674f2200a2c6710b19f478ae98a232bc);
+            
+        
+
+        circle_marker_5efdd5cd8fd16ebbb4f42feeaa95114b.bindPopup(popup_4e855491785694e67afebeaa85e498b6)
+        ;
+
+        
+    
+    
+            circle_marker_5efdd5cd8fd16ebbb4f42feeaa95114b.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 4.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bdc99f941f5442a32bed908a905e7ab5 = L.circleMarker(
+                [43.6533029, -79.4054568],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_8c0cba4a971cc85b27aaf5a6dede9975 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4683a7daba5731549fe70ba2e68d930a = $(`<div id="html_4683a7daba5731549fe70ba2e68d930a" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=265)<br>Recent mean: 4.2 (n=30)<br>Low-rating share: 0.16666666666666666<br>Date range ts: 1778642602–1794260973<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6533029,-79.4054568,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34e8f1a78c11:0x791732f1e936ddc8!8m2!3d43.6533029!4d-79.4054568" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_8c0cba4a971cc85b27aaf5a6dede9975.setContent(html_4683a7daba5731549fe70ba2e68d930a);
+            
+        
+
+        circle_marker_bdc99f941f5442a32bed908a905e7ab5.bindPopup(popup_8c0cba4a971cc85b27aaf5a6dede9975)
+        ;
+
+        
+    
+    
+            circle_marker_bdc99f941f5442a32bed908a905e7ab5.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31974a79b41cd6de3b1e1133863473e7 = L.circleMarker(
+                [43.6646608, -79.3990728],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46b840", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_43135a1ed3a6a58f7098906ff5d0d5df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d3b779276564cd648f941da81c4ad9c = $(`<div id="html_1d3b779276564cd648f941da81c4ad9c" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 2.1 (n=116)<br>Recent mean: 1.6333333333333333 (n=30)<br>Low-rating share: 0.8333333333333334<br>Date range ts: 1773005333–1794939841<br><a href="https://www.google.com/maps/place/Starbucks/@43.6646608,-79.3990728,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b3506637b7dcd:0x9ce95d6a04ccb27b!8m2!3d43.6646608!4d-79.3990728" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_43135a1ed3a6a58f7098906ff5d0d5df.setContent(html_1d3b779276564cd648f941da81c4ad9c);
+            
+        
+
+        circle_marker_31974a79b41cd6de3b1e1133863473e7.bindPopup(popup_43135a1ed3a6a58f7098906ff5d0d5df)
+        ;
+
+        
+    
+    
+            circle_marker_31974a79b41cd6de3b1e1133863473e7.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 2.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d72d0232f6ae9cec83423ed7834a2a6 = L.circleMarker(
+                [43.6626438, -79.3982675],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#669940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_fc71357d1edfc1aa12b009ae6c835846 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4f2502eda4bbff90dab7345b2a1ee74 = $(`<div id="html_e4f2502eda4bbff90dab7345b2a1ee74" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 2.6 (n=71)<br>Recent mean: 2.25 (n=8)<br>Low-rating share: 0.75<br>Date range ts: 1767883826–1793137502<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6626438,-79.3982675,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34cf56975af1:0x22ab4f9296d475cf!8m2!3d43.6626438!4d-79.3982675" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_fc71357d1edfc1aa12b009ae6c835846.setContent(html_e4f2502eda4bbff90dab7345b2a1ee74);
+            
+        
+
+        circle_marker_3d72d0232f6ae9cec83423ed7834a2a6.bindPopup(popup_fc71357d1edfc1aa12b009ae6c835846)
+        ;
+
+        
+    
+    
+            circle_marker_3d72d0232f6ae9cec83423ed7834a2a6.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 2.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d3ed7775ad9546b7257fbfd894da2b8 = L.circleMarker(
+                [43.6646492, -79.3876796],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b84640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_3e11eecc799e55e3ee1caabbd8c63496 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12adcd1caa1696f998199d53af033826 = $(`<div id="html_12adcd1caa1696f998199d53af033826" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=817)<br>Recent mean: 3.6 (n=30)<br>Low-rating share: 0.36666666666666664<br>Date range ts: 1791297509–1794587308<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6646492,-79.3876796,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34b14833a03d:0xf64dc1849056353f!8m2!3d43.6646492!4d-79.3876796" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_3e11eecc799e55e3ee1caabbd8c63496.setContent(html_12adcd1caa1696f998199d53af033826);
+            
+        
+
+        circle_marker_5d3ed7775ad9546b7257fbfd894da2b8.bindPopup(popup_3e11eecc799e55e3ee1caabbd8c63496)
+        ;
+
+        
+    
+    
+            circle_marker_5d3ed7775ad9546b7257fbfd894da2b8.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 3.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52fcef160856c59e92258ea24a12c352 = L.circleMarker(
+                [43.659549999999996, -79.38978999999999],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac5240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_1fb9557df8413085829539b57a990799 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a8666fcee835e592d31791fed89f30c = $(`<div id="html_3a8666fcee835e592d31791fed89f30c" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.7 (n=218)<br>Recent mean: 2.9565217391304346 (n=23)<br>Low-rating share: 0.43478260869565216<br>Date range ts: 1768471606–1793195923<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.659549999999996,-79.38978999999999,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34c8281fcab1:0x871a24d7654b50d0!8m2!3d43.659549999999996!4d-79.38978999999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_1fb9557df8413085829539b57a990799.setContent(html_3a8666fcee835e592d31791fed89f30c);
+            
+        
+
+        circle_marker_52fcef160856c59e92258ea24a12c352.bindPopup(popup_1fb9557df8413085829539b57a990799)
+        ;
+
+        
+    
+    
+            circle_marker_52fcef160856c59e92258ea24a12c352.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 3.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3d94878fe094b91e9fb7559395ab0e9 = L.circleMarker(
+                [43.660748299999995, -79.3966715],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#857940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_e77caf91230ac4f925a83b74cbd63aff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4b9f2b84cdc8cd64255aa8bc4c45757 = $(`<div id="html_f4b9f2b84cdc8cd64255aa8bc4c45757" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.1 (n=36)<br>Recent mean: 3.176470588235294 (n=17)<br>Low-rating share: 0.47058823529411764<br>Date range ts: 1764616261–1786371791<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.660748299999995,-79.3966715,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b35518ad957bf:0x3ebc83a3ab08f772!8m2!3d43.660748299999995!4d-79.3966715" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_e77caf91230ac4f925a83b74cbd63aff.setContent(html_f4b9f2b84cdc8cd64255aa8bc4c45757);
+            
+        
+
+        circle_marker_f3d94878fe094b91e9fb7559395ab0e9.bindPopup(popup_e77caf91230ac4f925a83b74cbd63aff)
+        ;
+
+        
+    
+    
+            circle_marker_f3d94878fe094b91e9fb7559395ab0e9.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 3.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61607f890337edf65501a19b72825f5a = L.circleMarker(
+                [43.654598, -79.3889781],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf3f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_88b9271859a1a843d2a37c7e380cc6a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_313949280cce798266bc3683ab65b8c2 = $(`<div id="html_313949280cce798266bc3683ab65b8c2" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=1551)<br>Recent mean: 3.6 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1787754026–1794358777<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.654598,-79.3889781,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c867a250a7:0x4a292afcf377aa79!8m2!3d43.654598!4d-79.3889781" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_88b9271859a1a843d2a37c7e380cc6a4.setContent(html_313949280cce798266bc3683ab65b8c2);
+            
+        
+
+        circle_marker_61607f890337edf65501a19b72825f5a.bindPopup(popup_88b9271859a1a843d2a37c7e380cc6a4)
+        ;
+
+        
+    
+    
+            circle_marker_61607f890337edf65501a19b72825f5a.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ad9943138e65715936abd349428d5c2 = L.circleMarker(
+                [43.65444, -79.38775],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf3f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_9f7988dc76c78a9cb833f710cedee3fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61cde85a424919a139e37d80df182c4f = $(`<div id="html_61cde85a424919a139e37d80df182c4f" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=252)<br>Recent mean: 3.896551724137931 (n=29)<br>Low-rating share: 0.2413793103448276<br>Date range ts: 1767650020–1794952001<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.65444,-79.38775,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b352c55b7548d:0xa23ae84b2cb41c93!8m2!3d43.65444!4d-79.38775" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_9f7988dc76c78a9cb833f710cedee3fb.setContent(html_61cde85a424919a139e37d80df182c4f);
+            
+        
+
+        circle_marker_1ad9943138e65715936abd349428d5c2.bindPopup(popup_9f7988dc76c78a9cb833f710cedee3fb)
+        ;
+
+        
+    
+    
+            circle_marker_1ad9943138e65715936abd349428d5c2.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_baaece6d42bcf8481bf581079ec9b559 = L.circleMarker(
+                [43.662726, -79.4012929],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f5f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_bb234f6b5f162082ccd8bcc2948dc95e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ea35f6c68033ea8e265e491dbbd2eea = $(`<div id="html_5ea35f6c68033ea8e265e491dbbd2eea" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.5 (n=43)<br>Recent mean: 2.6666666666666665 (n=3)<br>Low-rating share: 0.6666666666666666<br>Date range ts: 1769263025–1783549420<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.662726,-79.4012929,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34cf56975af1:0xf351c636be9954c4!8m2!3d43.662726!4d-79.4012929" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_bb234f6b5f162082ccd8bcc2948dc95e.setContent(html_5ea35f6c68033ea8e265e491dbbd2eea);
+            
+        
+
+        circle_marker_baaece6d42bcf8481bf581079ec9b559.bindPopup(popup_bb234f6b5f162082ccd8bcc2948dc95e)
+        ;
+
+        
+    
+    
+            circle_marker_baaece6d42bcf8481bf581079ec9b559.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 3.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d8527ad2d84c9d10b3360e0d80ec556 = L.circleMarker(
+                [43.6689717, -79.389562],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_d566ea3b7c2167155b93db4f5d11aad9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c3d3525e5adb6a75e630f6b41cbaf79 = $(`<div id="html_3c3d3525e5adb6a75e630f6b41cbaf79" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=1945)<br>Recent mean: 4.566666666666666 (n=30)<br>Low-rating share: 0.03333333333333333<br>Date range ts: 1792430034–1795009366<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6689717,-79.389562,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34ae8a33e61d:0xbd247d21539cb0fc!8m2!3d43.6689717!4d-79.389562" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_d566ea3b7c2167155b93db4f5d11aad9.setContent(html_3c3d3525e5adb6a75e630f6b41cbaf79);
+            
+        
+
+        circle_marker_7d8527ad2d84c9d10b3360e0d80ec556.bindPopup(popup_d566ea3b7c2167155b93db4f5d11aad9)
+        ;
+
+        
+    
+    
+            circle_marker_7d8527ad2d84c9d10b3360e0d80ec556.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e330e9eb8af09f08e13698dd7f67d70 = L.circleMarker(
+                [43.66805, -79.3885],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d22c40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_7de5db9c9385fde472b9992582ebf302 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3114d3af8b69d195733ccf6aa201e09 = $(`<div id="html_a3114d3af8b69d195733ccf6aa201e09" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.3 (n=422)<br>Recent mean: 3.5714285714285716 (n=28)<br>Low-rating share: 0.35714285714285715<br>Date range ts: 1766498511–1793987837<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.66805,-79.3885,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34b1d0a5a163:0x756ac2ad85c4617e!8m2!3d43.66805!4d-79.3885" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_7de5db9c9385fde472b9992582ebf302.setContent(html_a3114d3af8b69d195733ccf6aa201e09);
+            
+        
+
+        circle_marker_1e330e9eb8af09f08e13698dd7f67d70.bindPopup(popup_7de5db9c9385fde472b9992582ebf302)
+        ;
+
+        
+    
+    
+            circle_marker_1e330e9eb8af09f08e13698dd7f67d70.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ebc38cc9fa511896bcef14439e3b6e3 = L.circleMarker(
+                [43.6652324, -79.4097601],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf3f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_ae7f8d566c379f29403760e1d449f1f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_851009e10deb9786061a00eb05e134cb = $(`<div id="html_851009e10deb9786061a00eb05e134cb" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Coffee Co<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.0 (n=132)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup+Coffee+Co/@43.6652324,-79.4097601,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Coffee+Co!3m4!1s0x882b3493c2aa137d:0x918489a06a9bfc05!8m2!3d43.6652324!4d-79.4097601" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_ae7f8d566c379f29403760e1d449f1f9.setContent(html_851009e10deb9786061a00eb05e134cb);
+            
+        
+
+        circle_marker_0ebc38cc9fa511896bcef14439e3b6e3.bindPopup(popup_ae7f8d566c379f29403760e1d449f1f9)
+        ;
+
+        
+    
+    
+            circle_marker_0ebc38cc9fa511896bcef14439e3b6e3.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 4.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_839d38129a617c7d4ce263187c19e4c2 = L.circleMarker(
+                [43.676634799999995, -79.4115722],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b24c40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_e504de1c8e8036e7d84db6840cf7a9b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5399048425ef6e52bd0140830697263f = $(`<div id="html_5399048425ef6e52bd0140830697263f" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: other<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.8 (n=1560)<br>Recent mean: 3.7 (n=30)<br>Low-rating share: 0.26666666666666666<br>Date range ts: 1789339988–1795005597<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.676634799999995,-79.4115722,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b349c93199f93:0xa4b50c55f4934b2!8m2!3d43.676634799999995!4d-79.4115722" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_e504de1c8e8036e7d84db6840cf7a9b8.setContent(html_5399048425ef6e52bd0140830697263f);
+            
+        
+
+        circle_marker_839d38129a617c7d4ce263187c19e4c2.bindPopup(popup_e504de1c8e8036e7d84db6840cf7a9b8)
+        ;
+
+        
+    
+    
+            circle_marker_839d38129a617c7d4ce263187c19e4c2.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 3.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1125d3fbe04a71df92eac1a5da358194 = L.circleMarker(
+                [43.6475042, -79.40160039999999],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f7f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_ef259bd1487668ab86b76a568c3b0321 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc5936503836a1f469e34ce6934ed0d5 = $(`<div id="html_bc5936503836a1f469e34ce6934ed0d5" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.0 (n=51)<br>Recent mean: 3.36 (n=25)<br>Low-rating share: 0.4<br>Date range ts: 1764206639–1794922769<br><a href="https://www.google.com/maps/place/Starbucks/@43.6475042,-79.40160039999999,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b35cca99e1a55:0x361e29327a1e0428!8m2!3d43.6475042!4d-79.40160039999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_ef259bd1487668ab86b76a568c3b0321.setContent(html_bc5936503836a1f469e34ce6934ed0d5);
+            
+        
+
+        circle_marker_1125d3fbe04a71df92eac1a5da358194.bindPopup(popup_ef259bd1487668ab86b76a568c3b0321)
+        ;
+
+        
+    
+    
+            circle_marker_1125d3fbe04a71df92eac1a5da358194.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 3.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4de08b8289bf055795b80dcec740123 = L.circleMarker(
+                [43.6486434, -79.37902509999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_9fc435e0bd17969af2deddcdfaa5fefc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_817a83dfcc3a20613f51db8103177ec0 = $(`<div id="html_817a83dfcc3a20613f51db8103177ec0" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=85)<br>Recent mean: 3.8181818181818183 (n=11)<br>Low-rating share: 0.2727272727272727<br>Date range ts: 1772025807–1790362155<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6486434,-79.37902509999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb2376d0d7bb:0xc1335d2366d5aa6!8m2!3d43.6486434!4d-79.37902509999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_9fc435e0bd17969af2deddcdfaa5fefc.setContent(html_817a83dfcc3a20613f51db8103177ec0);
+            
+        
+
+        circle_marker_d4de08b8289bf055795b80dcec740123.bindPopup(popup_9fc435e0bd17969af2deddcdfaa5fefc)
+        ;
+
+        
+    
+    
+            circle_marker_d4de08b8289bf055795b80dcec740123.bindTooltip(
+                `<div>
+                     Second Cup: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c8dedfbe711687fd285bb65e17a5d4c = L.circleMarker(
+                [43.648528, -79.38333589999999],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb1340", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_fc047d83f05c72efa934376c1c8e6584 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d9bc42ebd259f8665c2ee2718f2f065 = $(`<div id="html_3d9bc42ebd259f8665c2ee2718f2f065" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.7 (n=57)<br>Recent mean: 4.566666666666666 (n=30)<br>Low-rating share: 0.1<br>Date range ts: 1780996916–1793197026<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.648528,-79.38333589999999,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b3500168e03f3:0x99a1c32fcdac5bcd!8m2!3d43.648528!4d-79.38333589999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_fc047d83f05c72efa934376c1c8e6584.setContent(html_3d9bc42ebd259f8665c2ee2718f2f065);
+            
+        
+
+        circle_marker_5c8dedfbe711687fd285bb65e17a5d4c.bindPopup(popup_fc047d83f05c72efa934376c1c8e6584)
+        ;
+
+        
+    
+    
+            circle_marker_5c8dedfbe711687fd285bb65e17a5d4c.bindTooltip(
+                `<div>
+                     Tim Hortons: lifetime 4.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f40777bb6062eac1087eb6fa19bce28 = L.circleMarker(
+                [43.64924, -79.37813],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c53940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a59b85a44dd2d6adf3418604355fda4);
+        
+    
+        var popup_452d4ff611a4231e2617a4b26d6328c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8668fe40d6a170d581f3de1da112ce63 = $(`<div id="html_8668fe40d6a170d581f3de1da112ce63" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=1680)<br>Recent mean: 3.7333333333333334 (n=30)<br>Low-rating share: 0.23333333333333334<br>Date range ts: 1787520016–1794800141<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.64924,-79.37813,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x89d4cb32844fc443:0xd11dc9af93fc2b0e!8m2!3d43.64924!4d-79.37813" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_452d4ff611a4231e2617a4b26d6328c0.setContent(html_8668fe40d6a170d581f3de1da112ce63);
+            
+        
+
+        circle_marker_7f40777bb6062eac1087eb6fa19bce28.bindPopup(popup_452d4ff611a4231e2617a4b26d6328c0)
+        ;
+
+        
+    
+    
+            circle_marker_7f40777bb6062eac1087eb6fa19bce28.bindTooltip(
+                `<div>
+                     Starbucks: lifetime 4.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_6a59b85a44dd2d6adf3418604355fda4.addTo(map_1043759bafc729233937898c70498463);
+        
+    
+            var feature_group_934c1aade483ce4a05e64f359514cd9b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_effac4457b7743df1c8c36e6bf6d99dd = L.circleMarker(
+                [43.659016699999995, -79.3969244],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#999999", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_a5610165279c011375b5330ff9f30a16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cd49bcee8e4f155328af6e0d5c80051 = $(`<div id="html_3cd49bcee8e4f155328af6e0d5c80051" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.2 (n=31)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.659016699999995,-79.3969244,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34c749bab157:0x2228eb8e5f6ed943!8m2!3d43.659016699999995!4d-79.3969244" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_a5610165279c011375b5330ff9f30a16.setContent(html_3cd49bcee8e4f155328af6e0d5c80051);
+            
+        
+
+        circle_marker_effac4457b7743df1c8c36e6bf6d99dd.bindPopup(popup_a5610165279c011375b5330ff9f30a16)
+        ;
+
+        
+    
+    
+            circle_marker_effac4457b7743df1c8c36e6bf6d99dd.bindTooltip(
+                `<div>
+                     Second Cup: low share None
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e99841f3aff41b86a2f50a73f5e40f5 = L.circleMarker(
+                [43.6582106, -79.3996686],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#669940", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_02ead919048a2465d2604afaa5ebdbb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0123c97630ff3625d90e2927fc515bb6 = $(`<div id="html_0123c97630ff3625d90e2927fc515bb6" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.7 (n=1063)<br>Recent mean: 4.2 (n=5)<br>Low-rating share: 0.2<br>Date range ts: 1793720479–1794886641<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6582106,-79.3996686,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c10020870d:0x2de4deb5f0305846!8m2!3d43.6582106!4d-79.3996686" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_02ead919048a2465d2604afaa5ebdbb9.setContent(html_0123c97630ff3625d90e2927fc515bb6);
+            
+        
+
+        circle_marker_6e99841f3aff41b86a2f50a73f5e40f5.bindPopup(popup_02ead919048a2465d2604afaa5ebdbb9)
+        ;
+
+        
+    
+    
+            circle_marker_6e99841f3aff41b86a2f50a73f5e40f5.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_def4c16d2f349dea0a3500e059b7e139 = L.circleMarker(
+                [43.6585414, -79.3954918],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0040", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_fca9bb3251b0457b954ac6baa3179453 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2862da42bb2124d47fdb7439db8d301 = $(`<div id="html_e2862da42bb2124d47fdb7439db8d301" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=580)<br>Recent mean: 1.8 (n=5)<br>Low-rating share: 0.8<br>Date range ts: 1792455272–1794073843<br><a href="https://www.google.com/maps/place/Starbucks/@43.6585414,-79.3954918,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b34c71490f457:0x4f113a148831c9b!8m2!3d43.6585414!4d-79.3954918" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_fca9bb3251b0457b954ac6baa3179453.setContent(html_e2862da42bb2124d47fdb7439db8d301);
+            
+        
+
+        circle_marker_def4c16d2f349dea0a3500e059b7e139.bindPopup(popup_fca9bb3251b0457b954ac6baa3179453)
+        ;
+
+        
+    
+    
+            circle_marker_def4c16d2f349dea0a3500e059b7e139.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b12edefe41121d5bf2bab28304f098be = L.circleMarker(
+                [43.6440116, -79.37752259999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#996640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_20511db272e7d7060283d1e9cc066df0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3bd33e5d5fb3e12b28de9f31acba1d7 = $(`<div id="html_c3bd33e5d5fb3e12b28de9f31acba1d7" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.8 (n=259)<br>Recent mean: 3.6333333333333333 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1785808270–1794957898<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6440116,-79.37752259999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb3a11b42ef5:0x84c1857e60455800!8m2!3d43.6440116!4d-79.37752259999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_20511db272e7d7060283d1e9cc066df0.setContent(html_c3bd33e5d5fb3e12b28de9f31acba1d7);
+            
+        
+
+        circle_marker_b12edefe41121d5bf2bab28304f098be.bindPopup(popup_20511db272e7d7060283d1e9cc066df0)
+        ;
+
+        
+    
+    
+            circle_marker_b12edefe41121d5bf2bab28304f098be.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_763fcf6aa04ff910a4ad89659ad4b8ba = L.circleMarker(
+                [43.6471832, -79.3773224],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#44bb40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_0a88d0265411b9403de9e1c76b801069 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_687de131983ad08b32ae74e1c60608b1 = $(`<div id="html_687de131983ad08b32ae74e1c60608b1" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons Brookfield Place<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=817)<br>Recent mean: 4.366666666666666 (n=30)<br>Low-rating share: 0.13333333333333333<br>Date range ts: 1789148753–1794946160<br><a href="https://www.google.com/maps/place/Tim+Hortons+Brookfield+Place/@43.6471832,-79.3773224,14z/data=!4m8!1m2!2m1!1sTim+Hortons+Brookfield+Place!3m4!1s0x89d4cb2d3d1a83b9:0x32285cb5bf87d964!8m2!3d43.6471832!4d-79.3773224" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_0a88d0265411b9403de9e1c76b801069.setContent(html_687de131983ad08b32ae74e1c60608b1);
+            
+        
+
+        circle_marker_763fcf6aa04ff910a4ad89659ad4b8ba.bindPopup(popup_0a88d0265411b9403de9e1c76b801069)
+        ;
+
+        
+    
+    
+            circle_marker_763fcf6aa04ff910a4ad89659ad4b8ba.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.13333333333333333
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbd2b9776b99eacdce0e2649766065d3 = L.circleMarker(
+                [43.6455621, -79.3798862],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e71740", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_770d888f462315fd2f6c0da337bcb583 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_319ec932943a872597ed4ba65776acc5 = $(`<div id="html_319ec932943a872597ed4ba65776acc5" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=217)<br>Recent mean: 3.0 (n=11)<br>Low-rating share: 0.45454545454545453<br>Date range ts: 1763804001–1790669596<br><a href="https://www.google.com/maps/place/Starbucks/@43.6455621,-79.3798862,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x89d4cb2cd8243127:0x46b1648119ac4288!8m2!3d43.6455621!4d-79.3798862" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_770d888f462315fd2f6c0da337bcb583.setContent(html_319ec932943a872597ed4ba65776acc5);
+            
+        
+
+        circle_marker_dbd2b9776b99eacdce0e2649766065d3.bindPopup(popup_770d888f462315fd2f6c0da337bcb583)
+        ;
+
+        
+    
+    
+            circle_marker_dbd2b9776b99eacdce0e2649766065d3.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.45454545454545453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8dc1a4400c86039241218e3bc5cd0d3a = L.circleMarker(
+                [43.6574989, -79.39017249999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_253c2e1160f78a578393542c444c54b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_336f8502c911e413fa763ea74aa07814 = $(`<div id="html_336f8502c911e413fa763ea74aa07814" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.8 (n=83)<br>Recent mean: 4.882352941176471 (n=17)<br>Low-rating share: 0.0<br>Date range ts: 1765990906–1791158815<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6574989,-79.39017249999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb348775585f:0x6ebe2327abce7e7a!8m2!3d43.6574989!4d-79.39017249999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_253c2e1160f78a578393542c444c54b5.setContent(html_336f8502c911e413fa763ea74aa07814);
+            
+        
+
+        circle_marker_8dc1a4400c86039241218e3bc5cd0d3a.bindPopup(popup_253c2e1160f78a578393542c444c54b5)
+        ;
+
+        
+    
+    
+            circle_marker_8dc1a4400c86039241218e3bc5cd0d3a.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_218ec1951c4c2f5684cd9ce559cc5e3f = L.circleMarker(
+                [43.659414899999994, -79.39122139999999],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55aa40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_1c05e81ad51f9544999616a6fab60e17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c8670c7a3dad391739661809ad02404 = $(`<div id="html_0c8670c7a3dad391739661809ad02404" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=1110)<br>Recent mean: 4.3 (n=30)<br>Low-rating share: 0.16666666666666666<br>Date range ts: 1784730610–1794971177<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.659414899999994,-79.39122139999999,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c867a250a7:0xc627ee02ec9e9a89!8m2!3d43.659414899999994!4d-79.39122139999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_1c05e81ad51f9544999616a6fab60e17.setContent(html_0c8670c7a3dad391739661809ad02404);
+            
+        
+
+        circle_marker_218ec1951c4c2f5684cd9ce559cc5e3f.bindPopup(popup_1c05e81ad51f9544999616a6fab60e17)
+        ;
+
+        
+    
+    
+            circle_marker_218ec1951c4c2f5684cd9ce559cc5e3f.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.16666666666666666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91276eb8955f3d5fe3bb5ed5dd8534cb = L.circleMarker(
+                [43.658069999999995, -79.3911],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3fbf40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_547985e9ac4c5264061226685ff14c34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_274102fda9001685fab1a70520f72938 = $(`<div id="html_274102fda9001685fab1a70520f72938" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.3 (n=41)<br>Recent mean: 4.25 (n=8)<br>Low-rating share: 0.125<br>Date range ts: 1764788470–1792691600<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.658069999999995,-79.3911,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b35654e8a2c0b:0x730fcbafe5d27a20!8m2!3d43.658069999999995!4d-79.3911" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_547985e9ac4c5264061226685ff14c34.setContent(html_274102fda9001685fab1a70520f72938);
+            
+        
+
+        circle_marker_91276eb8955f3d5fe3bb5ed5dd8534cb.bindPopup(popup_547985e9ac4c5264061226685ff14c34)
+        ;
+
+        
+    
+    
+            circle_marker_91276eb8955f3d5fe3bb5ed5dd8534cb.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e12acf0b8f7e5c6123ceee8d91ed4fa0 = L.circleMarker(
+                [43.6687693, -79.39466469999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#999999", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_500ebb4301c529d3f633dfb97f9a314b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_756e046819dc010e03f10fb11851af84 = $(`<div id="html_756e046819dc010e03f10fb11851af84" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=38)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup/@43.6687693,-79.39466469999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup!3m4!1s0x882b34bb2884122d:0x8a5bc1a6e095de1d!8m2!3d43.6687693!4d-79.39466469999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_500ebb4301c529d3f633dfb97f9a314b.setContent(html_756e046819dc010e03f10fb11851af84);
+            
+        
+
+        circle_marker_e12acf0b8f7e5c6123ceee8d91ed4fa0.bindPopup(popup_500ebb4301c529d3f633dfb97f9a314b)
+        ;
+
+        
+    
+    
+            circle_marker_e12acf0b8f7e5c6123ceee8d91ed4fa0.bindTooltip(
+                `<div>
+                     Second Cup: low share None
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37cd6a92cae1d47920dc8e32c8359577 = L.circleMarker(
+                [43.6681762, -79.3976878],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33cc40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_9bd1c9415d8008d0ce19c3af21798d06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea8b3da297cd577138916675e3a63b49 = $(`<div id="html_ea8b3da297cd577138916675e3a63b49" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.2 (n=2445)<br>Recent mean: 4.366666666666666 (n=30)<br>Low-rating share: 0.1<br>Date range ts: 1793730327–1794925845<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6681762,-79.3976878,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34bc9be08325:0x470de58c18e47270!8m2!3d43.6681762!4d-79.3976878" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_9bd1c9415d8008d0ce19c3af21798d06.setContent(html_ea8b3da297cd577138916675e3a63b49);
+            
+        
+
+        circle_marker_37cd6a92cae1d47920dc8e32c8359577.bindPopup(popup_9bd1c9415d8008d0ce19c3af21798d06)
+        ;
+
+        
+    
+    
+            circle_marker_37cd6a92cae1d47920dc8e32c8359577.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ea02e04d7a5ee5f57b63282046ad5ae = L.circleMarker(
+                [43.6685924, -79.3974264],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#996640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_c8bd3a7b790395085f77454988d03681 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4f7b5008e8c6bae8330c62f40f3471b = $(`<div id="html_b4f7b5008e8c6bae8330c62f40f3471b" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.1 (n=908)<br>Recent mean: 3.7666666666666666 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1777393556–1793889985<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.6685924,-79.3974264,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34a54e177221:0x601e123242df8e9a!8m2!3d43.6685924!4d-79.3974264" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_c8bd3a7b790395085f77454988d03681.setContent(html_b4f7b5008e8c6bae8330c62f40f3471b);
+            
+        
+
+        circle_marker_0ea02e04d7a5ee5f57b63282046ad5ae.bindPopup(popup_c8bd3a7b790395085f77454988d03681)
+        ;
+
+        
+    
+    
+            circle_marker_0ea02e04d7a5ee5f57b63282046ad5ae.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aa540948fcc5fd43ae9087a3bc257bf = L.circleMarker(
+                [43.6502838, -79.48090359999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd2140", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_7004ff26f6c43857087369aeb1ac6cb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cf329d5faa8bb825d10abe1d84d8625 = $(`<div id="html_4cf329d5faa8bb825d10abe1d84d8625" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.0 (n=264)<br>Recent mean: 3.1 (n=30)<br>Low-rating share: 0.43333333333333335<br>Date range ts: 1766430175–1794377219<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6502838,-79.48090359999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b37d2a8c44219:0x42ac217ffcd4044b!8m2!3d43.6502838!4d-79.48090359999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_7004ff26f6c43857087369aeb1ac6cb5.setContent(html_4cf329d5faa8bb825d10abe1d84d8625);
+            
+        
+
+        circle_marker_1aa540948fcc5fd43ae9087a3bc257bf.bindPopup(popup_7004ff26f6c43857087369aeb1ac6cb5)
+        ;
+
+        
+    
+    
+            circle_marker_1aa540948fcc5fd43ae9087a3bc257bf.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.43333333333333335
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d21b02915873e36402af598d0efe5a1b = L.circleMarker(
+                [43.6497841, -79.4831437],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#996640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_c2553d3ab5397724f7ac25f81a1bd4b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59ff49232243a3de943998f1caf05a58 = $(`<div id="html_59ff49232243a3de943998f1caf05a58" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.9 (n=69)<br>Recent mean: 3.8333333333333335 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1783533358–1794354862<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6497841,-79.4831437,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b379d862e2ff1:0xc1f35c45d54a0ca2!8m2!3d43.6497841!4d-79.4831437" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_c2553d3ab5397724f7ac25f81a1bd4b6.setContent(html_59ff49232243a3de943998f1caf05a58);
+            
+        
+
+        circle_marker_d21b02915873e36402af598d0efe5a1b.bindPopup(popup_c2553d3ab5397724f7ac25f81a1bd4b6)
+        ;
+
+        
+    
+    
+            circle_marker_d21b02915873e36402af598d0efe5a1b.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea0922468b214b9b6d22d86b50afaea9 = L.circleMarker(
+                [43.65135, -79.47587],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bb4440", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_53d9d25cef6929fa012ed7d2cc795826 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4137a6b84652dfa65ea219b630e3d4f4 = $(`<div id="html_4137a6b84652dfa65ea219b630e3d4f4" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: suburban:Etobicoke Islington<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=682)<br>Recent mean: 3.3666666666666667 (n=30)<br>Low-rating share: 0.36666666666666664<br>Date range ts: 1773240655–1793803940<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.65135,-79.47587,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b36812d7c724b:0x994eb94d053b352a!8m2!3d43.65135!4d-79.47587" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_53d9d25cef6929fa012ed7d2cc795826.setContent(html_4137a6b84652dfa65ea219b630e3d4f4);
+            
+        
+
+        circle_marker_ea0922468b214b9b6d22d86b50afaea9.bindPopup(popup_53d9d25cef6929fa012ed7d2cc795826)
+        ;
+
+        
+    
+    
+            circle_marker_ea0922468b214b9b6d22d86b50afaea9.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.36666666666666664
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc0953dfa96f6d4a9946237556b65a1b = L.circleMarker(
+                [43.6575588, -79.4032347],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#778840", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_9da85aed4468cb07142ad11a5156963d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfc0ab3eed19f288c472d375e960ecc0 = $(`<div id="html_cfc0ab3eed19f288c472d375e960ecc0" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.2 (n=376)<br>Recent mean: 4.0 (n=30)<br>Low-rating share: 0.23333333333333334<br>Date range ts: 1768484768–1794843367<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6575588,-79.4032347,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34c79cfb2529:0xd71ccfe0b79d1b47!8m2!3d43.6575588!4d-79.4032347" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_9da85aed4468cb07142ad11a5156963d.setContent(html_cfc0ab3eed19f288c472d375e960ecc0);
+            
+        
+
+        circle_marker_dc0953dfa96f6d4a9946237556b65a1b.bindPopup(popup_9da85aed4468cb07142ad11a5156963d)
+        ;
+
+        
+    
+    
+            circle_marker_dc0953dfa96f6d4a9946237556b65a1b.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.23333333333333334
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24757f5b01c5f14a1a76bf019375e896 = L.circleMarker(
+                [43.6533029, -79.4054568],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55aa40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_2dad5d689e8096a09b7f720988d93231 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8930961a509bf2483665ae50ec0a3172 = $(`<div id="html_8930961a509bf2483665ae50ec0a3172" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=265)<br>Recent mean: 4.2 (n=30)<br>Low-rating share: 0.16666666666666666<br>Date range ts: 1778642602–1794260973<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6533029,-79.4054568,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34e8f1a78c11:0x791732f1e936ddc8!8m2!3d43.6533029!4d-79.4054568" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_2dad5d689e8096a09b7f720988d93231.setContent(html_8930961a509bf2483665ae50ec0a3172);
+            
+        
+
+        circle_marker_24757f5b01c5f14a1a76bf019375e896.bindPopup(popup_2dad5d689e8096a09b7f720988d93231)
+        ;
+
+        
+    
+    
+            circle_marker_24757f5b01c5f14a1a76bf019375e896.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.16666666666666666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44a2d63cf93d3f09403b5c54c3daeb74 = L.circleMarker(
+                [43.6646608, -79.3990728],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0040", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_b3be0d3af63314a52a74e3a887ae8307 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76274f53e4aecb7a31e6a25e82d97d2e = $(`<div id="html_76274f53e4aecb7a31e6a25e82d97d2e" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 2.1 (n=116)<br>Recent mean: 1.6333333333333333 (n=30)<br>Low-rating share: 0.8333333333333334<br>Date range ts: 1773005333–1794939841<br><a href="https://www.google.com/maps/place/Starbucks/@43.6646608,-79.3990728,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b3506637b7dcd:0x9ce95d6a04ccb27b!8m2!3d43.6646608!4d-79.3990728" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_b3be0d3af63314a52a74e3a887ae8307.setContent(html_76274f53e4aecb7a31e6a25e82d97d2e);
+            
+        
+
+        circle_marker_44a2d63cf93d3f09403b5c54c3daeb74.bindPopup(popup_b3be0d3af63314a52a74e3a887ae8307)
+        ;
+
+        
+    
+    
+            circle_marker_44a2d63cf93d3f09403b5c54c3daeb74.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.8333333333333334
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f9a8af8fd0cb9488b880902edc58c75 = L.circleMarker(
+                [43.6626438, -79.3982675],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0040", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_1d7f2b89479ec270aa63e2f4dee7bb45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75b0b793ce4e6cad525a0df4327f8701 = $(`<div id="html_75b0b793ce4e6cad525a0df4327f8701" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 2.6 (n=71)<br>Recent mean: 2.25 (n=8)<br>Low-rating share: 0.75<br>Date range ts: 1767883826–1793137502<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6626438,-79.3982675,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34cf56975af1:0x22ab4f9296d475cf!8m2!3d43.6626438!4d-79.3982675" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_1d7f2b89479ec270aa63e2f4dee7bb45.setContent(html_75b0b793ce4e6cad525a0df4327f8701);
+            
+        
+
+        circle_marker_9f9a8af8fd0cb9488b880902edc58c75.bindPopup(popup_1d7f2b89479ec270aa63e2f4dee7bb45)
+        ;
+
+        
+    
+    
+            circle_marker_9f9a8af8fd0cb9488b880902edc58c75.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.75
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13409fca37b4936b4606b3db1fcdc3fc = L.circleMarker(
+                [43.6646492, -79.3876796],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bb4440", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_a6530369a4bf4d3f6630ccee5780c0a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07033e15778a15ea864dfb9c610f6fde = $(`<div id="html_07033e15778a15ea864dfb9c610f6fde" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.9 (n=817)<br>Recent mean: 3.6 (n=30)<br>Low-rating share: 0.36666666666666664<br>Date range ts: 1791297509–1794587308<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6646492,-79.3876796,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34b14833a03d:0xf64dc1849056353f!8m2!3d43.6646492!4d-79.3876796" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_a6530369a4bf4d3f6630ccee5780c0a6.setContent(html_07033e15778a15ea864dfb9c610f6fde);
+            
+        
+
+        circle_marker_13409fca37b4936b4606b3db1fcdc3fc.bindPopup(popup_a6530369a4bf4d3f6630ccee5780c0a6)
+        ;
+
+        
+    
+    
+            circle_marker_13409fca37b4936b4606b3db1fcdc3fc.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.36666666666666664
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_434c4aee0f66667a063d20bf198840e0 = L.circleMarker(
+                [43.659549999999996, -79.38978999999999],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd2140", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_e96acb09920f6225693096807543f88f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93a1f3dee7a1e89a40efe8ce55d82701 = $(`<div id="html_93a1f3dee7a1e89a40efe8ce55d82701" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.7 (n=218)<br>Recent mean: 2.9565217391304346 (n=23)<br>Low-rating share: 0.43478260869565216<br>Date range ts: 1768471606–1793195923<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.659549999999996,-79.38978999999999,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34c8281fcab1:0x871a24d7654b50d0!8m2!3d43.659549999999996!4d-79.38978999999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_e96acb09920f6225693096807543f88f.setContent(html_93a1f3dee7a1e89a40efe8ce55d82701);
+            
+        
+
+        circle_marker_434c4aee0f66667a063d20bf198840e0.bindPopup(popup_e96acb09920f6225693096807543f88f)
+        ;
+
+        
+    
+    
+            circle_marker_434c4aee0f66667a063d20bf198840e0.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.43478260869565216
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37006cb9c0c4c9d49183f18eab2e5338 = L.circleMarker(
+                [43.660748299999995, -79.3966715],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f00f40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_b8a6798104157ff1229da9ca668158f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c09b93df718b06e1fcbafa1958115fc = $(`<div id="html_0c09b93df718b06e1fcbafa1958115fc" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.1 (n=36)<br>Recent mean: 3.176470588235294 (n=17)<br>Low-rating share: 0.47058823529411764<br>Date range ts: 1764616261–1786371791<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.660748299999995,-79.3966715,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b35518ad957bf:0x3ebc83a3ab08f772!8m2!3d43.660748299999995!4d-79.3966715" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_b8a6798104157ff1229da9ca668158f6.setContent(html_0c09b93df718b06e1fcbafa1958115fc);
+            
+        
+
+        circle_marker_37006cb9c0c4c9d49183f18eab2e5338.bindPopup(popup_b8a6798104157ff1229da9ca668158f6)
+        ;
+
+        
+    
+    
+            circle_marker_37006cb9c0c4c9d49183f18eab2e5338.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.47058823529411764
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd363de2b032e54b3b5a17572ee6bd38 = L.circleMarker(
+                [43.654598, -79.3889781],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#996640", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_20b1903c8190804d29299abc8574a58d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce15556659dd2a541d639d2ade13c2b8 = $(`<div id="html_ce15556659dd2a541d639d2ade13c2b8" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=1551)<br>Recent mean: 3.6 (n=30)<br>Low-rating share: 0.3<br>Date range ts: 1787754026–1794358777<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.654598,-79.3889781,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34c867a250a7:0x4a292afcf377aa79!8m2!3d43.654598!4d-79.3889781" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_20b1903c8190804d29299abc8574a58d.setContent(html_ce15556659dd2a541d639d2ade13c2b8);
+            
+        
+
+        circle_marker_bd363de2b032e54b3b5a17572ee6bd38.bindPopup(popup_20b1903c8190804d29299abc8574a58d)
+        ;
+
+        
+    
+    
+            circle_marker_bd363de2b032e54b3b5a17572ee6bd38.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d894a000d9e05723ac603f553743c81b = L.circleMarker(
+                [43.65444, -79.38775],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b8340", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_4fda741303fe482b3d659af3b5fc7730 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12dcc7d652274b335d66fa83f31443ec = $(`<div id="html_12dcc7d652274b335d66fa83f31443ec" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.0 (n=252)<br>Recent mean: 3.896551724137931 (n=29)<br>Low-rating share: 0.2413793103448276<br>Date range ts: 1767650020–1794952001<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.65444,-79.38775,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b352c55b7548d:0xa23ae84b2cb41c93!8m2!3d43.65444!4d-79.38775" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_4fda741303fe482b3d659af3b5fc7730.setContent(html_12dcc7d652274b335d66fa83f31443ec);
+            
+        
+
+        circle_marker_d894a000d9e05723ac603f553743c81b.bindPopup(popup_4fda741303fe482b3d659af3b5fc7730)
+        ;
+
+        
+    
+    
+            circle_marker_d894a000d9e05723ac603f553743c81b.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.2413793103448276
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2aca896ced726370df95a26f4fcc6c76 = L.circleMarker(
+                [43.662726, -79.4012929],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0040", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_7d38f655cbc603894b4faccd87e32636 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ba95ed29bae3d5a8d9e1b95babebfd3 = $(`<div id="html_5ba95ed29bae3d5a8d9e1b95babebfd3" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 3.5 (n=43)<br>Recent mean: 2.6666666666666665 (n=3)<br>Low-rating share: 0.6666666666666666<br>Date range ts: 1769263025–1783549420<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.662726,-79.4012929,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x882b34cf56975af1:0xf351c636be9954c4!8m2!3d43.662726!4d-79.4012929" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_7d38f655cbc603894b4faccd87e32636.setContent(html_5ba95ed29bae3d5a8d9e1b95babebfd3);
+            
+        
+
+        circle_marker_2aca896ced726370df95a26f4fcc6c76.bindPopup(popup_7d38f655cbc603894b4faccd87e32636)
+        ;
+
+        
+    
+    
+            circle_marker_2aca896ced726370df95a26f4fcc6c76.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.6666666666666666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77a2b5cb27f8032db91a4b367ce1bfd7 = L.circleMarker(
+                [43.6689717, -79.389562],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#11ee40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_8f26d63e4f284b31c1a050bb0bf7c74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2666b788aa6439f26a95f9b69b38dc19 = $(`<div id="html_2666b788aa6439f26a95f9b69b38dc19" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=1945)<br>Recent mean: 4.566666666666666 (n=30)<br>Low-rating share: 0.03333333333333333<br>Date range ts: 1792430034–1795009366<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.6689717,-79.389562,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b34ae8a33e61d:0xbd247d21539cb0fc!8m2!3d43.6689717!4d-79.389562" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_8f26d63e4f284b31c1a050bb0bf7c74f.setContent(html_2666b788aa6439f26a95f9b69b38dc19);
+            
+        
+
+        circle_marker_77a2b5cb27f8032db91a4b367ce1bfd7.bindPopup(popup_8f26d63e4f284b31c1a050bb0bf7c74f)
+        ;
+
+        
+    
+    
+            circle_marker_77a2b5cb27f8032db91a4b367ce1bfd7.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.03333333333333333
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2c932b6a7b4533d7d54c65e4e339362 = L.circleMarker(
+                [43.66805, -79.3885],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b64840", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_8a6360136d9993e78f2d8015f292d54f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73a502554940e3f91f54d7421d53a2ff = $(`<div id="html_73a502554940e3f91f54d7421d53a2ff" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.3 (n=422)<br>Recent mean: 3.5714285714285716 (n=28)<br>Low-rating share: 0.35714285714285715<br>Date range ts: 1766498511–1793987837<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.66805,-79.3885,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x882b34b1d0a5a163:0x756ac2ad85c4617e!8m2!3d43.66805!4d-79.3885" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_8a6360136d9993e78f2d8015f292d54f.setContent(html_73a502554940e3f91f54d7421d53a2ff);
+            
+        
+
+        circle_marker_b2c932b6a7b4533d7d54c65e4e339362.bindPopup(popup_8a6360136d9993e78f2d8015f292d54f)
+        ;
+
+        
+    
+    
+            circle_marker_b2c932b6a7b4533d7d54c65e4e339362.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.35714285714285715
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d169ed2ae94800fce1e1aa98494e41bd = L.circleMarker(
+                [43.6652324, -79.4097601],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#999999", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_f451b0fc50336e437904a93d97012c4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc78b50ddbf720097258e3259394bd48 = $(`<div id="html_cc78b50ddbf720097258e3259394bd48" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Coffee Co<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.0 (n=132)<br>Recent mean:  (n=)<br>Low-rating share: <br>Date range ts: –<br><a href="https://www.google.com/maps/place/Second+Cup+Coffee+Co/@43.6652324,-79.4097601,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Coffee+Co!3m4!1s0x882b3493c2aa137d:0x918489a06a9bfc05!8m2!3d43.6652324!4d-79.4097601" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_f451b0fc50336e437904a93d97012c4b.setContent(html_cc78b50ddbf720097258e3259394bd48);
+            
+        
+
+        circle_marker_d169ed2ae94800fce1e1aa98494e41bd.bindPopup(popup_f451b0fc50336e437904a93d97012c4b)
+        ;
+
+        
+    
+    
+            circle_marker_d169ed2ae94800fce1e1aa98494e41bd.bindTooltip(
+                `<div>
+                     Second Cup: low share None
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_038ad8fd20ad42ceff2deba975b28e93 = L.circleMarker(
+                [43.676634799999995, -79.4115722],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#887740", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_58a616fffe6b6b946ef1594507de3cbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abbbf0eea5a9b1d20818b98822da0ef5 = $(`<div id="html_abbbf0eea5a9b1d20818b98822da0ef5" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: other<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.8 (n=1560)<br>Recent mean: 3.7 (n=30)<br>Low-rating share: 0.26666666666666666<br>Date range ts: 1789339988–1795005597<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.676634799999995,-79.4115722,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b349c93199f93:0xa4b50c55f4934b2!8m2!3d43.676634799999995!4d-79.4115722" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_58a616fffe6b6b946ef1594507de3cbe.setContent(html_abbbf0eea5a9b1d20818b98822da0ef5);
+            
+        
+
+        circle_marker_038ad8fd20ad42ceff2deba975b28e93.bindPopup(popup_58a616fffe6b6b946ef1594507de3cbe)
+        ;
+
+        
+    
+    
+            circle_marker_038ad8fd20ad42ceff2deba975b28e93.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.26666666666666666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec55388b4c3285e19b9ddcafb6177af7 = L.circleMarker(
+                [43.6475042, -79.40160039999999],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cc3240", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_c7e2a3857a3fa29d4f6d95dd75acdf8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1537cca5f2a1d3c9a72b08e6b59ff84 = $(`<div id="html_b1537cca5f2a1d3c9a72b08e6b59ff84" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 3.0 (n=51)<br>Recent mean: 3.36 (n=25)<br>Low-rating share: 0.4<br>Date range ts: 1764206639–1794922769<br><a href="https://www.google.com/maps/place/Starbucks/@43.6475042,-79.40160039999999,14z/data=!4m8!1m2!2m1!1sStarbucks!3m4!1s0x882b35cca99e1a55:0x361e29327a1e0428!8m2!3d43.6475042!4d-79.40160039999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_c7e2a3857a3fa29d4f6d95dd75acdf8b.setContent(html_b1537cca5f2a1d3c9a72b08e6b59ff84);
+            
+        
+
+        circle_marker_ec55388b4c3285e19b9ddcafb6177af7.bindPopup(popup_c7e2a3857a3fa29d4f6d95dd75acdf8b)
+        ;
+
+        
+    
+    
+            circle_marker_ec55388b4c3285e19b9ddcafb6177af7.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fef4a9ee5bc6f8505589929e1cdf62d6 = L.circleMarker(
+                [43.6486434, -79.37902509999999],
+                {"bubblingMouseEvents": true, "color": "#8B4513", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b7340", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_39d4a3568a92df2f7ed56c274d341fa1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4f91afc3e338933fb9cb45ad7ceffa2 = $(`<div id="html_b4f91afc3e338933fb9cb45ad7ceffa2" style="width: 100.0%; height: 100.0%;"><b>Second Cup</b><br>Second Cup Café<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=85)<br>Recent mean: 3.8181818181818183 (n=11)<br>Low-rating share: 0.2727272727272727<br>Date range ts: 1772025807–1790362155<br><a href="https://www.google.com/maps/place/Second+Cup+Caf%C3%A9/@43.6486434,-79.37902509999999,14z/data=!4m8!1m2!2m1!1sSecond+Cup+Caf%C3%A9!3m4!1s0x89d4cb2376d0d7bb:0xc1335d2366d5aa6!8m2!3d43.6486434!4d-79.37902509999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_39d4a3568a92df2f7ed56c274d341fa1.setContent(html_b4f91afc3e338933fb9cb45ad7ceffa2);
+            
+        
+
+        circle_marker_fef4a9ee5bc6f8505589929e1cdf62d6.bindPopup(popup_39d4a3568a92df2f7ed56c274d341fa1)
+        ;
+
+        
+    
+    
+            circle_marker_fef4a9ee5bc6f8505589929e1cdf62d6.bindTooltip(
+                `<div>
+                     Second Cup: low share 0.2727272727272727
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34ebb947a90bd0791074686e4b3a9f57 = L.circleMarker(
+                [43.648528, -79.38333589999999],
+                {"bubblingMouseEvents": true, "color": "#C8102E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33cc40", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_d64889d244a25a99d51caf67da653a19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7aba37f57957259a129e1408d595188 = $(`<div id="html_a7aba37f57957259a129e1408d595188" style="width: 100.0%; height: 100.0%;"><b>Tim Hortons</b><br>Tim Hortons<br>Area: downtown<br>Format: cafe<br>Uni: 1<br>Lifetime rating: 4.7 (n=57)<br>Recent mean: 4.566666666666666 (n=30)<br>Low-rating share: 0.1<br>Date range ts: 1780996916–1793197026<br><a href="https://www.google.com/maps/place/Tim+Hortons/@43.648528,-79.38333589999999,14z/data=!4m8!1m2!2m1!1sTim+Hortons!3m4!1s0x882b3500168e03f3:0x99a1c32fcdac5bcd!8m2!3d43.648528!4d-79.38333589999999" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_d64889d244a25a99d51caf67da653a19.setContent(html_a7aba37f57957259a129e1408d595188);
+            
+        
+
+        circle_marker_34ebb947a90bd0791074686e4b3a9f57.bindPopup(popup_d64889d244a25a99d51caf67da653a19)
+        ;
+
+        
+    
+    
+            circle_marker_34ebb947a90bd0791074686e4b3a9f57.bindTooltip(
+                `<div>
+                     Tim Hortons: low share 0.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5139dd26d9b1c34ed4bb829ae783354 = L.circleMarker(
+                [43.64924, -79.37813],
+                {"bubblingMouseEvents": true, "color": "#00704A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#778840", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_934c1aade483ce4a05e64f359514cd9b);
+        
+    
+        var popup_f099ca191c6e3b9ecc5fc7c943838a86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abbed0de5d8283494ca2e1b9158a76d2 = $(`<div id="html_abbed0de5d8283494ca2e1b9158a76d2" style="width: 100.0%; height: 100.0%;"><b>Starbucks</b><br>Starbucks Coffee Company<br>Area: downtown<br>Format: cafe<br>Uni: 0<br>Lifetime rating: 4.1 (n=1680)<br>Recent mean: 3.7333333333333334 (n=30)<br>Low-rating share: 0.23333333333333334<br>Date range ts: 1787520016–1794800141<br><a href="https://www.google.com/maps/place/Starbucks+Coffee+Company/@43.64924,-79.37813,14z/data=!4m8!1m2!2m1!1sStarbucks+Coffee+Company!3m4!1s0x89d4cb32844fc443:0xd11dc9af93fc2b0e!8m2!3d43.64924!4d-79.37813" target="_blank" rel="noopener">Maps link</a></div>`)[0];
+                popup_f099ca191c6e3b9ecc5fc7c943838a86.setContent(html_abbed0de5d8283494ca2e1b9158a76d2);
+            
+        
+
+        circle_marker_e5139dd26d9b1c34ed4bb829ae783354.bindPopup(popup_f099ca191c6e3b9ecc5fc7c943838a86)
+        ;
+
+        
+    
+    
+            circle_marker_e5139dd26d9b1c34ed4bb829ae783354.bindTooltip(
+                `<div>
+                     Starbucks: low share 0.23333333333333334
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_97770ec7aa9754e6da85019b07844023_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9b78962cf430e0f605eea39ace73d1d1,
+                },
+                overlays :  {
+                    "Lifetime rating" : feature_group_6a59b85a44dd2d6adf3418604355fda4,
+                    "Recent low-rating share" : feature_group_934c1aade483ce4a05e64f359514cd9b,
+                },
+            };
+            let layer_control_97770ec7aa9754e6da85019b07844023 = L.control.layers(
+                layer_control_97770ec7aa9754e6da85019b07844023_layers.base_layers,
+                layer_control_97770ec7aa9754e6da85019b07844023_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_1043759bafc729233937898c70498463);
+
+        
+</script>
+</html>

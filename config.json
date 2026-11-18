@@ -1,0 +1,134 @@
+{
+  "study": {
+    "city": "Toronto",
+    "timezone": "America/Toronto",
+    "brands": ["Second Cup", "Tim Hortons", "Starbucks"],
+    "stores_per_brand": 12,
+    "reviews_per_store": 30,
+    "review_window_months": 12,
+    "pilot_stores": 3,
+    "pilot_reviews_per_store": 5,
+    "selection_seed": 42,
+    "match_preferred_km": 1.0,
+    "match_max_km": 3.0,
+    "university_radius_m": 800,
+    "downtown_anchor_target": 4,
+    "suburban_anchor_target": 6,
+    "university_adjacent_target": 3,
+    "expansion_prefer_suburban": true,
+    "discovery_business_cap": 150,
+    "min_analyzed_reviews_for_topic": 10,
+    "min_eligible_stores_for_group": 3
+  },
+  "budget": {
+    "cap_cad": 10.0,
+    "usd_to_cad": 1.4,
+    "tax_buffer": 1.13,
+    "outscraper_business_free": 500,
+    "outscraper_review_free": 500,
+    "outscraper_per_1000_usd": 3.0,
+    "gemini_input_per_1m_usd": 0.0,
+    "gemini_output_per_1m_usd": 0.0,
+    "gemini_assume_free_tier": true,
+    "reserve_padding_cad": 0.25
+  },
+  "runtime": {
+    "max_hours": 8.0,
+    "export_reserve_minutes": 15,
+    "concurrency": 1,
+    "max_transient_retries": 2,
+    "poll_initial_seconds": 5,
+    "poll_max_seconds": 60,
+    "disk_free_gb_min": 1.0
+  },
+  "gemini": {
+    "model_candidates": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.1-flash-lite",
+      "gemini-3.8-flash",
+      "gemini-3.7-flash",
+      "gemini-3.6-flash"
+    ],
+    "prompt_version": "v1",
+    "batch_size": 6,
+    "max_output_tokens": 2048,
+    "temperature": 0.1,
+    "http_timeout_ms": 90000,
+    "call_timeout_seconds": 120,
+    "rate_limit_sleep_seconds": 35
+  },
+  "outscraper": {
+    "base_url": "https://api.outscraper.com",
+    "region": "ca",
+    "language": "en",
+    "search_limit_per_query": 20
+  },
+  "geography": {
+    "sources": [
+      "Operational City of Toronto study envelope approximated from public municipal extents (Lake Ontario south, Steeles Ave north, Rouge/Pickering boundary east, Etobicoke Creek west).",
+      "Downtown operational polygon for this study: roughly Bathurst–Don River–Bloor–waterfront core.",
+      "Campus points from publicly listed campus coordinates; university-adjacent = within 800 m.",
+      "Suburban neighbourhood centres are this study's operational definition, not official planning boundaries."
+    ],
+    "toronto_bbox": {
+      "min_lat": 43.58,
+      "max_lat": 43.855,
+      "min_lon": -79.64,
+      "max_lon": -79.12
+    },
+    "toronto_polygon": [
+      [43.58, -79.55],
+      [43.62, -79.64],
+      [43.75, -79.64],
+      [43.855, -79.45],
+      [43.855, -79.17],
+      [43.80, -79.12],
+      [43.65, -79.12],
+      [43.58, -79.30],
+      [43.58, -79.55]
+    ],
+    "downtown_polygon": [
+      [43.636, -79.420],
+      [43.670, -79.420],
+      [43.670, -79.350],
+      [43.636, -79.350],
+      [43.636, -79.420]
+    ],
+    "suburban_areas": [
+      {"name": "North York Centre", "lat": 43.7681, "lon": -79.4128},
+      {"name": "Willowdale", "lat": 43.7696, "lon": -79.4000},
+      {"name": "Scarborough Town Centre", "lat": 43.7764, "lon": -79.2580},
+      {"name": "Agincourt", "lat": 43.7850, "lon": -79.2930},
+      {"name": "Etobicoke Islington", "lat": 43.6460, "lon": -79.5240},
+      {"name": "Mimico", "lat": 43.6145, "lon": -79.4960},
+      {"name": "East York", "lat": 43.6910, "lon": -79.3380},
+      {"name": "York Weston", "lat": 43.7005, "lon": -79.5160}
+    ],
+    "campuses": [
+      {"name": "University of Toronto St. George", "lat": 43.6629, "lon": -79.3957},
+      {"name": "Toronto Metropolitan University", "lat": 43.6577, "lon": -79.3788},
+      {"name": "York University Keele", "lat": 43.7735, "lon": -79.5019},
+      {"name": "University of Toronto Scarborough", "lat": 43.7841, "lon": -79.1877},
+      {"name": "OCAD University", "lat": 43.6530, "lon": -79.3910}
+    ],
+    "downtown_search_queries": [
+      "Second Cup, Downtown Toronto, ON",
+      "Second Cup, Financial District Toronto, ON",
+      "Second Cup, Yonge and Dundas Toronto, ON",
+      "Second Cup, Bloor Yorkville Toronto, ON"
+    ],
+    "suburban_search_query_template": "Second Cup, {name}, Toronto, ON",
+    "competitor_query_templates": {
+      "Tim Hortons": "Tim Hortons near {lat},{lon}",
+      "Starbucks": "Starbucks near {lat},{lon}"
+    }
+  },
+  "topics": [
+    "atmosphere_seating",
+    "cleanliness",
+    "price_value",
+    "product_quality",
+    "service"
+  ],
+  "sentiments": ["positive", "negative", "neutral", "mixed", "uncertain"]
+}

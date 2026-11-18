@@ -1,0 +1,663 @@
+review_id,topic,sentiment,evidence,language,english_translation,uncertain,model
+9e86f86d59f03734a378a3352954a00e76dbac89,service,positive,Staff and food both amazing,en,,0,gemini-3.8-flash
+9e86f86d59f03734a378a3352954a00e76dbac89,product_quality,positive,Staff and food both amazing,en,,0,gemini-3.8-flash
+8391abff8c09a11d3a41566760826b75c4adad7a,service,positive,service is quick,en,,0,gemini-3.8-flash
+8391abff8c09a11d3a41566760826b75c4adad7a,product_quality,positive,The food is usually pretty fresh,en,,0,gemini-3.8-flash
+8391abff8c09a11d3a41566760826b75c4adad7a,atmosphere_seating,negative,"The atmosphere is not their fault, but it is not a happy place.",en,,0,gemini-3.8-flash
+36746ea97271e23fbe2891f96cfd3509132c11d3,product_quality,negative,"my drink did not taste good at all, tastes like straight up milk",en,,0,gemini-3.8-flash
+3eb9ef41fc78e274ef2e9e6e93885617ead29acf,service,negative,The Austin guy is not nice,en,,0,gemini-3.8-flash
+a57a432ae9745233787f32682097d82477a70998,service,mixed,The delayed urgency of the brunette and the manager really ticked me off and I will not be coming back to this location. I really appreciate the other employee who immediately made my drink on the spot and apologized.,en,,0,gemini-3.8-flash
+e4c6b137cee639ea12d1ad7086b573d253ec040a,service,positive,"Mehak, shirin  both are very friendly and helpful.",en,,0,gemini-3.8-flash
+06b36fe37bc5a3b7fe66b67c2c0eec88056e1db6,product_quality,positive,Beat food best drinks,en,,0,gemini-3.8-flash
+06b36fe37bc5a3b7fe66b67c2c0eec88056e1db6,service,positive,nice staff,en,,0,gemini-3.8-flash
+bc882317b5be53cdd025322df5a82723ca58ac20,service,positive,fast and friendly service,en,,0,gemini-3.8-flash
+bc882317b5be53cdd025322df5a82723ca58ac20,atmosphere_seating,positive,unique atmosphere,en,,0,gemini-3.8-flash
+bc882317b5be53cdd025322df5a82723ca58ac20,product_quality,positive,exclusive “bakers choice” donuts that you can not find at other locations,en,,0,gemini-3.8-flash
+4efb4c7d86b3a689098ff880c2d74cfd51b5bc31,product_quality,positive,I HAD THE BEST VANILLA ICED LATTE OF MY LIFE,en,,0,gemini-3.8-flash
+4efb4c7d86b3a689098ff880c2d74cfd51b5bc31,service,positive,I did ask the barista to add a little less vanilla syrup to my drink - and she did,en,,0,gemini-3.8-flash
+83e0eb1ded8a201971aba7dbc22ba02039ad7495,service,positive,Evening shift was so nice and friendly!!!,en,,0,gemini-3.8-flash
+7df83e9e88da4befdef9d01f865e20ca098e8b93,service,positive,Loved the staffs patience and service,en,,0,gemini-3.8-flash
+f6bbf4a70a2de83cfad83d1797ec5f5e18b819f0,service,positive,Very  good service and staff are very helpful,en,,0,gemini-3.8-flash
+df39a380fc6e65d9869aed4268c0716b12eb45b0,service,positive,Chan was super nice,en,,0,gemini-3.8-flash
+9dc603e55478e7e1542e0a34b0393bc1824963d9,service,positive,Excellent service and a great group of employees!,en,,0,gemini-3.8-flash
+ba3d8883511e2bb677c3e07a03e6bbc305561c5b,service,positive,the customer service was amazing!!!,en,,0,gemini-3.8-flash
+ba3d8883511e2bb677c3e07a03e6bbc305561c5b,product_quality,positive,The timbits lived up to their name especially the birthday ones!   Coffee put Starbucks to shame!,en,,0,gemini-3.8-flash
+ba3d8883511e2bb677c3e07a03e6bbc305561c5b,atmosphere_seating,positive,Loved the atmosphere of this one too being hockey!,en,,0,gemini-3.8-flash
+240387e5f712a80aade24bc12895d65f73e64b02,service,positive,Great service and friendly staff!,en,,0,gemini-3.8-flash
+240387e5f712a80aade24bc12895d65f73e64b02,product_quality,positive,"The coffee was fresh, and everything was delicious.",en,,0,gemini-3.8-flash
+60aa0caae714c1c776b54aecb2fa1915657e47c6,atmosphere_seating,positive,Good atmosphere,en,,0,gemini-3.8-flash
+60aa0caae714c1c776b54aecb2fa1915657e47c6,cleanliness,positive,store was very clean,en,,0,gemini-3.8-flash
+60aa0caae714c1c776b54aecb2fa1915657e47c6,service,positive,the employees were kind and helpful,en,,0,gemini-3.8-flash
+60aa0caae714c1c776b54aecb2fa1915657e47c6,product_quality,positive,The food was very nice.,en,,0,gemini-3.8-flash
+8cc9b5f0cdc29bd70a17f1df5b81d65ddb9de530,service,negative,Inspite of making sure it was input correctly in the system while giving the order and confirming twice with the lady.,en,,0,gemini-3.8-flash
+8cc9b5f0cdc29bd70a17f1df5b81d65ddb9de530,product_quality,negative,The sandwiches were not grilled.,en,,0,gemini-3.8-flash
+f878d202899a5676f169e7407c125da7d3a2b2a9,service,positive,Chris was very helpful and kind! Great service!,en,,0,gemini-3.8-flash
+9af81e7d9cb9a7be05a43029a3537465e8580326,service,positive,W chris,en,,0,gemini-3.8-flash
+e26248cc26715a15b9a61682a62da915fa9340fb,service,positive,We love Chris,en,,0,gemini-3.8-flash
+da297e8901989633fe0ffbb0d90fe46fb086ab73,service,positive,Chris is amazing and brightens my Monday mornings,en,,0,gemini-3.8-flash
+f8a41379940f45d06b3c4dcfc13bc1aaf285960c,service,positive,Chris is the GOAT,en,,0,gemini-3.8-flash
+f3158c440fa003445db3908cffaf6c9f8ea4f7da,service,positive,Chris is so good,en,,0,gemini-3.8-flash
+b43f34642dd8d8e999cbaca7cd5e47fd218cbe5d,service,positive,chris is a g,en,,0,gemini-3.8-flash
+12279d0a20f9b71d629db90f5491aba17578bebc,service,negative,Slowest service I’ve ever experienced in my life,en,,0,gemini-3.8-flash
+12279d0a20f9b71d629db90f5491aba17578bebc,product_quality,negative,Used regular milk instead of oat,en,,0,gemini-3.8-flash
+12279d0a20f9b71d629db90f5491aba17578bebc,product_quality,negative,Wrong sandwich,en,,0,gemini-3.8-flash
+bf80abe83f956e50ea094a2430ceb5d6cf54f14e,service,negative,not enough staff,en,,0,gemini-3.8-flash
+bf80abe83f956e50ea094a2430ceb5d6cf54f14e,service,negative,wait for so long,en,,0,gemini-3.8-flash
+bf80abe83f956e50ea094a2430ceb5d6cf54f14e,service,negative,she was rude when she take orders,en,,0,gemini-3.8-flash
+1c7905f415fc96754c6273e89541dba81533a799,service,positive,the barista greeted me in a friendly way was patient,en,,0,gemini-3.8-flash
+1c7905f415fc96754c6273e89541dba81533a799,service,positive,very rapidly made me,en,,0,gemini-3.8-flash
+1c7905f415fc96754c6273e89541dba81533a799,product_quality,positive,perfectly hot and delicious white mocha,en,,0,gemini-3.8-flash
+1c7905f415fc96754c6273e89541dba81533a799,cleanliness,positive,clean and nice,en,,0,gemini-3.8-flash
+be8f771b55f174abeb7dc337f9c7458b97f94eb6,service,negative,"they forgot my trading cards which i paid for, but they seemed far too busy to want to attend to me when i noticed the error",en,,0,gemini-3.8-flash
+be8f771b55f174abeb7dc337f9c7458b97f94eb6,atmosphere_seating,negative,an older south asian lady in a red t shirt with black glasses was (audible to all the customers in the store) yelling at a poor younger girl staff and sounded like she was verbally abusing her,en,,0,gemini-3.8-flash
+ba4561b121e04cd8fd973988645e1a0ec76881ab,service,positive,Friendly staff,en,,0,gemini-3.8-flash
+47b6633bd0a548c0657babfb0d6f5d8604ab03f0,service,positive,Fast service and friendly,en,,0,gemini-3.8-flash
+47b6633bd0a548c0657babfb0d6f5d8604ab03f0,product_quality,positive,great food,en,,0,gemini-3.8-flash
+bc4c41dbe8a1af3b1c047bec882b268538262795,product_quality,positive,Great coffee,en,,0,gemini-3.8-flash
+bc4c41dbe8a1af3b1c047bec882b268538262795,service,positive,fast service,en,,0,gemini-3.8-flash
+777498679dd14d8781fbdf359b6ca97ad0a9cdb1,service,positive,Very friendly staff,en,,0,gemini-3.8-flash
+21853673879db2f35bce2d6ca16ea153f11a727a,product_quality,positive,best quality drinks n food,en,,0,gemini-3.8-flash
+9f8407630f196afb6af0a7bc2c433d3570211781,service,positive,Very fast n helpful,en,,0,gemini-3.8-flash
+ebb28a461ebf71604244830efc67302c1de198ff,service,negative,"Slowest location ever, just left twice without getting my order",en,,0,gemini-3.8-flash
+896ef3a82582db6b06a46984111470365be6b134,service,positive,the service is always amazing epically when Chris is on duty!,en,,0,gemini-3.8-flash
+3f5aeb87f763b4c33c7c00c0058ea5b475b42cf2,service,negative,Genuinely the worst pickup experience. They keep the food behind the counter and ignore you when you ask them to grab it for you.,en,,0,gemini-3.8-flash
+ba504024f7c0c3b07b4cdc41639ff580bbfa810c,atmosphere_seating,positive,This place so fancy,en,,0,gemini-3.8-flash
+ba504024f7c0c3b07b4cdc41639ff580bbfa810c,service,positive,server keep smiling,en,,0,gemini-3.8-flash
+ba504024f7c0c3b07b4cdc41639ff580bbfa810c,product_quality,positive,Food and drinks so great,en,,0,gemini-3.8-flash
+ecc057fa42dbe8b1b43a15852ac1f9b2e488f378,price_value,negative,The only problem I have with this coffee shop is the price!!,en,,0,gemini-3.8-flash
+ecc057fa42dbe8b1b43a15852ac1f9b2e488f378,product_quality,mixed,"they look so yummy, too!!). The only problem I have with this coffee shop is the price!! I feel like you need to take a second mortgage out in your house or have a 3rd career going to buy anything at this shop.  Sure,  everyone needs to make  money and they price items however they feel it's appropriate, but $9 for a side of cheesecake?<br>I think it's really costly and being the only coffee shop in a fair walking distance (on the main floor of Union Station) that you almost fell like you have to buy from them. I don't see much people standing here waiting at all,  really. Maybe to get a bottle of something. But it costed $25 for a muffin,  a sandwich and a slice of  carrot cake. I am not at all complaining,  but it just makes me want those hot dog carts back in Toronto!! At least you could get a hot dog for a good price, tastes so damn good and be satisfied from it. Anyways, got a little side tracked about the hot dog carts on Toronto 🤭. I just think that if prices weren't as outrageous as they are then it wouldn't be so bad. But inflation has ruined everything like it once was before, no matter how many promises can be made to make the inflation go back down. Anyways,  coffee is okay.",en,,0,gemini-3.8-flash
+eaffe1fb82ac689f4d9d6b439acfeee1fdae3826,service,positive,customer services really great.. Manager and staff both are polite..,en,,0,gemini-3.8-flash
+eaffe1fb82ac689f4d9d6b439acfeee1fdae3826,product_quality,positive,they sell best iced coffee,en,,0,gemini-3.8-flash
+a9e60ac51dea86d9c7a0d642ba5d7b526c3749c4,service,positive,great customer service and never had problems with my orders,en,,0,gemini-3.8-flash
+1d1cdf1e367e69b76d0fd8ff8cc2293281cf92af,service,positive,Fast service,en,,0,gemini-3.8-flash
+9e5139f575c25ef5bcdb0bd202a96878610370fd,service,mixed,"Staff was completely lovely but the lines were absolutely ridiculous, I waited for like 30 minutes",en,,0,gemini-3.8-flash
+b31cf735cc44a0142e64349b6f7319eac1f7777f,service,positive,"Wonderful, friendly staff",en,,0,gemini-3.8-flash
+b31cf735cc44a0142e64349b6f7319eac1f7777f,product_quality,positive,Array of delicious goodies,en,,0,gemini-3.8-flash
+00ecfa8ab6777fc765ce77791a22128adc75cdd2,service,positive,Amazing customer service by Sakshi!,en,,0,gemini-3.8-flash
+96f6ddd9d3c9e5a1be2974132bf88f207d0f23fa,service,positive,"The staff member was very kind, caring, and a creative problem solver. Went above and beyond.",en,,0,gemini-3.8-flash
+2222b9d8364d67b0c8203d99a354d48f6486c6f6,service,positive,Great service!,en,,0,gemini-3.8-flash
+51b7faa0bceb16fbc063b89dc47dbb1b0d96a73c,service,positive,The service at this place Excellent,en,,0,gemini-3.8-flash
+0e442a699a7e64ed1cb5862f90883b7fbc9b527f,price_value,negative,disappointed with the serving size of the coffee. You guys are so stingy,en,,0,gemini-3.8-flash
+0e442a699a7e64ed1cb5862f90883b7fbc9b527f,product_quality,negative,old brewed coffee,en,,0,gemini-3.8-flash
+c82040835a2dc1fae6d826c8ad5d9db395b4be57,service,negative,Lazy guys,en,,0,gemini-3.8-flash
+586f58e69583449203f81d6a737ba3a1af290259,atmosphere_seating,positive,Love the HHF alignment and Canadian Teams displays,en,,0,gemini-3.8-flash
+b57ac945e543f2dc4aa42bb4e5d3dc6a4b9e7442,service,negative,an employee told me it was their drink and then rolled their eyes at me,en,,0,gemini-3.8-flash
+b57ac945e543f2dc4aa42bb4e5d3dc6a4b9e7442,product_quality,negative,the black cat tasted awful,en,,0,gemini-3.8-flash
+23df9da57e1d83760b82c88f30e36c9bc6548f3b,service,positive,Great service from Ishrat!,en,,0,gemini-3.8-flash
+23df9da57e1d83760b82c88f30e36c9bc6548f3b,product_quality,positive,"Food was fresh and delicious, fresh coffee",en,,0,gemini-3.8-flash
+79548770f1039c615aa0b0a9c84c3a41d6955f45,service,positive,Amazing customer service that saved my day and restored my trust in the brand!,en,,0,gemini-3.8-flash
+79548770f1039c615aa0b0a9c84c3a41d6955f45,product_quality,positive,"The coffee they brewed was perfect, exactly how I love it.",en,,0,gemini-3.8-flash
+14efe60e1cd1e682dfb78c2f1fb8caab544e0a91,service,negative,Barista was super condescending to the group of Asians sitting at a table quietly.,en,,0,gemini-3.8-flash
+5e12d4b19e1e32fc969f19be682c4478fd7de80c,service,positive,Fast service. Patient and friendly staff.,en,,0,gemini-3.8-flash
+a9df5596a73b07bdae0580f84ebf4dffc7e88a33,product_quality,positive,good place to grab a quick coffee,en,,0,gemini-3.8-flash
+e9238d2ca9e81a8974fff50a2135c7375ebfe52c,atmosphere_seating,negative,Couldn’t find a seat as there’s limited seating,en,,0,gemini-3.8-flash
+e9238d2ca9e81a8974fff50a2135c7375ebfe52c,cleanliness,positive,clean unisex washrooms,en,,0,gemini-3.8-flash
+eb0c70b3a916a1ce6a23f79791385be43ecef309,service,positive,Kendra the barista is amazing!,en,,0,gemini-3.8-flash
+eb0c70b3a916a1ce6a23f79791385be43ecef309,product_quality,positive,help us get our favourite drink once again,en,,0,gemini-3.8-flash
+95526da26ec727052b8ac1a306f8d6cbdea73182,service,negative,Terrible Staff and Terrible Manager Really!,en,,0,gemini-3.8-flash
+c961a98311892bce10780fcfce16f3aacc1791c5,product_quality,mixed,Poor choice of donuts.Noone had cleaned the place. Its a pity that Tim's great coffee and donuts are served in this squalor.,en,,0,gemini-3.8-flash
+c961a98311892bce10780fcfce16f3aacc1791c5,cleanliness,negative,Noone had cleaned the place. Its a pity that Tim's great coffee and donuts are served in this squalor.,en,,0,gemini-3.8-flash
+0ee8509be9ebcbd1eafb248c8e13851747bec0e6,product_quality,negative,my wrap was ice cold,en,,0,gemini-3.8-flash
+280f8ec190a7b2602bc385792922f6237cc08abb,service,negative,even with the two staff they have the service is unbelievable,en,,0,gemini-3.8-flash
+73ebf9b1cd72fea2147a4981a5f6160ac209bf0e,atmosphere_seating,positive,Great vibes,en,,0,gemini-3.8-flash
+73ebf9b1cd72fea2147a4981a5f6160ac209bf0e,service,positive,staff!,en,,0,gemini-3.8-flash
+56ee89d4fadead796abbaa079ae382102bca3ce5,service,negative,Poor service,en,,0,gemini-3.8-flash
+d9660539492a20bdc159b3f2d53ea12d482addd0,price_value,negative,Mind u this drink was 8$,en,,0,gemini-3.8-flash
+d9660539492a20bdc159b3f2d53ea12d482addd0,service,negative,they didn’t change or remake my drink,en,,0,gemini-3.8-flash
+d9660539492a20bdc159b3f2d53ea12d482addd0,product_quality,negative,I am not happy with my drink,en,,0,gemini-3.8-flash
+f5866d13f3b43e4bf1ac81fc2d99e231b6e8d457,service,positive,Dhru is an amazing staff working with hospitals and friendly attitudes,en,,0,gemini-3.8-flash
+314ac743f8e387a6f326ff3a99cb88b332e85b36,service,positive,pleasant experience of being served by Hannah. She was extremely sweet,en,,0,gemini-3.8-flash
+314ac743f8e387a6f326ff3a99cb88b332e85b36,product_quality,positive,made an amazing drink for me,en,,0,gemini-3.8-flash
+bc44b3278b98e4940f58bdaade478ca63f1f5d3f,service,positive,They are always so kind and despite having many customers they are so efficient and always get your order correct.,en,,0,gemini-3.8-flash
+00b60434708e7f2b4f13c34e7da1ed2e1d29d9d3,product_quality,negative,the quality of the food like sandwich had been getting worse,en,,0,gemini-3.8-flash
+00b60434708e7f2b4f13c34e7da1ed2e1d29d9d3,price_value,negative,"I pay a high cost for this, and is just getting 😞 I will say I am ok if I need to pay more but give me quality",en,,0,gemini-3.8-flash
+e8189b71c02977cc085635f706307ba5f44c6360,service,negative,They don’t accept survey codes,en,,0,gemini-3.8-flash
+9e8289f2a90da99e660487455dfff35de6ee204c,service,positive,The staff here are superstars!!!,en,,0,gemini-3.8-flash
+9e8289f2a90da99e660487455dfff35de6ee204c,product_quality,positive,Beverages and food are consistent,en,,0,gemini-3.8-flash
+697ecfd53267427d3972607a935680a375b2386d,service,positive,Very nice staff,en,,0,gemini-3.8-flash
+a559d494117483564beda084b8806d7e0a0b30f8,service,positive,the employees are very helpful and kind especially Oscar was the best barista I've ever met!,en,,0,gemini-3.8-flash
+a559d494117483564beda084b8806d7e0a0b30f8,product_quality,positive,He makes the best pumpkin chai ever.,en,,0,gemini-3.8-flash
+fce97ea39ae896b1e8916cfd630753cae12dd8a9,service,negative,She had a lot of attitude and we were sure why,en,,0,gemini-3.8-flash
+fce97ea39ae896b1e8916cfd630753cae12dd8a9,price_value,negative,overcharged us for two meals,en,,0,gemini-3.8-flash
+80998bf0048d906f3e6e94106fedb3055caf0ea4,service,positive,"Great service, very friendly staff",en,,0,gemini-3.8-flash
+80998bf0048d906f3e6e94106fedb3055caf0ea4,cleanliness,positive,very clean,en,,0,gemini-3.8-flash
+c0cca48a2632d746b48316dcd9d3cb7e06a3c9f0,atmosphere_seating,positive,Very nice cafe,en,,0,gemini-3.8-flash
+c0cca48a2632d746b48316dcd9d3cb7e06a3c9f0,service,positive,barista Jelena gave great fall drink recommendations,en,,0,gemini-3.8-flash
+dc5ff0e35f7e84e495165522e97ebd22a16a8851,service,positive,staff is always amazing very friendly and attentive,en,,0,gemini-3.8-flash
+dc5ff0e35f7e84e495165522e97ebd22a16a8851,cleanliness,negative,"there are frequently a lot of flies, especially around the tables near the bathroom",en,,0,gemini-3.8-flash
+ac24d1a7e30d9fc38c2c2ad58398d07a5c924da4,service,negative,This guys are so slow. They are just chatting,en,,0,gemini-3.8-flash
+5aef5fde822e49087ef525e639eabf28f470c9cc,service,negative,Terrible service,en,,0,gemini-3.8-flash
+5aef5fde822e49087ef525e639eabf28f470c9cc,product_quality,negative,horrible coffee,en,,0,gemini-3.8-flash
+5aef5fde822e49087ef525e639eabf28f470c9cc,price_value,negative,This is false advertisement and misleading which unfortunately cost me $7,en,,0,gemini-3.8-flash
+5aef5fde822e49087ef525e639eabf28f470c9cc,service,negative,The employess treated me with disrespect,en,,0,gemini-3.8-flash
+02e27259c9e266a3dfa6f5a035387b4dfdcc8d7c,service,negative,Staffs are extremely rude,en,,0,gemini-3.8-flash
+9f9ab5438943e8fccd69c7638588ed544e0396e6,service,negative,I found it very concerning that they didn’t even have information about the food they were serving,en,,0,gemini-3.8-flash
+9f9ab5438943e8fccd69c7638588ed544e0396e6,product_quality,negative,Food poisoning,en,,0,gemini-3.8-flash
+71517f9255563563a4edb07c6c8752b3e7a16c2b,service,mixed,"I left more impressed by how hard they were working under pressure. But 25 minutes for a coffee, when time is currency for those of us working downtown, is a hard sell",en,,0,gemini-3.8-flash
+c1c1c526c81fbb53d82b0c19ab5b74f20bbb3861,service,negative,Waited 20 mins for a sandwich.,en,,0,gemini-3.8-flash
+68ef000c25e224cd679d10957e1b056414e563dd,atmosphere_seating,positive,one of the top most high end Tims I visited.,en,,0,gemini-3.8-flash
+68ef000c25e224cd679d10957e1b056414e563dd,service,positive,Very cool and friendly staff.,en,,0,gemini-3.8-flash
+68ef000c25e224cd679d10957e1b056414e563dd,product_quality,positive,Food and coffee are amazing.,en,,0,gemini-3.8-flash
+ae7daa19640aa63fa78a9c115c55eeb3d212f468,cleanliness,positive,Very clean restaurant,en,,0,gemini-3.8-flash
+ae7daa19640aa63fa78a9c115c55eeb3d212f468,service,positive,patient staff,en,,0,gemini-3.8-flash
+ae7daa19640aa63fa78a9c115c55eeb3d212f468,product_quality,positive,delivers quality,en,,0,gemini-3.8-flash
+5dc1caebb9fb1d401b03256862b6246b231c14c0,service,negative,Terrible service,en,,0,gemini-3.8-flash
+81595517100432b2cec53ffb3fdb7f1a2606bcd5,service,negative,aren’t they paid to make orders right?,en,,0,gemini-3.8-flash
+81595517100432b2cec53ffb3fdb7f1a2606bcd5,price_value,negative,Why do I have to waste money like this.,en,,0,gemini-3.8-flash
+4378e1e77c88b7c776a72fffa646eda5cedf9b02,service,negative,She says oh we can’t do that we don’t have change.,en,,0,gemini-3.8-flash
+f10c4dd36db497b5f02676c1208a4009196e4a18,service,positive,Team was super friendly,en,,0,gemini-3.8-flash
+f10c4dd36db497b5f02676c1208a4009196e4a18,product_quality,positive,food was great,en,,0,gemini-3.8-flash
+a0acb68c752377a9ae38843fdcfd4dafaa4e6451,product_quality,neutral,pumpkin cream cold brew was done ok,en,,0,gemini-3.8-flash
+a0acb68c752377a9ae38843fdcfd4dafaa4e6451,cleanliness,negative,multiple tables either covered in crumbs or left over cream on tables,en,,0,gemini-3.8-flash
+a0acb68c752377a9ae38843fdcfd4dafaa4e6451,atmosphere_seating,negative,two of the staff were practically yelling at eachother in friendly tones but still loud enough to disturb me,en,,0,gemini-3.8-flash
+e33c8e8ff1c792a4a293d830b6e755626f498412,service,negative,Service is not good,en,,0,gemini-3.8-flash
+a89660feee0d699002894b05512de62ea7fcb3fe,product_quality,positive,The coffee was great,en,,0,gemini-3.8-flash
+a89660feee0d699002894b05512de62ea7fcb3fe,atmosphere_seating,positive,the architecture gives the place a really nice atmosphere,en,,0,gemini-3.8-flash
+a89660feee0d699002894b05512de62ea7fcb3fe,service,positive,The staff were also very friendly and welcoming,en,,0,gemini-3.8-flash
+f01258de8485035f261a6ffd9079f3c403a93d48,product_quality,positive,Coffee is always fresh!,en,,0,gemini-3.8-flash
+aa86f1d4916a2323cd87f2dfb462e1fa466295ce,service,negative,everytime 10 min wait for uber orders,en,,0,gemini-3.8-flash
+5b0dd6c2d0007fc8751eb7b2cb7d074a842cd278,product_quality,negative,more than 2/3 of cup is foam,en,,0,gemini-3.8-flash
+3f2db852043e131e047385e816fd94eec29c2210,service,positive,Fastest Tim’s service.,en,,0,gemini-3.5-flash-lite
+3f2db852043e131e047385e816fd94eec29c2210,product_quality,positive,Food is always fresh,en,,0,gemini-3.5-flash-lite
+62c104830165574432e0fe94db8821523fabf824,service,negative,the lines are insane in the morning while there’s only 2 people running around,en,,0,gemini-3.5-flash-lite
+3523f5ba36ad8fbb683ca46232e23668fedd2e3a,service,positive,All the staff treat me very well.,en,,0,gemini-3.5-flash-lite
+3523f5ba36ad8fbb683ca46232e23668fedd2e3a,atmosphere_seating,positive,it’s a good atmosphere.,en,,0,gemini-3.5-flash-lite
+8aac9c35bb1034bc1add06a7a44e172eea1d7798,service,positive,She is so friendly and always helps me out when I have a problem with my order!,en,,0,gemini-3.5-flash-lite
+2586fd897f7a9974adb822f57e74b614045a9ed8,service,positive,Mehak and Shirin are so good in customer services,en,,0,gemini-3.5-flash-lite
+3ff248d7992005875c8e66c7b21d592f2a4f6fd3,product_quality,positive,The steaming hot butter croissant with coffee was perfect.,en,,0,gemini-3.5-flash-lite
+ce1be9e4823ee242b5f692b15efc351ec7ea3c0b,product_quality,mixed,Breakfast wrap was good but the cold brew I ordered was spoilt.,en,,0,gemini-3.5-flash-lite
+ce1be9e4823ee242b5f692b15efc351ec7ea3c0b,service,positive,I usually receive good service from this location.,en,,0,gemini-3.5-flash-lite
+97a0fec6cf01aac0720ecd4045ea598b5357086b,product_quality,positive,The coffee and food are always fresh and taste great,en,,0,gemini-3.5-flash-lite
+97a0fec6cf01aac0720ecd4045ea598b5357086b,service,positive,the staff are genuinely so friendly and welcoming.,en,,0,gemini-3.5-flash-lite
+97a0fec6cf01aac0720ecd4045ea598b5357086b,cleanliness,positive,"The atmosphere is really clean, cozy, and relaxing",en,,0,gemini-3.5-flash-lite
+97a0fec6cf01aac0720ecd4045ea598b5357086b,atmosphere_seating,positive,"The atmosphere is really clean, cozy, and relaxing, which makes it a great spot to sit and enjoy your coffee and get some work done!",en,,0,gemini-3.5-flash-lite
+6114dbd8bf9cbc5fff06cc58bcfd36595326c19d,price_value,negative,Required one more tea bag for flavour and was charged 70 cents for the extra tea bag.,en,,0,gemini-3.5-flash-lite
+55a51395fb23f0305be470c86df293ecb3ff4983,service,negative,"Worst service! 4 cash registers, 1 cashier, 18 customers, 0 manager.",en,,0,gemini-3.5-flash-lite
+b93aa52e1297eb385fac64a2367d0d7479ce5fd3,product_quality,negative,The cold brew coffee tastes like it was burnt.,en,,0,gemini-3.5-flash-lite
+b93aa52e1297eb385fac64a2367d0d7479ce5fd3,service,negative,Stood just to chitchat taking almost 15 minutes to make 2 cold brews,en,,0,gemini-3.5-flash-lite
+fbc59dd309d4c32419b7454605566e50817ad213,atmosphere_seating,negative,the patio tables and chairs and always very dirty,en,,0,gemini-3.5-flash-lite
+fbc59dd309d4c32419b7454605566e50817ad213,cleanliness,negative,the patio tables and chairs and always very dirty,en,,0,gemini-3.5-flash-lite
+d64d4866989e8451e10d4e741042f2ac9096617a,product_quality,positive,The wraps here are so much bigger than the average one i get from other locations,en,,0,gemini-3.5-flash-lite
+d64d4866989e8451e10d4e741042f2ac9096617a,cleanliness,negative,its kinda dirty inside sometimes,en,,0,gemini-3.5-flash-lite
+4bf47ec2803a15e193f7eba2c87c2cdfcfffbf43,product_quality,negative,No lettuce. Obviously cooked from frozen. (The chicken was tough btw). And double wrapped in tortillas.,en,,0,gemini-3.5-flash-lite
+a6456024776ddd162599d1195e547f4e9681538c,service,positive,Really good service,en,,0,gemini-3.5-flash-lite
+ff24e2cf544e0e659b09c9fce2bba8a7e63ff907,service,positive,Thank you for the service.,en,,0,gemini-3.5-flash-lite
+3a554dd4b362f423cc9d58c09ac08c495011b282,product_quality,positive,This secondcup really makes good drinks. Its so yummy and creamy! Taste so fresh!,en,,0,gemini-3.5-flash-lite
+3a554dd4b362f423cc9d58c09ac08c495011b282,service,positive,Employees are very friendly too!,en,,0,gemini-3.5-flash-lite
+0fb7949939a7e7b583723ccc38606dc32b66b7e9,product_quality,positive,I like their croissants—they're freshly baked—and I love the hot chocolate; it's delicious.,en,,0,gemini-3.5-flash-lite
+3ddbf5ca8eaa7b55c5a8c53326083a42abfe8a9d,product_quality,negative,mon cafe glacé très dégoûtant,fr,"I often go to Starbucks for my iced coffee, I always have the same order but when I made a new visit to this place, I received my iced coffee very disgusting. I think it's the first time... So they didn't make my order correctly...",0,gemini-3.5-flash-lite
+3ddbf5ca8eaa7b55c5a8c53326083a42abfe8a9d,service,negative,il n'a pas fait correctement mon ordre,fr,"I often go to Starbucks for my iced coffee, I always have the same order but when I made a new visit to this place, I received my iced coffee very disgusting. I think it's the first time... So they didn't make my order correctly...",0,gemini-3.5-flash-lite
+82755ea23d73893f9f317a112ae3fef2f7797931,service,positive,Service was exceptional,en,,0,gemini-3.5-flash-lite
+82755ea23d73893f9f317a112ae3fef2f7797931,product_quality,positive,the food was delicious,en,,0,gemini-3.5-flash-lite
+dbfa8f6d46c4e230212cae8b07c856d8fb4307c9,service,positive,nice workers,en,,0,gemini-3.5-flash-lite
+b42f08594d17680637fcbdca9e52a1777e36fec1,atmosphere_seating,negative,If have more seats it will be much better.,en,,0,gemini-3.5-flash-lite
+25b080da0fe656d877a9fac1813d2e96216651b9,price_value,negative,paying more for less,en,,0,gemini-3.5-flash-lite
+2d3f903467c650a0c16d7ad33be62bd758f10014,product_quality,positive,The drinks 10/10,en,,0,gemini-3.5-flash-lite
+2d3f903467c650a0c16d7ad33be62bd758f10014,service,positive,"The staff, 1000/10",en,,0,gemini-3.5-flash-lite
+2c2f309e7c83e122b02a803b0c15262103269b41,service,positive,I truly appreciate how the employees there know my daily order.,en,,0,gemini-3.5-flash-lite
+ed0649f6097f43e2ec65fe5723527f36e81d6a85,service,negative,"didn’t receive my drink until 9:55 AM, a full 25-minute wait.",en,,0,gemini-3.5-flash-lite
+ed0649f6097f43e2ec65fe5723527f36e81d6a85,product_quality,negative,"My food items, which I specifically requested to be warmed (including the cookie), were completely cold by the time they were handed over.",en,,0,gemini-3.5-flash-lite
+0fdbc07e048dbe0861eb52ed61a00cd2c0d1cb99,service,positive,"Friendly baristas, line moves pretty fast.",en,,0,gemini-3.5-flash-lite
+0fdbc07e048dbe0861eb52ed61a00cd2c0d1cb99,cleanliness,positive,The store is clean and well organized.,en,,0,gemini-3.5-flash-lite
+a5b0b94e6a93c9b058e2fa4df5e443c5d4573c8e,cleanliness,negative,all the bathrooms here are locked to prevent customers from using them.,en,,0,gemini-3.5-flash-lite
+3975059d76e4d9672e6bcd53386559a6876b2532,service,positive,friendly/excellent service!,en,,0,gemini-3.5-flash-lite
+a0b7353852c4e3b15639d7af81d0de51947d94b3,atmosphere_seating,positive,the vibes are nice,en,,0,gemini-3.5-flash-lite
+a0b7353852c4e3b15639d7af81d0de51947d94b3,service,positive,every team member smiles oftennn,en,,0,gemini-3.5-flash-lite
+ec45b5bb4eef92b27d95d0c8251935edd914066f,service,positive,"Great staff, always smiling and supportive of the community they serve!",en,,0,gemini-3.5-flash-lite
+1daf41348f1bc1c61853ef13c91e19c5ef5bf04c,service,positive,Service is too good and fast.,en,,0,gemini-3.5-flash-lite
+1daf41348f1bc1c61853ef13c91e19c5ef5bf04c,product_quality,positive,Everything is prepared front of me and fresh.,en,,0,gemini-3.5-flash-lite
+b4c20a173062cca373e88bf42f375bf0d264ec2d,service,positive,"Great service from Graeme, above and beyond for customers.",en,,0,gemini-3.5-flash-lite
+80f6626914d6d1f3b7b4db8811f3a0a5f7bd5ec5,service,negative,quite unprofessional with their work,en,,0,gemini-3.5-flash-lite
+949786dc123569e6be8bd1177ed96b4e39d07188,service,positive,He had a great customer service and always willing to help and smile.,en,,0,gemini-3.5-flash-lite
+54420914753cedddd77fd6cc903fa7ca3e28646f,product_quality,negative,Just bought a tomato mozzarella sandwich and it was hard as a rock.,en,,0,gemini-3.5-flash-lite
+745fd761102e3f9706f6209528dc81a235f458ff,service,positive,"Loved the service, the people and the food.",en,,0,gemini-3.5-flash-lite
+745fd761102e3f9706f6209528dc81a235f458ff,product_quality,positive,"Loved the service, the people and the food.",en,,0,gemini-3.5-flash-lite
+ac4bb2d8da92bf3807823d504f8f27c5a041ed31,service,positive,The people who work here are really nice,en,,0,gemini-3.5-flash-lite
+c9c9209aa60fd67d4311d005120964899ffa1e41,atmosphere_seating,positive,It's a nice place,en,,0,gemini-3.5-flash-lite
+c9c9209aa60fd67d4311d005120964899ffa1e41,product_quality,negative,I got the worst iced triple espresso I've ever bought at a Starbucks.,en,,0,gemini-3.5-flash-lite
+54c9bb8f698eea3a103f131f3fc2ae684b056ab3,product_quality,positive,Uncharacteristically good second cup - I don't usually love SC coffee but this location was great.,en,,0,gemini-3.5-flash-lite
+54c9bb8f698eea3a103f131f3fc2ae684b056ab3,service,positive,"Also spectacular, patient service!",en,,0,gemini-3.5-flash-lite
+47c66c2f6c8e88305de8231b028c816f49fa6e49,service,negative,This Guy says 5 min. After 9 min telling me 10 min more. Thats really not acceptable!!!,en,,0,gemini-3.5-flash-lite
+493efeb731c4547e94bff8a9c83c92ce7773a3e2,service,positive,they're always on time and efficient during the rush hour.,en,,0,gemini-3.5-flash-lite
+2843573bfc50391d8b7723c5fc07cbb76aec4d51,product_quality,negative,protein matcha latte which was like warm milk without matcha!,en,,0,gemini-3.5-flash-lite
+2843573bfc50391d8b7723c5fc07cbb76aec4d51,price_value,negative,It costs about $7! So they didn't even put matcha on it.,en,,0,gemini-3.5-flash-lite
+3dd153016ec1703e85e36e1cae309b2a1560451b,product_quality,positive,"The Matcha is always rich, creamy, and perfectly textured flavourful foam on top.",en,,0,gemini-3.5-flash-lite
+734f8ce859a82ac0602071fcf35f9803e046e75d,product_quality,positive,Their drinks are well prepared,en,,0,gemini-3.5-flash-lite
+734f8ce859a82ac0602071fcf35f9803e046e75d,service,positive,staff are always friendly and helpful.,en,,0,gemini-3.5-flash-lite
+06c2503b0ed977ddb720caf2802ee882d605cd84,product_quality,negative,I find that the pike coffee is very dry,en,,0,gemini-3.5-flash-lite
+06c2503b0ed977ddb720caf2802ee882d605cd84,atmosphere_seating,negative,the new manager doesn't want to get a sidewalk permit for the patio.,en,,0,gemini-3.5-flash-lite
+ec9e80df5cb0e984caf4e1e3cebbb149e402c068,atmosphere_seating,positive,remarkable vibe,en,,0,gemini-3.5-flash-lite
+ec9e80df5cb0e984caf4e1e3cebbb149e402c068,product_quality,positive,scrumptious selection,en,,0,gemini-3.5-flash-lite
+ec9e80df5cb0e984caf4e1e3cebbb149e402c068,service,positive,The staff are friendly and efficient.,en,,0,gemini-3.5-flash-lite
+ff92a55d35b0bc84bd3e4fd37db06946d6a11a51,service,negative,always very slow despite number of staff they have there. Ordering mobile orders take more than 20 mins!  Nuts!  Unacceptable speed.,en,,0,gemini-3.5-flash-lite
+3d2cd4456ea66d67bc1a14f77c8fd01e4a272cdc,product_quality,negative,cant even make my drink right,en,,0,gemini-3.5-flash-lite
+3d2cd4456ea66d67bc1a14f77c8fd01e4a272cdc,service,negative,She messed up my order and refused to give a refund very rude and unprofessional customer service awful and cant even make my drink right you were so RUDEEEE,en,,0,gemini-3.5-flash-lite
+4d7c2d10992054a0982d9e559086e5fc26535202,service,negative,The 2 Girls Ukrainian working morning 12 pm shift unprofessional how to deal with customers!,en,,0,gemini-3.5-flash-lite
+fdfe9cddddf29a0c3343606fc4333b3a881cf2be,service,positive,barista was very kind and outgoing,en,,0,gemini-3.5-flash-lite
+b7e2647c95b9c600ac760ed73cf23aa62f3eb54b,service,positive,"Nice, friendly reception; good staff members work here.",en,,0,gemini-3.5-flash-lite
+032422632b6eedefea0b1f3b43925d235654adb1,service,positive,Beautiful service,en,,0,gemini-3.5-flash-lite
+1ed5e15617478dd832c31711d8988b5b48cf0ee8,product_quality,negative,matcha latte is not good.,en,,0,gemini-3.5-flash-lite
+77786f9c4c24e2412587956d56f5b97231c253d8,price_value,negative,Hard to the price corresponds to what size.,en,,0,gemini-3.5-flash-lite
+a4d21732b3a0263bbfb621c6338f3f48cd237dd5,service,negative,Why have advanced order if it’s not gonna be ready or claim you didn’t receive it.,en,,0,gemini-3.5-flash-lite
+379d40653526bdda9569cee358abda6b267eeee5,atmosphere_seating,positive,Best vibe in a chain store,en,,0,gemini-3.5-flash-lite
+379d40653526bdda9569cee358abda6b267eeee5,service,positive,you can tell the baristas enjoy their work and giving you the best shots,en,,0,gemini-3.5-flash-lite
+572425a739c48e583c20232ad4ee184227652c40,service,positive,The staff here are amazing,en,,0,gemini-3.5-flash-lite
+4ef0bbe156b39493808d0f7a1f2f75bcace4542a,atmosphere_seating,positive,adds a unique architectural charm that you just don’t see at most Starbucks,en,,0,gemini-3.5-flash-lite
+4ef0bbe156b39493808d0f7a1f2f75bcace4542a,service,positive,"The staff were genuinely polite, welcoming, and efficient",en,,0,gemini-3.5-flash-lite
+4ef0bbe156b39493808d0f7a1f2f75bcace4542a,atmosphere_seating,positive,great outdoor seating area,en,,0,gemini-3.5-flash-lite
+f9cc6f101df8779d758249eca45421cacb1d3397,service,positive,Gia took the time to check the packaging herself and answered all my questions,en,,0,gemini-3.5-flash-lite
+d6b9de43f2edc006ba03ff3b45a93bd895051cc1,product_quality,positive,I believe I had the best coffee I ever had!,en,,0,gemini-3.5-flash-lite
+d6b9de43f2edc006ba03ff3b45a93bd895051cc1,service,positive,"The barista was quick, and friendly",en,,0,gemini-3.5-flash-lite
+d488881edfa8a4b1a16fad68e5626049471097e7,service,positive,Everyone working here is so nice!,en,,0,gemini-3.5-flash-lite
+e7dca6bc4cb0d527ecf5eb06c289f67ed6c69290,product_quality,negative,The coffee taste like just milk,en,,0,gemini-3.5-flash-lite
+a1b8dc045106017036cfbebf0306281ccfa0bd55,atmosphere_seating,positive,atmosphere and welcoming vibe,en,,0,gemini-3.5-flash-lite
+a1b8dc045106017036cfbebf0306281ccfa0bd55,service,positive,"They are always friendly, smiling",en,,0,gemini-3.5-flash-lite
+a1b8dc045106017036cfbebf0306281ccfa0bd55,product_quality,positive,create amazing drinks,en,,0,gemini-3.5-flash-lite
+d223072ac20a8eab83ec872e20d463fd49638439,atmosphere_seating,negative,Uncozy,en,,0,gemini-3.5-flash-lite
+d223072ac20a8eab83ec872e20d463fd49638439,service,negative,"impolite, and inattentive",en,,0,gemini-3.5-flash-lite
+d544516fb6e19e1b981c90a8385b9026c71f37b1,service,negative,Service is awful we asked matcha with cold milk and they missed that. I asked decaffed drink and the answer was absolutely unclear,en,,0,gemini-3.5-flash-lite
+d544516fb6e19e1b981c90a8385b9026c71f37b1,product_quality,negative,we asked matcha with cold milk and they missed that,en,,0,gemini-3.5-flash-lite
+b04cf280cc54af6222d5dd7dd56be6f60eaa50b2,service,negative,Waited 20mins for a black iced coffee,en,,0,gemini-3.5-flash-lite
+af0d8d61d2d8010ffda1c9e1d4a5eca970c3f9ef,cleanliness,positive,"clean, well-organized",en,,0,gemini-3.5-flash-lite
+af0d8d61d2d8010ffda1c9e1d4a5eca970c3f9ef,atmosphere_seating,positive,relaxed atmosphere that made it a comfortable place,en,,0,gemini-3.5-flash-lite
+af0d8d61d2d8010ffda1c9e1d4a5eca970c3f9ef,product_quality,positive,"My drink was made perfectly—fresh, flavorful, and exactly how I ordered it",en,,0,gemini-3.5-flash-lite
+af0d8d61d2d8010ffda1c9e1d4a5eca970c3f9ef,service,positive,"wonderful customer service. The staff were friendly, attentive, and went out of their way to make sure I felt welcomed.",en,,0,gemini-3.5-flash-lite
+49198096dcb666bdb52746a7086c111831d2070d,service,positive,Poor woman was working by herself on a Saturday. Pretty long line up but she handled it well and was very friendly.,en,,0,gemini-3.5-flash-lite
+49198096dcb666bdb52746a7086c111831d2070d,price_value,neutral,Cookie was $3.75,en,,0,gemini-3.5-flash-lite
+49198096dcb666bdb52746a7086c111831d2070d,product_quality,positive,monster brownie was delicious,en,,0,gemini-3.5-flash-lite
+49198096dcb666bdb52746a7086c111831d2070d,product_quality,neutral,Coffee was alright.,en,,0,gemini-3.5-flash-lite
+5ba69be932ab6d1b9c0cc6b6720888d8c98ef02f,product_quality,neutral,I got a hazelnut coffee with coconut milk!,en,,1,gemini-3.5-flash-lite
+1adc7a15605989743863940ea7e51c839e44c41f,service,positive,"Very attentive staff, quick but accurate service",en,,0,gemini-3.5-flash-lite
+1adc7a15605989743863940ea7e51c839e44c41f,product_quality,positive,I enjoy my ice lattes a lot,en,,0,gemini-3.5-flash-lite
+789bac8996d51c66ba7f8af5e94696d7366288e4,atmosphere_seating,positive,Nice location,en,,0,gemini-3.5-flash-lite
+789bac8996d51c66ba7f8af5e94696d7366288e4,service,positive,staff were friendly,en,,0,gemini-3.5-flash-lite
+789bac8996d51c66ba7f8af5e94696d7366288e4,product_quality,positive,My drink was made well,en,,0,gemini-3.5-flash-lite
+789bac8996d51c66ba7f8af5e94696d7366288e4,atmosphere_seating,mixed,It can get a little crowded at times,en,,0,gemini-3.5-flash-lite
+3fbf5f0a8deef615f9e1f02c2ea590a23c667fa8,service,positive,The blonde barista is the best of the place!!,en,,0,gemini-3.5-flash-lite
+fd54f19761e8cdb609ea62035531bc9b9b41fe08,product_quality,positive,They make the best drinks!  Always hot & never luke warm,en,,0,gemini-3.5-flash-lite
+fc2f597112d34df2b46b23c31bbc2a53d1ddbf4a,service,negative,Horrible service.,en,,0,gemini-3.5-flash-lite
+fc2f597112d34df2b46b23c31bbc2a53d1ddbf4a,product_quality,negative,muffins and banana bread always stale.,en,,0,gemini-3.5-flash-lite
+fc2f597112d34df2b46b23c31bbc2a53d1ddbf4a,price_value,negative,Waste of time and money to go here,en,,0,gemini-3.5-flash-lite
+4a723e24b98720c38f60afb151628ff420d3262b,service,negative,I was told by a young woman who told me rudely to get back in line.,en,,0,gemini-3.5-flash-lite
+31f637979f11aab7dd83bd3c66431273e7daf944,service,positive,"fast, efficient, and friendly customer service at the highest tier!",en,,0,gemini-3.5-flash-lite
+615af4a76cf7681ac1a17fb9872d23f924603cd0,atmosphere_seating,positive,has a good community vibe and quite a nice back patio.,en,,0,gemini-3.5-flash-lite
+615af4a76cf7681ac1a17fb9872d23f924603cd0,service,positive,"The barista's are friendly, efficient and produce a good cup of coffee.",en,,0,gemini-3.5-flash-lite
+615af4a76cf7681ac1a17fb9872d23f924603cd0,product_quality,positive,drink was executed perfectly,en,,0,gemini-3.5-flash-lite
+f54baacff99d92047718a40e1818d2c1c39e50f1,service,positive,placed my order easily on the app and it was received correctly and on time,en,,0,gemini-3.5-flash-lite
+dcd6341be8af736753688da6dada5502978343d8,service,positive,best and most friendly staff ever!,en,,0,gemini-3.5-flash-lite
+dcd6341be8af736753688da6dada5502978343d8,product_quality,positive,"always serving some of the best coffees, treats and snacks with a great smile!",en,,0,gemini-3.5-flash-lite
+1f0a8fc5af4d1f8fca2d220509076267352b840a,service,positive,the staff are quite good with their attitude and speed.,en,,0,gemini-3.5-flash-lite
+770a57f64e0102d31e056532f4b6c04f7bf877fb,service,positive,amazing service,en,,0,gemini-3.5-flash-lite
+b6a7aa351efb712d2de2b7b86bfa3c555cf50c1e,service,positive,extremely helpful and kind,en,,0,gemini-3.5-flash-lite
+eebec7f1358ad2671e5747942280046f276111f3,service,positive,Juan was so kind and energetic to customer,en,,0,gemini-3.5-flash-lite
+eebec7f1358ad2671e5747942280046f276111f3,atmosphere_seating,positive,Friendly place,en,,0,gemini-3.5-flash-lite
+7e4f2c5854957e2b26b08106f3541a14619c0351,service,positive,the lady on the phone was very nice,en,,0,gemini-3.5-flash-lite
+7e4f2c5854957e2b26b08106f3541a14619c0351,product_quality,positive,Tiramisu drink,en,,0,gemini-3.5-flash-lite
+fd76b9f55bdc600b00621d60cef2cf0db18a43cb,service,positive,service,en,,0,gemini-3.5-flash-lite
+382d2bdbca891e68050eebec36569d44be1d6629,product_quality,positive,Espresso was dialed to perfection.,en,,0,gemini-3.5-flash-lite
+68e4922421b05e540a333e0a39487dd28f116265,service,negative,"first off the wait time, a simple coffee takes 10+ mins even when they aren't busy. And if you order a bakery item on the app they will never give it to you unless you tell them.",en,,0,gemini-3.5-flash-lite
+68e4922421b05e540a333e0a39487dd28f116265,product_quality,negative,"then when your drink finally comes, it's never full. this happened multiple times with different drinks including an ice capp.",en,,0,gemini-3.5-flash-lite
+a1f66d4f06f0c3ae8509286afd9539083acfe2d7,service,negative,have a terrible experience here every single time I come.,en,,0,gemini-3.5-flash-lite
+435264377ad5b68fc8bd7f2822e28968b3a80692,cleanliness,positive,Clean,en,,0,gemini-3.5-flash-lite
+435264377ad5b68fc8bd7f2822e28968b3a80692,atmosphere_seating,positive,dine -in,en,,0,gemini-3.5-flash-lite
+69bfd172a35ac506fb035c8c1f71bde97af67341,service,negative,"Super slow, the the staff are super mean",en,,0,gemini-3.5-flash-lite
+58311b74b7d6999c89bab4eb89718d18cb838552,service,positive,Friendly staff,en,,0,gemini-3.5-flash-lite
+5b0ea9c353fd4a5a8daba941155f7ed50a79f40f,service,positive,"Very friendly, Fatima was great!",en,,0,gemini-3.5-flash-lite
+51a47b2cc25e272f3ba3d0ea75c6e00172044aa2,service,positive,My experience was good with Fatima.,en,,0,gemini-3.5-flash-lite
+2e0ebe639d431e54a87a2e78974602b8e5134dab,service,positive,Great customer service by Khalida. Quick and efficient.,en,,0,gemini-3.5-flash-lite
+9266e8f118b140af54dde0ee3c0eeb2aecada115,atmosphere_seating,negative,Homeless people,en,,0,gemini-3.5-flash-lite
+64f931dd3551870edfd4a565d8cfb13d1bad68ce,product_quality,mixed,I ordered a plain bagel with only cream chese and i got more toasted than cream cheese but the matcha strawberry was good,en,,0,gemini-3.5-flash-lite
+efd51dd6149e148aff91d8a67521bf04aea447d9,service,positive,service is impeccable,en,,0,gemini-3.1-flash-lite
+18c8408da110b74a29e6624e86672016ec021834,product_quality,positive,prepared my Loaded Wrap perfectly,en,,0,gemini-3.1-flash-lite
+18c8408da110b74a29e6624e86672016ec021834,cleanliness,positive,maintaining excellent hygiene standards,en,,0,gemini-3.1-flash-lite
+18c8408da110b74a29e6624e86672016ec021834,service,positive,Excellent service,en,,0,gemini-3.1-flash-lite
+dbc7dfad6f1d5cea7ed7c80474e704ba41d6039d,service,positive,Fast service,en,,0,gemini-3.1-flash-lite
+2d330184a7f9d9f3f58552e09e647aff7c619b29,product_quality,positive,Great new special selection of bakery goods,en,,0,gemini-3.1-flash-lite
+2d330184a7f9d9f3f58552e09e647aff7c619b29,service,positive,service is good,en,,0,gemini-3.1-flash-lite
+87504b4448d47bbd1e649dcf1294d23f451ec96c,service,negative,service is so bad,en,,0,gemini-3.1-flash-lite
+220603ade4f849c565aa1d8d01696086c6bd49bf,product_quality,positive,Food is very tasty,en,,0,gemini-3.5-flash-lite
+220603ade4f849c565aa1d8d01696086c6bd49bf,service,positive,employee are very good.,en,,0,gemini-3.5-flash-lite
+a6348c85f3a2f4671e56b758055901351d7fa135,service,positive,good service,en,,0,gemini-3.5-flash-lite
+eb156a237ecf4cc2ef3250bf7d51725757b225f5,atmosphere_seating,positive,Nice place and very open,en,,0,gemini-3.5-flash-lite
+112f9d540518629680e94d2bb58216ea80465e70,cleanliness,positive,so clean,en,,0,gemini-3.5-flash-lite
+112f9d540518629680e94d2bb58216ea80465e70,service,positive,staff are a blast,en,,0,gemini-3.5-flash-lite
+112f9d540518629680e94d2bb58216ea80465e70,atmosphere_seating,positive,"keeping an open, positive, and uplifting environment",en,,0,gemini-3.5-flash-lite
+112f9d540518629680e94d2bb58216ea80465e70,product_quality,positive,food is exceptionally well done,en,,0,gemini-3.5-flash-lite
+32f5192d766586c8e3dab37d894d2fc46f6854b7,service,positive,Great service,en,,0,gemini-3.5-flash-lite
+3cdad27ecdf58e2ae2096d3f6e2c3d496de035e8,service,negative,"This guy was super lazy, tool forever to get my order no one was paying attention and didn’t care.",en,,0,gemini-3.5-flash-lite
+3cdad27ecdf58e2ae2096d3f6e2c3d496de035e8,product_quality,negative,the food they served me was cooled and soggy,en,,0,gemini-3.5-flash-lite
+a0c5eb1850cb70fac317be51ffe4535c4355157c,cleanliness,negative,The place is dirty,en,,0,gemini-3.1-flash-lite
+1b600172574c252ee8c42edd4ed66ddd0893435e,product_quality,positive,Good coffee,en,,0,gemini-3.1-flash-lite
+c0515ccb5b1873f252e64c7193bd7269466ad283,service,positive,I was Bery impressed with the service,en,,0,gemini-3.1-flash-lite
+aa38c44eacebfb8e9942f6a730b80a3ef2162e98,service,positive,Service is always fast and they never get orders wrong,en,,0,gemini-3.1-flash-lite
+7c377319ef7723e0478c419c6ec2d955019be344,service,positive,Khalidla always gives warm services,en,,0,gemini-3.1-flash-lite
+7c377319ef7723e0478c419c6ec2d955019be344,product_quality,positive,good coffee,en,,0,gemini-3.1-flash-lite
+4f06deb91373063eeb011825bcbf2e2ba9584b57,service,positive,Khalita was great,en,,0,gemini-3.1-flash-lite
+a1fb8344fc0fff4a1491f1d21c324d84a4079b15,service,positive,The service is nice and friendly,en,,0,gemini-3.1-flash-lite
+a1fb8344fc0fff4a1491f1d21c324d84a4079b15,cleanliness,positive,clean environment,en,,0,gemini-3.1-flash-lite
+4f1d4afa93bc1fd4a7e9cc47a769e756ee46bdc4,service,positive,Lady was friendly and able to customize my drink as I liked.,en,,0,gemini-3.1-flash-lite
+4f1d4afa93bc1fd4a7e9cc47a769e756ee46bdc4,product_quality,positive,able to customize my drink as I liked,en,,0,gemini-3.1-flash-lite
+e500c7d0f8c3bd6dfca5b0a1c97eab7b0195477f,service,positive,Good service,en,,0,gemini-3.1-flash-lite
+e500c7d0f8c3bd6dfca5b0a1c97eab7b0195477f,atmosphere_seating,positive,atmosphere,en,,0,gemini-3.1-flash-lite
+3a710ce28a18701264814fd1575bf5a55be9d86f,service,positive,Service is always amazing,en,,0,gemini-3.1-flash-lite
+8c9fc013355cd6b2d8f66aa36c6fdff66d014b3a,product_quality,neutral,Coffee is ok,en,,0,gemini-3.1-flash-lite
+8c9fc013355cd6b2d8f66aa36c6fdff66d014b3a,service,negative,poor communication and customer relations,en,,0,gemini-3.1-flash-lite
+562f9d012316e35e462050cef04f21149a5d49ff,service,positive,Quick and efficient! Fatima was very sweet!,en,,0,gemini-3.1-flash-lite
+5e8f3f2896d96707fa8ae3761a8d0e5b64339a2a,service,positive,"Staff, especially Fatima, were super friendly and helpful",en,,0,gemini-3.1-flash-lite
+06c46890ac71a49f3e3a0d8144a2a6827f000cb0,service,positive,orders moved fast,en,,0,gemini-3.1-flash-lite
+9bbdef92eafffe3c1050d9911504a98ca7e5d343,service,positive,Consistent service,en,,0,gemini-3.1-flash-lite
+9bbdef92eafffe3c1050d9911504a98ca7e5d343,product_quality,positive,good coffee and baked good,en,,0,gemini-3.1-flash-lite
+9d0e2e7e3b04d39f9620e6534459ac1d7ad5db3a,service,negative,they forgot about it; I ended up waiting for about 25 minutes,en,,0,gemini-3.1-flash-lite
+d6493362c457c179df23e9a4fda5e9d66b2d255b,service,positive,never experienced anything short of great service,en,,0,gemini-3.1-flash-lite
+2880f8812139e2ef23d1ee3e0edd1a3a958da0be,service,positive,barista with the afro hair was very friendly and helpful with amazing customer service,en,,0,gemini-3.1-flash-lite
+df3814747aff55b9e445498b3fb508a452c26288,product_quality,positive,Strawberry matcha latte and toasted coconut donut are excellent,en,,0,gemini-3.1-flash-lite
+df3814747aff55b9e445498b3fb508a452c26288,service,positive,Pooja was very nice,en,,0,gemini-3.1-flash-lite
+b9653b0946aa13d65893f36e6ae0e5f1161cb70b,service,positive,Best efficiency,en,,0,gemini-3.1-flash-lite
+5933581e0194973d489c1798617fe0a2352ee87d,service,positive,"The morning shift staff is fast, efficient, and meticulous",en,,0,gemini-3.1-flash-lite
+3f49e25173b6be16dae9806cfd9cfd6747209714,price_value,negative,they’re charging me for tapwater,en,,0,gemini-3.1-flash-lite
+f0c2fae14c170cdb247ee34c053c3d36635e0d27,service,positive,sabrina was excellent at her service,en,,0,gemini-3.1-flash-lite
+9060e700779edd14e93da834a1a783ebd47ae676,service,positive,I appreciated his friendly service,en,,0,gemini-3.1-flash-lite
+ccc8c01f966e2b923d8b40becd9d60e9cdaeab49,atmosphere_seating,positive,Very calm atmosphere.,en,,0,gemini-3.1-flash-lite
+ccc8c01f966e2b923d8b40becd9d60e9cdaeab49,service,positive,Exceptional services.,en,,0,gemini-3.1-flash-lite
+03b10507dd5d3827de7de4fa520c0d99aaed3026,product_quality,positive,The coffee and breakfast items were fresh and delicious,en,,0,gemini-3.1-flash-lite
+03b10507dd5d3827de7de4fa520c0d99aaed3026,service,positive,"the staff provided quick, cheerful service.",en,,0,gemini-3.1-flash-lite
+03b10507dd5d3827de7de4fa520c0d99aaed3026,atmosphere_seating,positive,The atmosphere inside is clean and comfortable.,en,,0,gemini-3.1-flash-lite
+03b10507dd5d3827de7de4fa520c0d99aaed3026,cleanliness,positive,The atmosphere inside is clean,en,,0,gemini-3.1-flash-lite
+97491eecb85ed5bbb2b5c570c31d21753bb91bdd,service,negative,Most rude staff possible,en,,0,gemini-3.1-flash-lite
+83f7697804c1b09a2fdaca405dbfa32c5ad2b008,service,negative,I am waiting for Steep tea 15 minutes,en,,0,gemini-3.1-flash-lite
+01b53d657bf1b1f7f984f594528e4a52956b7b9a,product_quality,positive,one of the best veggie wraps I’ve had,en,,0,gemini-3.1-flash-lite
+01b53d657bf1b1f7f984f594528e4a52956b7b9a,service,positive,"They were super friendly, respectful, and welcoming.",en,,0,gemini-3.1-flash-lite
+3d7af51cec6d8deb63d324b882a7092d9ed466fa,product_quality,negative,most of the food is (UNDERCOOKED),en,,0,gemini-3.1-flash-lite
+148b2a948c974df8da3360f9f47b252b370038e5,product_quality,negative,Nothing is ever in stock at this place.,en,,0,gemini-3.5-flash-lite
+5c5c585564b67b9bd6e2ab01a003f2086d3a8eee,product_quality,positive,"I only got a coffee, but I swear to God it was the best I've ever had LoL.",en,,0,gemini-3.5-flash-lite
+c5f819c5f17d7da5f8229a9416ae05a37ecac78d,service,negative,one of the team member is rude to me,en,,0,gemini-3.5-flash-lite
+a6204eb7549f1dc7d527df197fb529c325e87fa9,service,positive,Very nice and friendly staff.,en,,0,gemini-3.5-flash-lite
+a6204eb7549f1dc7d527df197fb529c325e87fa9,cleanliness,positive,The restaurant location is clean,en,,0,gemini-3.5-flash-lite
+a6204eb7549f1dc7d527df197fb529c325e87fa9,product_quality,positive,everything is fresh.,en,,0,gemini-3.5-flash-lite
+ededd62af3138d1b744396297ea117275a71ad9e,service,positive,Fatime is outstanding & She is So cooperative,en,,0,gemini-3.5-flash-lite
+2c34c8265bcfa63501eec502e1f6892c8902217b,atmosphere_seating,positive,Nice place,en,,0,gemini-3.5-flash-lite
+2c34c8265bcfa63501eec502e1f6892c8902217b,service,positive,very good attention,en,,0,gemini-3.5-flash-lite
+7cd4402541b1e32d9795f1a82aede8de09d8f501,service,positive,Great service.,en,,0,gemini-3.1-flash-lite
+95fe82baeea2783b5173a5bef46a7e2cc25bc577,service,positive,The baristas are super kind,en,,0,gemini-3.1-flash-lite
+95fe82baeea2783b5173a5bef46a7e2cc25bc577,product_quality,positive,drinks always taste amazing,en,,0,gemini-3.1-flash-lite
+2922877ebc961d2c38bed6ab78d191bbf8c95c88,service,positive,Fatima was personable and friendly with quick service,en,,0,gemini-3.1-flash-lite
+01740727a87930144aefecde398bbd31f986ec7c,service,positive,"Thank you, Sayda and Tania for offering me free coffee.",en,,0,gemini-3.1-flash-lite
+573bf62757b78590d0d350a2173ff913c82ae3b0,product_quality,neutral,Food was ok,en,,0,gemini-3.1-flash-lite
+573bf62757b78590d0d350a2173ff913c82ae3b0,service,negative,service was slow and order came in multiple parts,en,,0,gemini-3.1-flash-lite
+956d0c4456b5b3ab6e419e467d49d8cf72c3a41b,service,positive,good customer service,en,,0,gemini-3.1-flash-lite
+fbc7950510e3cb87d79c99b023c48b8de1381bd9,product_quality,negative,My drink tasted horrible,en,,0,gemini-3.1-flash-lite
+fbc7950510e3cb87d79c99b023c48b8de1381bd9,service,negative,the girl named Naomi was extremely rude and unpleasant to deal with,en,,0,gemini-3.1-flash-lite
+03c7c1ee8fbe7b99a01cfdc8ea9880680dc2abf8,product_quality,negative,STALE DOUGHNUTS,en,,0,gemini-3.1-flash-lite
+bf188f6a3a314c6dced902b41503b5f19ab3d173,service,positive,Great service,en,,0,gemini-3.1-flash-lite
+d7f978b90045467bdf041bdd8d43b81363f8e3c0,service,positive,"Great service, komal is a great staff super friendly!",en,,0,gemini-3.1-flash-lite
+cd63718202e2b927c3c3baee0f2a9acd264e1ffc,service,negative,"She gave me such a look, like I was asking for the most ridiculous customized bar drink!",en,,0,gemini-3.1-flash-lite
+c5046981805a9801959355af862189e0c404efce,service,positive,Riv was kind,en,,0,gemini-3.1-flash-lite
+c5046981805a9801959355af862189e0c404efce,product_quality,positive,breakfast sandwich was great,en,,0,gemini-3.1-flash-lite
+c90475ceb2e4e110b740d9006fef5b85e38154a7,service,positive,Haewon and Roy were fantastic !! Thank you so much for the great service,en,,0,gemini-3.1-flash-lite
+8944f6fc0dca03ae8c88b66c1ff7411245376375,service,negative,Messed up my order twice and were so passive aggressive about it,en,,0,gemini-3.1-flash-lite
+8944f6fc0dca03ae8c88b66c1ff7411245376375,product_quality,negative,didn’t even fill up my drink to the top,en,,0,gemini-3.1-flash-lite
+f68e6bf43d839c88886fb58c3bec8598e00544eb,service,negative,They forget my order every time and are rude about it,en,,0,gemini-3.1-flash-lite
+f68e6bf43d839c88886fb58c3bec8598e00544eb,product_quality,negative,my coffee just never showed up,en,,0,gemini-3.1-flash-lite
+c36ff0250e8fd5d129e67d5da2f7dda55a7cec73,service,positive,The person that helped me he was super friendly and super kind,en,,0,gemini-3.1-flash-lite
+28644c280a49ed8516481a1c72b5347bb8c6eeea,product_quality,negative,none of food is freshly made is brought in by automated food services my wrap was ice cold,en,,0,gemini-3.1-flash-lite
+4893ca8baff9f1c8e1c48335d59f6999c615d081,product_quality,negative,Saida added far too much sugar,en,,0,gemini-3.1-flash-lite
+4893ca8baff9f1c8e1c48335d59f6999c615d081,service,negative,The customer service was unacceptable.,en,,0,gemini-3.1-flash-lite
+6e7121a70494f682a6a09ba1bedef49b498ed0ca,service,negative,The baristas (at least the one that took my order) are not accommodating at all and are borderline rude.,en,,0,gemini-3.1-flash-lite
+73c25aee6b14c8ca0c741a424d179dfa4fee0e7f,service,positive,"Good costumer service by isha . Great service, fast staff",en,,0,gemini-3.1-flash-lite
+73c25aee6b14c8ca0c741a424d179dfa4fee0e7f,product_quality,positive,fresh coffee,en,,0,gemini-3.1-flash-lite
+d1acd69392e3f073443fa200f304604b76381728,service,negative,Waited almost 10 minutes for my drink that  I could see was ready and couldn't get the attention of the workers to ask for it,en,,0,gemini-3.1-flash-lite
+859efcb549505202e9f202625b8e52ea42be31a3,product_quality,positive,Fresh foods,en,,0,gemini-3.1-flash-lite
+d83833248d3b04faa7cd9336fa356bf3542d8ea6,product_quality,negative,They put my breakfast in sideways it the grease dripped everywhere.,en,,0,gemini-3.1-flash-lite
+cf45943bc61c2a4ded85c4ea12481dbacfe3c120,service,negative,I can’t punch in my debit PIN number because the number jumbles.,en,,0,gemini-3.1-flash-lite
+8419dc4821309e8aaf0266d5c1a9e4e378c0a14f,cleanliness,negative,when you mop the way to the washroom you dont allow its nit fair,en,,0,gemini-3.1-flash-lite
+8419dc4821309e8aaf0266d5c1a9e4e378c0a14f,service,negative,so confused so my question is when you clean the front or mop at the front you still take the orders but when you mop the way to the washroom you dont allow its nit fair,en,,0,gemini-3.1-flash-lite
+f52e19eb615e14ff7856cbca9c9cfcfc6136c0a4,atmosphere_seating,positive,Very good place and enviroment.,en,,0,gemini-3.1-flash-lite
+f52e19eb615e14ff7856cbca9c9cfcfc6136c0a4,product_quality,positive,the coffe is always fresh and tasty.,en,,0,gemini-3.1-flash-lite
+10098e0d2894894e00ec3d4abddfff625969ae37,service,positive,Amazing friendly service,en,,0,gemini-3.5-flash-lite
+6e6d4d806543a0479cd6e622df443fbe128186f4,cleanliness,negative,"the employee dropped my food outside of the press grill while she trys to put it in. Instead of the making me another one, she picked it up with her hands and put it back into the grill. Disgusting!",en,,0,gemini-3.5-flash-lite
+6e6d4d806543a0479cd6e622df443fbe128186f4,product_quality,negative,if you gonna serve me dirty food,en,,0,gemini-3.5-flash-lite
+6e6d4d806543a0479cd6e622df443fbe128186f4,service,negative,Disappointed service and poor employee hygiene training.,en,,0,gemini-3.5-flash-lite
+df5f41fb994119e2bc0c1f594a2dc975119cbb5c,service,negative,Waited 35 min for one iced matcha lol. don’t come here if u value ur time.,en,,0,gemini-3.5-flash-lite
+afc7ae9ba393c5cea69b601f587e12c90476b242,service,negative,Took 15 minutes just for a simple coffee,en,,0,gemini-3.5-flash-lite
+f60bce851caf31159918c1cd8d5c62a5bc13332f,service,negative,Bad service rudely kick out 6pm,en,,0,gemini-3.5-flash-lite
+30fb1b45101d325df46c09873ffa913d0fa10227,product_quality,neutral,"Not a review of the actual store, a review of the product",en,,0,gemini-3.5-flash-lite
+e904aaa49d569c6325d6ba5ae67871bc3a5d62c6,service,negative,Service is terrible.,en,,0,gemini-3.5-flash-lite
+25d7a331babc6046b3775c6c5d1779205c635c3a,service,negative,Terrible service,en,,0,gemini-3.5-flash-lite
+1affb0ebebd72997a910097c1e37facc6b4b036e,service,positive,The staff are very friendly and welcoming as well,en,,0,gemini-3.5-flash-lite
+ae37f31e30a739e5670904a825563e6dadaf2f17,service,positive,The baristas Bella and Eva were friendly and efficient.,en,,0,gemini-3.5-flash-lite
+5205e3ebb786097e64ee1f24770fc3beca7174dc,cleanliness,negative,This is disgusting,en,,0,gemini-3.5-flash-lite
+5205e3ebb786097e64ee1f24770fc3beca7174dc,service,negative,"If customers can't use the washroom, then who can?",en,,0,gemini-3.5-flash-lite
+ea55a6affe750d94e1abf4bbd8e7c73f9c4c5b3e,service,negative,the staff here could be friendlier and better mannered,en,,0,gemini-3.5-flash-lite
+01d1cb5ed27df624e274aec05721b6cf5dec7822,service,mixed,"The manager I think (?)that works here looks nice and seems to do a good job of creating a positive impression of the store. For some reason, a lot of the other baristas look kind of miserable and make things slow.",en,,0,gemini-3.5-flash-lite
+4588b5f996fb9de7b62280d79da6b0df62dc2bed,product_quality,negative,Today i ordered everything bagel with extra better and in return they gave me this<br>I am intolerant to cream cheese.<br>Very bad,en,,0,gemini-3.5-flash-lite
+282be231e9fa4d348e17726cfd9eee39fe5dc99d,service,positive,We absolutely love the staff at this Second Cup!,en,,0,gemini-3.5-flash-lite
+e46af5f2c820ca4c8a9c44932672568c8e7ab748,service,negative,"Very long wait to order, very long wait to receive food",en,,0,gemini-3.5-flash-lite
+e46af5f2c820ca4c8a9c44932672568c8e7ab748,price_value,positive,you can use your meal plan money here so its sufficient,en,,0,gemini-3.5-flash-lite
+3c46d9fb50a29dc195bee39470d50cc638ad5c4a,service,negative,"There is no greeting, and sometimes the staff don’t seem to know how to handle customers properly.",en,,0,gemini-3.5-flash-lite
+3c46d9fb50a29dc195bee39470d50cc638ad5c4a,cleanliness,negative,I saw flies on the muffins,en,,0,gemini-3.5-flash-lite
+3c46d9fb50a29dc195bee39470d50cc638ad5c4a,product_quality,negative,I saw flies on the muffins,en,,0,gemini-3.5-flash-lite
+d3004ef191f8152e53b1e5daf032c607946f8594,service,positive,Harry was a wonderful barista! He made great conversation and really made our day.,en,,0,gemini-3.5-flash-lite
+99caead644c4d3c501e16ab241c0af909bad13fb,service,negative,"The morning staff were extremely unprofessional. Even when the mistake was clearly on their side, they refused to acknowledge it or apologise.",en,,0,gemini-3.5-flash-lite
+a2da479661a7c2b8c79ef65ce2de37de58ef5b73,service,positive,This location has the Best customer service of all second cup. Hospitality at its finest.,en,,0,gemini-3.5-flash-lite
+a2da479661a7c2b8c79ef65ce2de37de58ef5b73,product_quality,positive,Always great to get a good cup of their cafe latte.,en,,0,gemini-3.5-flash-lite
+6c011e46f6bd93cc515e6236f135983fa1b29e64,service,positive,Friendly staff and quick service.,en,,0,gemini-3.5-flash-lite
+5ec0a9942707970333d7773a364e9afa22254817,product_quality,positive,"I tried the croissant with ham and cheese, and wow, it's the best for me—so soft, I'd even say exquisite.",en,,0,gemini-3.5-flash-lite
+5ec0a9942707970333d7773a364e9afa22254817,service,positive,The staff were incredibly attentive and friendly,en,,0,gemini-3.5-flash-lite
+5ec0a9942707970333d7773a364e9afa22254817,atmosphere_seating,positive,they gave off such great vibes as soon as you walked in.,en,,0,gemini-3.5-flash-lite
+677cf57e281c61db712dd32c64dc791a66c20c38,service,positive,Fast service.,en,,0,gemini-3.5-flash-lite
+677cf57e281c61db712dd32c64dc791a66c20c38,product_quality,positive,Latte made well.,en,,0,gemini-3.5-flash-lite
+677cf57e281c61db712dd32c64dc791a66c20c38,atmosphere_seating,negative,No sitting space,en,,0,gemini-3.5-flash-lite
+b300ffc2d3b2d588ad6e22a66a3491b6dc5694e3,service,positive,Mainly Gaya3 assisted me with utmost care,en,,0,gemini-3.5-flash-lite
+b300ffc2d3b2d588ad6e22a66a3491b6dc5694e3,product_quality,positive,she makes the best double double!,en,,0,gemini-3.5-flash-lite
+bf5f0edb77cd478a4a10f82cc7307f2ba7b4a8fd,service,positive,"Gayathri offered really helpful suggestions that made it easy for me to customize my order, and the service was quick and very clean.",en,,0,gemini-3.5-flash-lite
+bf5f0edb77cd478a4a10f82cc7307f2ba7b4a8fd,cleanliness,positive,the service was quick and very clean.,en,,0,gemini-3.5-flash-lite
+bf5f0edb77cd478a4a10f82cc7307f2ba7b4a8fd,product_quality,positive,providing quick service without compromising the quality of the food.,en,,0,gemini-3.5-flash-lite
+5e8cddff8d117bcc1d4c0920a8f9334ee2667a6a,service,positive,"he helped me hand my drink and food, excellent manners and great service!",en,,0,gemini-3.5-flash-lite
+b27906e6b9761745fba8cddcebd1fd3237aec138,service,positive,The staff at this location were very friendly and personable.,en,,0,gemini-3.5-flash-lite
+b27906e6b9761745fba8cddcebd1fd3237aec138,cleanliness,positive,The store was clean,en,,0,gemini-3.5-flash-lite
+b27906e6b9761745fba8cddcebd1fd3237aec138,product_quality,positive,the chocolate chunk cookie and dream bar were delightful.,en,,0,gemini-3.5-flash-lite
+f383a2e6810957f400eee57d74f11506c1a2e221,service,positive,The staff are always super welcoming and kind and i’ve never had issues ordering here.,en,,0,gemini-3.5-flash-lite
+03dbd5714c5fb02a96b47dceb978441a19a1bf4c,atmosphere_seating,negative,this place is just toxic.,en,,0,gemini-3.5-flash-lite
+03dbd5714c5fb02a96b47dceb978441a19a1bf4c,price_value,negative,He tried to charge me $8 for a $4 coffee.,en,,0,gemini-3.5-flash-lite
+03dbd5714c5fb02a96b47dceb978441a19a1bf4c,service,negative,He was so angry  that another worker had to step in and fix my order for him.,en,,0,gemini-3.5-flash-lite
+554996598e0667768bbc58d74c224574d6bba7b6,service,negative,stood waiting for several minutes - there was nobody behind the counter to take my order.,en,,0,gemini-3.5-flash-lite
+a27a82275aa334ab958fe5f444b2c07572da5ba8,product_quality,positive,The food and coffee were great,en,,0,gemini-3.5-flash-lite
+a27a82275aa334ab958fe5f444b2c07572da5ba8,service,positive,exceptional service from Gayathri,en,,0,gemini-3.5-flash-lite
+064a5c6dfa13d7244d5fcedbe74373499d854a29,service,positive,Really quick service and Gayathri was really amazing throughout!!,en,,0,gemini-3.5-flash-lite
+54d130417c532a7c05bd3bd9535b59d74b046108,service,positive,Staff and drink is well made,en,,0,gemini-3.5-flash-lite
+54d130417c532a7c05bd3bd9535b59d74b046108,product_quality,positive,Staff and drink is well made,en,,0,gemini-3.5-flash-lite
+54d130417c532a7c05bd3bd9535b59d74b046108,atmosphere_seating,negative,"its the chair that is made really uncomfortable , i got back pain after 30 minutes",en,,0,gemini-3.5-flash-lite
+318b543c4e8a170ea33f3d84549c60666ba5c36a,product_quality,positive,Enjoyed our beverages from Second Cup all weekend in Toronto!,en,,0,gemini-3.5-flash-lite
+7515115caca044f3dd8ebc1b054f0de261639f63,price_value,negative,Buy a $5 coffee and get treated like a criminal.,en,,0,gemini-3.5-flash-lite
+7515115caca044f3dd8ebc1b054f0de261639f63,service,negative,Buy a $5 coffee and get treated like a criminal.,en,,0,gemini-3.5-flash-lite
+fd19eb36bbe6962339ec1c8f967579d9364e5d41,service,positive,Friendly and fast service  from Gayatri.,en,,0,gemini-3.5-flash-lite
+7553633525ed039be23f6f2b3c4113fcce57a842,service,positive,The customer service very good.,en,,0,gemini-3.5-flash-lite
+7553633525ed039be23f6f2b3c4113fcce57a842,cleanliness,positive,neat,en,,0,gemini-3.5-flash-lite
+7553633525ed039be23f6f2b3c4113fcce57a842,atmosphere_seating,positive,The place inside hospital is also very calm and neat.,en,,0,gemini-3.5-flash-lite
+a53705c9c29bab57d5e92a7bd1ead7eb20acd537,product_quality,positive,"Perfect Coffee, just the way I want it.",en,,0,gemini-3.5-flash-lite
+a53705c9c29bab57d5e92a7bd1ead7eb20acd537,service,positive,Gayu was so supportive and patient and helped with my customization.,en,,0,gemini-3.5-flash-lite
+60b4cf085ebb629ddbe8af1c558c1fdeb1e01ba3,service,positive,Service was good.,en,,0,gemini-3.5-flash-lite
+60b4cf085ebb629ddbe8af1c558c1fdeb1e01ba3,product_quality,negative,Food is less then good.,en,,0,gemini-3.5-flash-lite
+60b4cf085ebb629ddbe8af1c558c1fdeb1e01ba3,atmosphere_seating,negative,No atmosphere.,en,,0,gemini-3.5-flash-lite
+3c0bec3dfde0550e5cc94786fa9f3e24a2fb31c1,atmosphere_seating,positive,Love the environment!!,en,,0,gemini-3.5-flash-lite
+3c0bec3dfde0550e5cc94786fa9f3e24a2fb31c1,service,positive,Aster is such a lovely and friendly lady!!,en,,0,gemini-3.5-flash-lite
+34e1bb5eae276bbfd9d362223e61c48c8544133c,service,positive,Gayathri at the counter handled it calmly and professionally. She quickly helped replace my cup and was very kind throughout.,en,,0,gemini-3.5-flash-lite
+f549f4542c9cd2d80fb41c58c11990afa0d76293,service,negative,"This was the slowest the service had ever been, and some girls were waiting for almost an hour to which they just left without even grabbing their drinks.",en,,0,gemini-3.5-flash-lite
+5c35d8339da9f7639380a81d5b37e51906f12465,service,positive,"Great service, fast, friendly.",en,,0,gemini-3.5-flash-lite
+fd9f8ce01372621faa3c827052fe8a4aa71dbd56,product_quality,positive,Great place to have coffee / desserts,en,,0,gemini-3.5-flash-lite
+fd9f8ce01372621faa3c827052fe8a4aa71dbd56,atmosphere_seating,positive,they have great seating area to work .,en,,0,gemini-3.5-flash-lite
+fd9f8ce01372621faa3c827052fe8a4aa71dbd56,service,positive,The staff is very friendly and cooperative,en,,0,gemini-3.5-flash-lite
+fd9f8ce01372621faa3c827052fe8a4aa71dbd56,cleanliness,positive,the restrooms<br>A were clean .,en,,0,gemini-3.5-flash-lite
+07f87582d08d947c24fa171167f3cb1b996dcafa,service,positive,Excellent customer service and friendly staff.,en,,0,gemini-3.5-flash-lite
+76d61b62c1b7697c598164d61ce03b1c1819dba2,service,positive,Very nice staff,en,,0,gemini-3.5-flash-lite
+76d61b62c1b7697c598164d61ce03b1c1819dba2,atmosphere_seating,positive,ample amount of seating,en,,0,gemini-3.5-flash-lite
+fbce82de491371af17f5ce2144045ab675b4c2dc,service,positive,Houman was a great employee. He made me feel very welcome.,en,,0,gemini-3.5-flash-lite
+861d5ed9d7252364cc716b8f037def9932e4ed0c,service,negative,you’ll get questioned about if you’ve actually made a purchase or not…unless you’re one of the favoured clients,en,,0,gemini-3.5-flash-lite
+74c7084aac4a37ad18f73b1061920cd2bef6e5f3,service,positive,Marcos and Elyas were the sweetest even if there was a huge line up they took it with speed and grace and were just overall very pleasant,en,,0,gemini-3.5-flash-lite
+761c8dd1f2fbc27cc086b053326eed2534c329e0,atmosphere_seating,mixed,Wish there was more seating,en,,0,gemini-3.5-flash-lite
+761c8dd1f2fbc27cc086b053326eed2534c329e0,cleanliness,positive,well maintained location,en,,0,gemini-3.5-flash-lite
+761c8dd1f2fbc27cc086b053326eed2534c329e0,service,positive,"service is quick, and the staff are very polite",en,,0,gemini-3.5-flash-lite
+36b1c845d75f29fef356ac2806f728a1f9a63b1b,product_quality,negative,the quality of Tim Horton's across Toronto has gone for the worse.,en,,0,gemini-3.5-flash-lite
+f8015564eaca507bb066f56771987b900cb3e39f,product_quality,negative,latte that tasted this bitter and horrible in a while,en,,0,gemini-3.5-flash-lite
+f8015564eaca507bb066f56771987b900cb3e39f,price_value,negative,cost like $5,en,,0,gemini-3.5-flash-lite
+b58408aaa58238ca7ad1be28e34ee2fba149a870,cleanliness,negative,Bathroom was absolutely disgusting.,en,,0,gemini-3.5-flash-lite
+b58408aaa58238ca7ad1be28e34ee2fba149a870,product_quality,negative,Coffee was terrible and watery.,en,,0,gemini-3.5-flash-lite
+b58408aaa58238ca7ad1be28e34ee2fba149a870,service,negative,Customer service was not good.,en,,0,gemini-3.5-flash-lite
+6a4b5bc877617ffedb615d7a9e47efe27649cc2b,atmosphere_seating,positive,"Sweet, cozy",en,,0,gemini-3.5-flash-lite
+6a4b5bc877617ffedb615d7a9e47efe27649cc2b,price_value,negative,expensive.,en,,0,gemini-3.5-flash-lite
+7f7285f3d1c617f068c0455d3c501fc7d7b16e7f,service,negative,"The response I received was a very direct “no,” without much empathy",en,,0,gemini-3.5-flash-lite
+037a024bcb2718d757264e2f065ed85a4ca7b80b,cleanliness,positive,the place is nice and clean,en,,0,gemini-3.5-flash-lite
+037a024bcb2718d757264e2f065ed85a4ca7b80b,atmosphere_seating,mixed,Large seating area but sometimes it's hard to find a place to sit down,en,,0,gemini-3.5-flash-lite
+627fb7ce2ca560c3cf0ac05e4e6fd4e3e273935b,product_quality,negative,Bella goofed up my order,en,,0,gemini-3.5-flash-lite
+627fb7ce2ca560c3cf0ac05e4e6fd4e3e273935b,service,negative,their phone line is kaput and There is No voice mail set up!,en,,0,gemini-3.5-flash-lite
+1c43a9c9fdebd2a4a7d54fbebbb92d4f979d98c5,atmosphere_seating,positive,perfect atmosphere,en,,0,gemini-3.5-flash-lite
+1c43a9c9fdebd2a4a7d54fbebbb92d4f979d98c5,service,positive,the staff are all the friendliest baristas ever,en,,0,gemini-3.5-flash-lite
+1c43a9c9fdebd2a4a7d54fbebbb92d4f979d98c5,product_quality,positive,breakfast sandwiches are better than Tim's or McDs,en,,0,gemini-3.5-flash-lite
+4e15fb8b207c7e6c06f4faef552752f324653bf8,service,negative,Wait time of 30 minutes for a drink and a sandwich is not unusual,en,,0,gemini-3.5-flash-lite
+4e15fb8b207c7e6c06f4faef552752f324653bf8,atmosphere_seating,negative,Way too small and understaffed for Robarts' traffic,en,,0,gemini-3.5-flash-lite
+25a983be1cfb4384d36f2348aa1fc25aebee0584,service,positive,The customer service is very friendly.,en,,0,gemini-3.5-flash-lite
+25a983be1cfb4384d36f2348aa1fc25aebee0584,product_quality,positive,Food is fresh and tasty.,en,,0,gemini-3.5-flash-lite
+25a983be1cfb4384d36f2348aa1fc25aebee0584,atmosphere_seating,positive,Great place!,en,,0,gemini-3.5-flash-lite
+ed16fb31584c6d53684aeb5be999313683607999,service,negative,"the employees are super rude, especially the ginger girl",en,,0,gemini-3.5-flash-lite
+bf8f6ba51765cb2e9da609c2af73d8eb41391ace,service,negative,"So I stood there for an hour for something that didn’t exist, while staff ignored me when I tried to fix it.",en,,0,gemini-3.5-flash-lite
+8b3aa9e30e40d4b4104ec02bba5da98b977a1c38,product_quality,negative,A cup of hot water with a spoon of coffee in it?,en,,0,gemini-3.5-flash-lite
+91c829e3d8787d51140c9f3c94dea27c0d3b3e78,service,negative,"The servers are VERY rude and impatient, they snapped at me and told me to rejoin the line even when i just ask for a cup of water.",en,,0,gemini-3.5-flash-lite
+6a001238bffb7ba755c4e8a37390782d59583b9d,product_quality,positive,Great place to take a coffee and a snack.,en,,0,gemini-3.5-flash-lite
+6a001238bffb7ba755c4e8a37390782d59583b9d,service,positive,They are nice and helpful towards the customers.,en,,0,gemini-3.5-flash-lite
+0921a744b7c0a439c3e04576d2858aa3f44b8ece,service,positive,The staff at this store are all very kind and friendly.,en,,0,gemini-3.5-flash-lite
+898eda474cf3041e117849318d2962c1231ca15b,service,negative,He was very disrespectful and made me very uncomfortable.,en,,0,gemini-3.5-flash-lite
+cda16a2ff1a4a96c90a797697af3fde787228c06,service,negative,16 minute wait,en,,0,gemini-3.5-flash-lite
+e09c466aa5a37f90986e6dc15092490b95de9359,product_quality,positive,Ice cherry chai 💓,en,,0,gemini-3.5-flash-lite
+d0fef285036cd769d3e25811f03f35c992603690,service,positive,Everyone is so friendly,en,,0,gemini-3.5-flash-lite
+d0fef285036cd769d3e25811f03f35c992603690,product_quality,positive,the coffee is so yummy,en,,0,gemini-3.5-flash-lite
+bda3fbfbb40c5c7f6834d736b729b12482d2d709,service,negative,The employees all have an attitude and they are simply bad at their jobs,en,,0,gemini-3.5-flash-lite
+17b5f08404f27da8284395da1d9722f29ce7165f,service,positive,The ladies working tonight were super sweet and helpful.,en,,0,gemini-3.5-flash-lite
+17b5f08404f27da8284395da1d9722f29ce7165f,product_quality,positive,"There was some confusion with my lavender latte, and they instantly replaced my drink with the one I wanted.",en,,0,gemini-3.5-flash-lite
+77e37bd0b885d11a7d82063a39d559e0fb4fa08c,price_value,negative,they stole 60 stars from me,en,,0,gemini-3.5-flash-lite
+77e37bd0b885d11a7d82063a39d559e0fb4fa08c,product_quality,negative,the drink came with A LOT of little coffee grains,en,,0,gemini-3.5-flash-lite
+3f738e21b72dc00f5f0b9dd17d1ad5a0225b1d84,product_quality,negative,stale food,en,,0,gemini-3.5-flash-lite
+28f27b11fd662f6464ef883f405032584aab9667,service,negative,Horrid service,en,,0,gemini-3.5-flash-lite
+f1678c59af2a3009fbeb0ba03c646cd392d397aa,service,negative,30 minute wait for a cup of tea. One employee was also unable to control his emotions,en,,0,gemini-3.5-flash-lite
+22c5c72d4c7ca095f79ef12a8606076f01bac947,service,negative,The staff here was so rude.,en,,0,gemini-3.5-flash-lite
+22c5c72d4c7ca095f79ef12a8606076f01bac947,price_value,negative,did not refund the difference,en,,0,gemini-3.5-flash-lite
+a95d123b4767eb76f3f353ddf7ff4cd4d8e712ee,service,negative,"Staff rude, service awful.",en,,0,gemini-3.5-flash-lite
+f9f7f50e73c64298191f6dd64014608c274d7125,service,negative,"Staff were rude, service was a mess.",en,,0,gemini-3.5-flash-lite
+200e866d40febb1a4a6a2acbeda8952478699deb,service,negative,The staff are unprofessional and very rude.,en,,0,gemini-3.5-flash-lite
+5498e410a2a730cffc4c599b8468819ed4d1c72e,price_value,negative,"I just spent $8 at Starbucks and asked for water, and the guy said it has to be in the same order. That’s crazy",en,,0,gemini-3.5-flash-lite
+5498e410a2a730cffc4c599b8468819ed4d1c72e,service,negative,the guy said it has to be in the same order. That’s crazy,en,,0,gemini-3.5-flash-lite
+51f3dd7a60b4197c184bd9d53ce470dffd868d1f,service,negative,Very bad customer service,en,,0,gemini-3.5-flash-lite
+1e8ac82bec495390d18b9e97ef7910c7acfb9eff,service,positive,The staff here are incredibly organized for such a busy location.,en,,0,gemini-3.5-flash-lite
+ad4dba67e9af38bd6af5102b189ec8a3410f0d1f,product_quality,positive,Grabbed lattes for take out.  Just what we wanted !,en,,0,gemini-3.5-flash-lite
+a6e8345c482635d7009beddf7bc0f9c6101701ea,service,negative,the service at this location by Keith has stopped me from coming back to this location,en,,0,gemini-3.5-flash-lite
+d94717d6e6c3b837e15ceb57bff8f842f61cf0cf,product_quality,positive,Good place for early morning coffee fix,en,,0,gemini-3.5-flash-lite
+d94717d6e6c3b837e15ceb57bff8f842f61cf0cf,service,positive,Barista is great!,en,,0,gemini-3.5-flash-lite
+9731a26d79bebbae5062e1a8e6a1b2188155e46b,product_quality,positive,Amazing lattes,en,,0,gemini-3.5-flash-lite
+9731a26d79bebbae5062e1a8e6a1b2188155e46b,service,positive,great staff!,en,,0,gemini-3.5-flash-lite
+e84c3c1e4e845b5d202e0b2ca08ce99cb465453e,service,positive,Quick and convenient.,en,,0,gemini-3.5-flash-lite
+753eff5b74449b11799c4ffe43ced3c9e91d54bd,product_quality,positive,My food and coffee were great!,en,,0,gemini-3.5-flash-lite
+753eff5b74449b11799c4ffe43ced3c9e91d54bd,service,positive,She’s was very sweet and helped me find the building I was looking for!,en,,0,gemini-3.5-flash-lite
+d0b7b122b66946d7a39166b8c887dfd8a9d804e7,service,positive,baristas always doing their best,en,,0,gemini-3.5-flash-lite
+09aabf77e81093b4965500c4106664877eeee48c,product_quality,negative,iced latte,en,,0,gemini-3.5-flash-lite
+09aabf77e81093b4965500c4106664877eeee48c,service,negative,receive my coffee within 5 minutes,en,,0,gemini-3.5-flash-lite
+6d6bc94ce6fecae1f19abee3c54ef9fbae8a6954,service,negative,Customer service is so bad.,en,,0,gemini-3.5-flash-lite
+6d6bc94ce6fecae1f19abee3c54ef9fbae8a6954,product_quality,negative,sold the last croissant to another person when I already ordered it,en,,0,gemini-3.5-flash-lite
+c0015b76c93b3cb9876e439c38ef1e5a035787f2,service,negative,Their behavior was so inappropriate,en,,0,gemini-3.5-flash-lite
+8d22396793d74cfd3325bdf926490a19105be24b,service,negative,Staff need training!,en,,0,gemini-3.5-flash-lite
+7cf8c6be01f7711683bed7225ea3aa2990b3784e,atmosphere_seating,positive,create such a warm and welcoming environment,en,,0,gemini-3.5-flash-lite
+7cf8c6be01f7711683bed7225ea3aa2990b3784e,service,positive,always provide a friendly smile with patience and care,en,,0,gemini-3.5-flash-lite
+9400dc0b9bfb394f578e990fdb3274335858ab51,service,positive,Such great service!,en,,0,gemini-3.1-flash-lite
+9400dc0b9bfb394f578e990fdb3274335858ab51,product_quality,positive,great drinks,en,,0,gemini-3.1-flash-lite
+3e97a931da5022c9282ac5dd6be7d601ce9cabee,service,positive,"the gentleman who works there was super nice, and helpful. His positive energy made my day. Service was quick",en,,0,gemini-3.1-flash-lite
+3e97a931da5022c9282ac5dd6be7d601ce9cabee,product_quality,positive,coffee is nice,en,,0,gemini-3.1-flash-lite
+b2d98fee85b9f1291de4ed9125806d91691b28e6,product_quality,negative,"recently the ones I’m getting are not good. I asked for light ice, the one I got ain’t light ice",en,,0,gemini-3.1-flash-lite
+ea2a2ae769f768b3e3614db7792e14b896987208,service,positive,workers are making an effort,en,,0,gemini-3.1-flash-lite
+a25a95bc4a1e5ddf2434469feeab649e315f1a69,atmosphere_seating,positive,Very cozy place,en,,0,gemini-3.1-flash-lite
+a25a95bc4a1e5ddf2434469feeab649e315f1a69,product_quality,positive,cappuccino and it was really amazing,en,,0,gemini-3.1-flash-lite
+bc6f7d8c07e619d7ee100d4912f94b25ef7d66cb,product_quality,negative,cappuccino was mediocre,en,,0,gemini-3.1-flash-lite
+bc6f7d8c07e619d7ee100d4912f94b25ef7d66cb,price_value,negative,not worth the price,en,,0,gemini-3.1-flash-lite
+bc6f7d8c07e619d7ee100d4912f94b25ef7d66cb,service,negative,"customer service is strange: the staff aren’t rude, but they seem lifeless, perfunctory, and disengaged",en,,0,gemini-3.1-flash-lite
+d644ef57e1b82a3f8b9f5e90ef641bdf686f9a80,service,positive,The Best crew,en,,0,gemini-3.1-flash-lite
+917faea8e348e2dbfb600cbb22dc57c7d6593510,price_value,negative,You pay over $5 for tea,en,,0,gemini-3.1-flash-lite
+917faea8e348e2dbfb600cbb22dc57c7d6593510,product_quality,negative,undrinkable beverage with broken tea bags,en,,0,gemini-3.1-flash-lite
+a5a0005cdb89eaaa85fa9b4a54a6ae8d4d96f617,service,neutral,Service is what it is.,en,,0,gemini-3.1-flash-lite
+a5a0005cdb89eaaa85fa9b4a54a6ae8d4d96f617,price_value,negative,spending so much on a cup of coffee,en,,0,gemini-3.1-flash-lite
+a5a0005cdb89eaaa85fa9b4a54a6ae8d4d96f617,product_quality,negative,Not milk mixed with coffee grounds and ice when I order an iced latte.,en,,0,gemini-3.1-flash-lite
+4f234fa625fd440125850b45a9829afc1d97206b,atmosphere_seating,negative,Seating was very competitive near noon,en,,0,gemini-3.1-flash-lite
+4f234fa625fd440125850b45a9829afc1d97206b,product_quality,neutral,The food was what you'd expect from a Starbucks,en,,0,gemini-3.1-flash-lite
+4f234fa625fd440125850b45a9829afc1d97206b,service,positive,The staff were friendly and attentive,en,,0,gemini-3.1-flash-lite
+80f51f5d1671172a76ea2dd7005c736d5845f963,service,negative,"The costumer service is awful, super unwelcoming",en,,0,gemini-3.1-flash-lite
+80f51f5d1671172a76ea2dd7005c736d5845f963,product_quality,negative,their drinks are not that good either,en,,0,gemini-3.1-flash-lite
+80f51f5d1671172a76ea2dd7005c736d5845f963,price_value,negative,they charge more than they supposed to for a very mediocre drink,en,,0,gemini-3.1-flash-lite
+4b2ba722c77a4abea29762108db3a1d9f74af7ff,service,negative,Poor coordination with custom orders,en,,0,gemini-3.1-flash-lite
+421065234b96f084d4cf911f084544bc04065d9c,service,positive,This location has the friendliest baristas!,en,,0,gemini-3.1-flash-lite
+4f6a50fc7da1fbdb867abc4ba0a0e475d53b57e2,product_quality,negative,"the item I received appeared to be pre-packaged or 'meal-prep' style and simply reheated, resulting in a poor texture",en,,0,gemini-3.1-flash-lite
+992a6be4f21f0db3d3aa3533c2385db40a96e406,service,positive,lovely and friendly workers,en,,0,gemini-3.1-flash-lite
+992a6be4f21f0db3d3aa3533c2385db40a96e406,atmosphere_seating,negative,No space to sit,en,,0,gemini-3.1-flash-lite
+992a6be4f21f0db3d3aa3533c2385db40a96e406,price_value,negative,$5 for an iced coffee that doesn't taste much different from even the cheapest local chains,en,,0,gemini-3.1-flash-lite
+992a6be4f21f0db3d3aa3533c2385db40a96e406,service,negative,7 minute wait,en,,0,gemini-3.1-flash-lite
+40a170a7a8c7e94956366ca1071a6e2c28ee6e8d,service,positive,Serena is really nice and alot more she made sure she is making a really good customer connection,en,,0,gemini-3.1-flash-lite
+3b7f93ce3689ce819cfe10e74ce9bcb3de6bebf3,price_value,negative,Overpriced,en,,0,gemini-3.1-flash-lite
+3b7f93ce3689ce819cfe10e74ce9bcb3de6bebf3,product_quality,negative,low quality food,en,,0,gemini-3.1-flash-lite
+3b7f93ce3689ce819cfe10e74ce9bcb3de6bebf3,atmosphere_seating,negative,a place to sit,en,,0,gemini-3.1-flash-lite
+32fd54c55a52c0613ea83f34557bb047e0ce25b0,product_quality,positive,I really like how here you can always get honey,en,,0,gemini-3.1-flash-lite
+8d57498d7bce3d4b0f6559a5809ea6a42c348e7b,service,negative,we were told by one of their proud liberal employees we will not be allowed back in,en,,0,gemini-3.1-flash-lite
+162e7877d6e0f23ebe86d0982c4451a5d91e80fd,service,positive,"These guys are absolutely professional, friendly, extremely helpful. And just radiate with customer service.",en,,0,gemini-3.1-flash-lite
+98293dbbc5a58b3720b57085c0dc9e349a0c7d5d,service,negative,the staff said that they are closing at 5pm,en,,0,gemini-3.1-flash-lite
+98293dbbc5a58b3720b57085c0dc9e349a0c7d5d,product_quality,negative,There is no whipping cream and no mocha lines,en,,0,gemini-3.1-flash-lite
+b430cfe6403f00079bcd5fb1b2a8dd8e2d299eb7,service,negative,About four other people who ordered at the till after my order was placed got their orders first.,en,,0,gemini-3.5-flash-lite
+a03fd01f2f36ad7c66292d651c7cae83057a45cf,service,negative,"Cashier (dark skinned, tall, slim lady) charged me twice saying first payment didn't go through and that I should use another card.",en,,0,gemini-3.5-flash-lite
+a03fd01f2f36ad7c66292d651c7cae83057a45cf,price_value,negative,$30 cup cost me $60 - not the best experience.,en,,0,gemini-3.5-flash-lite
+7883b2a950dfd856eb266bb14783be7520333108,service,positive,The staff have been so pleasant on every morning trip we’ve taken to this Starbucks,en,,0,gemini-3.5-flash-lite
+c793f66561acc82d00bc64d6e68732357c7566ac,atmosphere_seating,neutral,"Dark or romantic, you decide.",en,,0,gemini-3.5-flash-lite
+c793f66561acc82d00bc64d6e68732357c7566ac,service,positive,staff is great.,en,,0,gemini-3.5-flash-lite
+4ee6a95ea5c7cb01bd34df16fff513e98f2aaab9,service,negative,25 minute wait for a coffee with milk? Absolute joke.,en,,0,gemini-3.5-flash-lite
+ce11ecbf9dff69d82774f05e516c1f051f452758,service,mixed,"Service has gone down extremely. Baristas are awesome, however it now takes 20-30 mins for a mobile order pick up",en,,0,gemini-3.5-flash-lite
+4087563c2a6554c7b2b741ac6f7b6b935183b274,service,positive,they work so efficiently.,en,,0,gemini-3.5-flash-lite
+4087563c2a6554c7b2b741ac6f7b6b935183b274,product_quality,negative,They put the smallest dallop of cream cheese.,en,,0,gemini-3.5-flash-lite
+4087563c2a6554c7b2b741ac6f7b6b935183b274,price_value,negative,All I am asking is to get what I pay for,en,,0,gemini-3.5-flash-lite
+35a7ac1b6d2271d1cd56ea3166bbf0643ecf7538,atmosphere_seating,positive,"The atmosphere is nice, and it’s a convenient spot to grab a coffee or take a quick break.",en,,0,gemini-3.5-flash-lite
+35a7ac1b6d2271d1cd56ea3166bbf0643ecf7538,cleanliness,neutral,you actually have to ask a barista to unlock the door for you remotely.,en,,0,gemini-3.5-flash-lite
+6517e5c1b95145e286f5740474dcaff40eace054,service,positive,Amazing staff smile on their face,en,,0,gemini-3.5-flash-lite
+a6933c963fdadcf2271f4da71b85473fb2776edb,service,positive,Top shelf service,en,,0,gemini-3.5-flash-lite
+a6933c963fdadcf2271f4da71b85473fb2776edb,product_quality,positive,product today,en,,0,gemini-3.5-flash-lite
+bac5c1faebf26adf4423d310649d64138b7f49cc,service,positive,The staff is so friendly there,en,,0,gemini-3.5-flash-lite
+3a4652fdb0b917bc8d8ed6547a17615a8223aa98,service,positive,Loved their service,en,,0,gemini-3.5-flash-lite
+eb95e649b1126aac5294545610fecabf24d2bd2b,product_quality,negative,matcha tasted so bad.,en,,0,gemini-3.5-flash-lite
+eb95e649b1126aac5294545610fecabf24d2bd2b,service,negative,I specifically asked for light ice and this is what they gave me,en,,0,gemini-3.5-flash-lite
+065f0e766b46d9e50e98d345c1c9e222335b30d0,service,positive,he always listens and makes up for the mistakes I make. Big shout out to the incredible team here!!!,en,,0,gemini-3.5-flash-lite
+1bdb75777a78a436c7254f727e4918bcefde7ee9,product_quality,positive,Good food,en,,0,gemini-3.5-flash-lite
+1bdb75777a78a436c7254f727e4918bcefde7ee9,service,negative,super disorganized with long wait times,en,,0,gemini-3.5-flash-lite
+cae719db0d662d25671eb6f1cb3be127541ee0b6,service,positive,Dory is always so lovely!,en,,0,gemini-3.5-flash-lite
+52089ddfd482ad0a0ca6cc7630bd73c4ed139e1c,service,negative,I waited for 20 minutes for a latte to be made.,en,,0,gemini-3.5-flash-lite
+d98d34ba2748bb8f8148d65147be654365e0ee8c,product_quality,positive,"I really enjoy the Ice Capp that I order all the time, and the Farmer’s Wrap is also very good.",en,,0,gemini-3.5-flash-lite
+d98d34ba2748bb8f8148d65147be654365e0ee8c,service,positive,"Everyone is very friendly, and the service is always fast and efficient.",en,,0,gemini-3.5-flash-lite
+e39d296b01ad31a1baaeb8b9a4330ccc00b42af4,product_quality,positive,fresh food,en,,0,gemini-3.5-flash-lite
+e39d296b01ad31a1baaeb8b9a4330ccc00b42af4,service,positive,"Great service, friendly staff",en,,0,gemini-3.5-flash-lite
+1927ea7edbd5800cc75d93ffcf2f109772d6efae,service,positive,Lovely staff,en,,0,gemini-3.5-flash-lite
+1927ea7edbd5800cc75d93ffcf2f109772d6efae,product_quality,positive,great food,en,,0,gemini-3.5-flash-lite
+1927ea7edbd5800cc75d93ffcf2f109772d6efae,atmosphere_seating,positive,great energy,en,,0,gemini-3.5-flash-lite
+ff3aaa9057499ec34d7e05ad3481c88d89798396,service,positive,great customer service,en,,0,gemini-3.5-flash-lite
+7a9f92504fa07d58754547cd044935d3835930e6,price_value,negative,Tim Hortons rewards system is a joke - you spend $100 and you 1000 points which gets you 2 free coffees,en,,0,gemini-3.5-flash-lite
+7a9f92504fa07d58754547cd044935d3835930e6,product_quality,negative,quality food has dropped off  - they just throw it together,en,,0,gemini-3.5-flash-lite
+6e34a17e455ca38250381315514cd3a6f569dd10,service,negative,this interaction fell well below the level of customer service I expect from Tim Hortons.,en,,0,gemini-3.5-flash-lite
+5ade56e03e29698567197cb387ab32187d7c031e,product_quality,positive,Great coffee,en,,0,gemini-3.5-flash-lite
+5ade56e03e29698567197cb387ab32187d7c031e,service,positive,quick service,en,,0,gemini-3.5-flash-lite
+6bb813fa14df0e05370222d3addf1b7ebba0cf3a,product_quality,positive,the coffee is consistently great,en,,0,gemini-3.5-flash-lite
+6bb813fa14df0e05370222d3addf1b7ebba0cf3a,service,positive,"Thank you to the entire team for the kindness, care, and positivity you’ve shown me over the years.",en,,0,gemini-3.5-flash-lite
+6bb813fa14df0e05370222d3addf1b7ebba0cf3a,atmosphere_seating,positive,they’ve somehow created a place that feels so warm and personal.,en,,0,gemini-3.5-flash-lite
+5a56d946413ff6ea4d17c0f04b760ba1e381f79f,service,positive,nice service and quick delivery bageber section.and behivour very gental,en,,0,gemini-3.5-flash-lite
+577e42908da15c3001cf03c6103cdc90ee603c82,product_quality,positive,Everything there is delicious...,en,,0,gemini-3.5-flash-lite
+577e42908da15c3001cf03c6103cdc90ee603c82,service,positive,the staff is lovely,en,,0,gemini-3.5-flash-lite
+8cec3d1a689f54a25882bee1a2c8778205213795,atmosphere_seating,positive,maintaining a welcoming atmosphere,en,,0,gemini-3.5-flash-lite
+8cec3d1a689f54a25882bee1a2c8778205213795,service,positive,"The entire team was friendly, professional and provided excellent customer service.",en,,0,gemini-3.5-flash-lite
+0b9d6b94bc34abd53e4b6a9a813c118c611313f7,service,negative,"Location says opens at 7am, at 7:10 ai was told they weren't open yet.",en,,0,gemini-3.5-flash-lite
+f9d996e9aac78d486906d94b1906d5085891beee,service,positive,Very smooth and fast service and friendly staff.,en,,0,gemini-3.5-flash-lite
+3d7e40906349a9fa77bebe62adb2d9d690674dff,service,positive,staff was so polite and I like their quick service,en,,0,gemini-3.5-flash-lite
+2dc89de87ae86fdd4671eaaf19a6199cc90b7d74,service,positive,"Great service, staff are always friendly.",en,,0,gemini-3.5-flash-lite
+2dc89de87ae86fdd4671eaaf19a6199cc90b7d74,product_quality,positive,My go to for a caramel latte,en,,0,gemini-3.5-flash-lite
+63f36c98423207739a7a7649fd00df08b762ad1d,service,positive,They are very friendly and always punctual.,en,,0,gemini-3.5-flash-lite
+b137c58cc466a4dd0148d566696195709b594014,product_quality,positive,the butter croissant was a highlight—it was prepared very well and tasted fresh.,en,,0,gemini-3.5-flash-lite
+b137c58cc466a4dd0148d566696195709b594014,service,neutral,the overall experience would have been improved by a bit more friendliness from the staff.,en,,0,gemini-3.5-flash-lite
+ecc668ae98076291d8a6f84e0acdbb8032d646d4,cleanliness,positive,Clean space.,en,,0,gemini-3.5-flash-lite
+ecc668ae98076291d8a6f84e0acdbb8032d646d4,service,positive,Good customer service and quick service,en,,0,gemini-3.5-flash-lite
+10dbb09d0cf6c9c9070c112b7f4f558d14aceddb,product_quality,negative,I ordered a brewed coffee and it had coffee residue at the bottom.,en,,0,gemini-3.5-flash-lite
